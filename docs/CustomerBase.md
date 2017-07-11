@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **gender** | **String** | Customer&#39;s gender. Can be &#x60;M&#x60;, &#x60;F&#x60; or null. |  [optional]
 **dateOfBirth** | **String** | Birthday. |  [optional]
 **companyName** | **String** | Company name. |  [optional]
+**doNotEmail** | **Boolean** | Indicates whether the customer opted out of email communications. |  [optional]
 **phone** | **String** | Phone no. |  [optional]
 **mobile** | **String** | Mobile phone no. |  [optional]
 **fax** | **String** | Fax no. |  [optional]
