@@ -128,7 +128,7 @@ public class InventoryCount {
   }
 
    /**
-   * The status of the inventory count. One of: `STOCKTAKE_SCHEDULED`, `STOCKTAKE_IN_PROGRESS`, `STOCKTAKE_IN_PROGRESS_PROCESSED`, `STOCKTAKE_COMPLETE`.
+   * The status of the inventory count. One of: &#x60;STOCKTAKE_SCHEDULED&#x60;, &#x60;STOCKTAKE_IN_PROGRESS&#x60;, &#x60;STOCKTAKE_IN_PROGRESS_PROCESSED&#x60;, &#x60;STOCKTAKE_COMPLETE&#x60;.
    * @return status
   **/
   @ApiModelProperty(required = true, value = "The status of the inventory count. One of: `STOCKTAKE_SCHEDULED`, `STOCKTAKE_IN_PROGRESS`, `STOCKTAKE_IN_PROGRESS_PROCESSED`, `STOCKTAKE_COMPLETE`.")
@@ -172,7 +172,7 @@ public class InventoryCount {
   }
 
    /**
-   * Consignment type, for inventory counts always `STOCKTAKE`
+   * Consignment type, for inventory counts always &#x60;STOCKTAKE&#x60;
    * @return type
   **/
   @ApiModelProperty(required = true, value = "Consignment type, for inventory counts always `STOCKTAKE`")

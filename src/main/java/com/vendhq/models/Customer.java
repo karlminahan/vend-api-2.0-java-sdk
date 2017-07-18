@@ -160,7 +160,7 @@ public class Customer {
   }
 
    /**
-   * Customer's first name.
+   * Customer&#39;s first name.
    * @return firstName
   **/
   @ApiModelProperty(required = true, value = "Customer's first name.")
@@ -178,7 +178,7 @@ public class Customer {
   }
 
    /**
-   * Customer 's last name.
+   * Customer &#39;s last name.
    * @return lastName
   **/
   @ApiModelProperty(required = true, value = "Customer 's last name.")
@@ -268,7 +268,7 @@ public class Customer {
   }
 
    /**
-   * Customer's email address.
+   * Customer&#39;s email address.
    * @return email
   **/
   @ApiModelProperty(value = "Customer's email address.")
@@ -304,7 +304,7 @@ public class Customer {
   }
 
    /**
-   * Customer's gender. Can be `M`, `F` or null.
+   * Customer&#39;s gender. Can be &#x60;M&#x60;, &#x60;F&#x60; or null.
    * @return gender
   **/
   @ApiModelProperty(value = "Customer's gender. Can be `M`, `F` or null.")
@@ -808,7 +808,7 @@ public class Customer {
   }
 
    /**
-   * Customer's spending this year.
+   * Customer&#39;s spending this year.
    * @return yearToDate
   **/
   @ApiModelProperty(value = "Customer's spending this year.")
@@ -826,7 +826,7 @@ public class Customer {
   }
 
    /**
-   * Customer's unpaid balance.
+   * Customer&#39;s unpaid balance.
    * @return balance
   **/
   @ApiModelProperty(value = "Customer's unpaid balance.")
@@ -844,7 +844,7 @@ public class Customer {
   }
 
    /**
-   * Customer's loyalty balance.
+   * Customer&#39;s loyalty balance.
    * @return loyaltyBalance
   **/
   @ApiModelProperty(value = "Customer's loyalty balance.")

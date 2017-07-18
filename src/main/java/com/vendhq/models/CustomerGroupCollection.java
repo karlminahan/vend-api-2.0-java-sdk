@@ -49,7 +49,7 @@ public class CustomerGroupCollection {
   }
 
    /**
-   * An array of customer group objects wrapped in top level `data` object.
+   * An array of customer group objects wrapped in top level &#x60;data&#x60; object.
    * @return data
   **/
   @ApiModelProperty(value = "An array of customer group objects wrapped in top level `data` object.")

@@ -49,7 +49,7 @@ public class RegisterCollection {
   }
 
    /**
-   * An array Register objects wrapped in a top level `data` object.
+   * An array Register objects wrapped in a top level &#x60;data&#x60; object.
    * @return data
   **/
   @ApiModelProperty(value = "An array Register objects wrapped in a top level `data` object.")

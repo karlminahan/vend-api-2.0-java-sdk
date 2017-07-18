@@ -156,7 +156,7 @@ public class Product {
   }
 
    /**
-   * Product sku. **Note:** Should be unique, but it's not verified while posting.
+   * Product sku. **Note:** Should be unique, but it&#39;s not verified while posting.
    * @return sku
   **/
   @ApiModelProperty(required = true, value = "Product sku. **Note:** Should be unique, but it's not verified while posting.")

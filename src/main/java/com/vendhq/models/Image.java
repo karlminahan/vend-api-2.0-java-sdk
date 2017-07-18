@@ -119,7 +119,7 @@ public class Image {
   }
 
    /**
-   * Status if the image upload processing. Can be `processing`, `uploaded`, `error`.
+   * Status if the image upload processing. Can be &#x60;processing&#x60;, &#x60;uploaded&#x60;, &#x60;error&#x60;.
    * @return status
   **/
   @ApiModelProperty(value = "Status if the image upload processing. Can be `processing`, `uploaded`, `error`.")

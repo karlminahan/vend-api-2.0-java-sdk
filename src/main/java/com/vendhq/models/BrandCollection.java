@@ -49,7 +49,7 @@ public class BrandCollection {
   }
 
    /**
-   * An array of Brand objects wrapped in top level `data` object.
+   * An array of Brand objects wrapped in top level &#x60;data&#x60; object.
    * @return data
   **/
   @ApiModelProperty(value = "An array of Brand objects wrapped in top level `data` object.")

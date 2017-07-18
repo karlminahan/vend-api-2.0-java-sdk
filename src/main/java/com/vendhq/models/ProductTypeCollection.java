@@ -49,7 +49,7 @@ public class ProductTypeCollection {
   }
 
    /**
-   * An array of Product Type objects wrapped in top level `data` object.
+   * An array of Product Type objects wrapped in top level &#x60;data&#x60; object.
    * @return data
   **/
   @ApiModelProperty(value = "An array of Product Type objects wrapped in top level `data` object.")

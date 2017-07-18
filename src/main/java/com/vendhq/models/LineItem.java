@@ -124,7 +124,7 @@ public class LineItem {
   }
 
    /**
-   * Indicates whether this line item is a return from another sale (referenced by `return_for` on the main sale object).
+   * Indicates whether this line item is a return from another sale (referenced by &#x60;return_for&#x60; on the main sale object).
    * @return isReturn
   **/
   @ApiModelProperty(value = "Indicates whether this line item is a return from another sale (referenced by `return_for` on the main sale object).")
@@ -330,7 +330,7 @@ public class LineItem {
   }
 
    /**
-   * The value that should be added to associated customer's loyalty balance.
+   * The value that should be added to associated customer&#39;s loyalty balance.
    * @return loyaltyValue
   **/
   @ApiModelProperty(value = "The value that should be added to associated customer's loyalty balance.")
@@ -348,7 +348,7 @@ public class LineItem {
   }
 
    /**
-   * Indicates whether the price was set manually. Using `true` means that the value will never be refreshed from the price book when reloaded (sale retrieved from parked sales).
+   * Indicates whether the price was set manually. Using &#x60;true&#x60; means that the value will never be refreshed from the price book when reloaded (sale retrieved from parked sales).
    * @return priceSet
   **/
   @ApiModelProperty(value = "Indicates whether the price was set manually. Using `true` means that the value will never be refreshed from the price book when reloaded (sale retrieved from parked sales).")

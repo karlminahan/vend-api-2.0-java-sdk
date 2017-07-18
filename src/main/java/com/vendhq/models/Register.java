@@ -145,7 +145,7 @@ public class Register {
   }
 
    /**
-   * `0` for **Never**, `1` for **On Save/Layby/Account/Return**, `2` for **Always**.
+   * &#x60;0&#x60; for **Never**, &#x60;1&#x60; for **On Save/Layby/Account/Return**, &#x60;2&#x60; for **Always**.
    * @return askForNoteOnSave
   **/
   @ApiModelProperty(value = "`0` for **Never**, `1` for **On Save/Layby/Account/Return**, `2` for **Always**.")

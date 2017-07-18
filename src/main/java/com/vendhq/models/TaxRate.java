@@ -80,7 +80,7 @@ public class TaxRate {
   }
 
    /**
-   * Tax rate value. `0.1 = 10%`.
+   * Tax rate value. &#x60;0.1 &#x3D; 10%&#x60;.
    * @return rate
   **/
   @ApiModelProperty(required = true, value = "Tax rate value. `0.1 = 10%`.")

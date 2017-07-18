@@ -199,7 +199,7 @@ public class Consignment {
   }
 
    /**
-   * One of `SUPPLIER`, `OUTLET`, `STOCKTAKE`, `RETURN`.
+   * One of &#x60;SUPPLIER&#x60;, &#x60;OUTLET&#x60;, &#x60;STOCKTAKE&#x60;, &#x60;RETURN&#x60;.
    * @return type
   **/
   @ApiModelProperty(value = "One of `SUPPLIER`, `OUTLET`, `STOCKTAKE`, `RETURN`.")
@@ -217,7 +217,7 @@ public class Consignment {
   }
 
    /**
-   * One of `OPEN`, `RECEIVED`, `SENT`, `STOCKTAKE`, `STOCKTAKE_SCHEDULED`, `STOCKTAKE_IN_PROGRESS`, `STOCKTAKE_IN_PROGRESS_PROCESSED`, `STOCKTAKE_COMPLETE`, `CLOSED`, `CANCELLED`
+   * One of &#x60;OPEN&#x60;, &#x60;RECEIVED&#x60;, &#x60;SENT&#x60;, &#x60;STOCKTAKE&#x60;, &#x60;STOCKTAKE_SCHEDULED&#x60;, &#x60;STOCKTAKE_IN_PROGRESS&#x60;, &#x60;STOCKTAKE_IN_PROGRESS_PROCESSED&#x60;, &#x60;STOCKTAKE_COMPLETE&#x60;, &#x60;CLOSED&#x60;, &#x60;CANCELLED&#x60;
    * @return status
   **/
   @ApiModelProperty(value = "One of `OPEN`, `RECEIVED`, `SENT`, `STOCKTAKE`, `STOCKTAKE_SCHEDULED`, `STOCKTAKE_IN_PROGRESS`, `STOCKTAKE_IN_PROGRESS_PROCESSED`, `STOCKTAKE_COMPLETE`, `CLOSED`, `CANCELLED`")
@@ -289,7 +289,7 @@ public class Consignment {
   }
 
    /**
-   * Order number.+ `total_count_gain` (number)
+   * Order number.+ &#x60;total_count_gain&#x60; (number)
    * @return reference
   **/
   @ApiModelProperty(value = "Order number.+ `total_count_gain` (number)")

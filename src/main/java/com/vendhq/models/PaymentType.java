@@ -84,7 +84,7 @@ public class PaymentType {
   }
 
    /**
-   * The ID of the global Vend payment type. It shouldn't be used to identify the payment type - there may be multiple payment types with the same `type_id`.
+   * The ID of the global Vend payment type. It shouldn&#39;t be used to identify the payment type - there may be multiple payment types with the same &#x60;type_id&#x60;.
    * @return typeId
   **/
   @ApiModelProperty(required = true, value = "The ID of the global Vend payment type. It shouldn't be used to identify the payment type - there may be multiple payment types with the same `type_id`.")

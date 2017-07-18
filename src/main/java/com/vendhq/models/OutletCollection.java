@@ -49,7 +49,7 @@ public class OutletCollection {
   }
 
    /**
-   * An array of Outlet objects  wrapped in top level `data` object.
+   * An array of Outlet objects  wrapped in top level &#x60;data&#x60; object.
    * @return data
   **/
   @ApiModelProperty(value = "An array of Outlet objects  wrapped in top level `data` object.")

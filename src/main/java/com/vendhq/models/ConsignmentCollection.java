@@ -49,7 +49,7 @@ public class ConsignmentCollection {
   }
 
    /**
-   * An array of consignment objects wrapped in a top level `data` object.
+   * An array of consignment objects wrapped in a top level &#x60;data&#x60; object.
    * @return data
   **/
   @ApiModelProperty(value = "An array of consignment objects wrapped in a top level `data` object.")

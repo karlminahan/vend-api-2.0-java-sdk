@@ -155,7 +155,7 @@ public class PriceBook {
   }
 
    /**
-   * `\"0\"` - all platforms, `\"1\"` - in store, `\"2\"` - ecommerce.
+   * &#x60;\&quot;0\&quot;&#x60; - all platforms, &#x60;\&quot;1\&quot;&#x60; - in store, &#x60;\&quot;2\&quot;&#x60; - ecommerce.
    * @return restrictToPlatformKey
   **/
   @ApiModelProperty(value = "`\"0\"` - all platforms, `\"1\"` - in store, `\"2\"` - ecommerce.")
@@ -191,7 +191,7 @@ public class PriceBook {
   }
 
    /**
-   * One of `In Store`, `Ecommerce`, `All Platforms`.
+   * One of &#x60;In Store&#x60;, &#x60;Ecommerce&#x60;, &#x60;All Platforms&#x60;.
    * @return restrictToPlatformLabel
   **/
   @ApiModelProperty(value = "One of `In Store`, `Ecommerce`, `All Platforms`.")

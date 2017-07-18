@@ -52,7 +52,7 @@ public class User {
   private List<UUID> restrictedOutletIds = null;
 
   /**
-   * User's account type.
+   * User&#39;s account type.
    */
   public enum AccountTypeEnum {
     CASHIER("cashier"),
@@ -148,7 +148,7 @@ public class User {
   }
 
    /**
-   * User's username used for login.
+   * User&#39;s username used for login.
    * @return username
   **/
   @ApiModelProperty(required = true, value = "User's username used for login.")
@@ -166,7 +166,7 @@ public class User {
   }
 
    /**
-   * Full user's name to be used for display in the UI.
+   * Full user&#39;s name to be used for display in the UI.
    * @return displayName
   **/
   @ApiModelProperty(value = "Full user's name to be used for display in the UI.")
@@ -184,7 +184,7 @@ public class User {
   }
 
    /**
-   * User's email address.
+   * User&#39;s email address.
    * @return email
   **/
   @ApiModelProperty(value = "User's email address.")
@@ -220,7 +220,7 @@ public class User {
   }
 
    /**
-   * **deprecated** Use the `restricted_outlet_ids` instead.
+   * **deprecated** Use the &#x60;restricted_outlet_ids&#x60; instead.
    * @return restrictedOutletId
   **/
   @ApiModelProperty(value = "**deprecated** Use the `restricted_outlet_ids` instead.")
@@ -264,7 +264,7 @@ public class User {
   }
 
    /**
-   * User's account type.
+   * User&#39;s account type.
    * @return accountType
   **/
   @ApiModelProperty(required = true, value = "User's account type.")
@@ -336,7 +336,7 @@ public class User {
   }
 
    /**
-   * The timestamp of the user's last activity in the system.
+   * The timestamp of the user&#39;s last activity in the system.
    * @return seenAt
   **/
   @ApiModelProperty(value = "The timestamp of the user's last activity in the system.")
@@ -444,7 +444,7 @@ public class User {
   }
 
    /**
-   * URL of the default-sized user's avatar.
+   * URL of the default-sized user&#39;s avatar.
    * @return imageSource
   **/
   @ApiModelProperty(value = "URL of the default-sized user's avatar.")

@@ -49,7 +49,7 @@ public class InventoryCollection {
   }
 
    /**
-   * An array of Inventory records wrapped in top level `data` object.
+   * An array of Inventory records wrapped in top level &#x60;data&#x60; object.
    * @return data
   **/
   @ApiModelProperty(value = "An array of Inventory records wrapped in top level `data` object.")

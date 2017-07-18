@@ -155,7 +155,7 @@ public class InventoryCountItem {
   }
 
    /**
-   * Indicated whether the item was included via a filter. Can be `null`. For full count (no filters) always `true`.
+   * Indicated whether the item was included via a filter. Can be &#x60;null&#x60;. For full count (no filters) always &#x60;true&#x60;.
    * @return isIncluded
   **/
   @ApiModelProperty(value = "Indicated whether the item was included via a filter. Can be `null`. For full count (no filters) always `true`.")
@@ -173,7 +173,7 @@ public class InventoryCountItem {
   }
 
    /**
-   * The status of the item. One of: `PENDING`, `SUCCESS`.
+   * The status of the item. One of: &#x60;PENDING&#x60;, &#x60;SUCCESS&#x60;.
    * @return status
   **/
   @ApiModelProperty(required = true, value = "The status of the item. One of: `PENDING`, `SUCCESS`.")

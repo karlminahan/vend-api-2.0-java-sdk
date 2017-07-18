@@ -38,7 +38,7 @@ public class InventoryCountFilter {
   }
 
    /**
-   * Filter type. One of `product_type`, `brand`, `supplier`, `tag`, `product`.
+   * Filter type. One of &#x60;product_type&#x60;, &#x60;brand&#x60;, &#x60;supplier&#x60;, &#x60;tag&#x60;, &#x60;product&#x60;.
    * @return type
   **/
   @ApiModelProperty(required = true, value = "Filter type. One of `product_type`, `brand`, `supplier`, `tag`, `product`.")
