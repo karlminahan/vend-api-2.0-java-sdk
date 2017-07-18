@@ -21,7 +21,7 @@ Creates a new price book.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.PriceBooksApi;
+//import com.vendhq.api_2.PriceBooksApi;
 
 
 PriceBooksApi apiInstance = new PriceBooksApi();
@@ -66,7 +66,7 @@ Returns a single price book with a requested ID
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.PriceBooksApi;
+//import com.vendhq.api_2.PriceBooksApi;
 
 
 PriceBooksApi apiInstance = new PriceBooksApi();
@@ -111,7 +111,7 @@ Returns a paginated list of price books
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.PriceBooksApi;
+//import com.vendhq.api_2.PriceBooksApi;
 
 
 PriceBooksApi apiInstance = new PriceBooksApi();

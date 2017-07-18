@@ -23,7 +23,7 @@ Creates a new customer.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.CustomersApi;
+//import com.vendhq.api_2.CustomersApi;
 
 
 CustomersApi apiInstance = new CustomersApi();
@@ -68,7 +68,7 @@ Deletes the customer with the requested ID.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.CustomersApi;
+//import com.vendhq.api_2.CustomersApi;
 
 
 CustomersApi apiInstance = new CustomersApi();
@@ -112,7 +112,7 @@ Returns a single customer with a requested ID.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.CustomersApi;
+//import com.vendhq.api_2.CustomersApi;
 
 
 CustomersApi apiInstance = new CustomersApi();
@@ -157,7 +157,7 @@ Returns a paginated list of customers.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.CustomersApi;
+//import com.vendhq.api_2.CustomersApi;
 
 
 CustomersApi apiInstance = new CustomersApi();
@@ -206,7 +206,7 @@ Updates the customer with the requested ID.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.CustomersApi;
+//import com.vendhq.api_2.CustomersApi;
 
 
 CustomersApi apiInstance = new CustomersApi();

@@ -19,7 +19,7 @@ Returns a paginated list of price book products.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.PriceBookProductsApi;
+//import com.vendhq.api_2.PriceBookProductsApi;
 
 
 PriceBookProductsApi apiInstance = new PriceBookProductsApi();

@@ -19,7 +19,7 @@ Returns a paginated list of taxes.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.TaxesApi;
+//import com.vendhq.api_2.TaxesApi;
 
 
 TaxesApi apiInstance = new TaxesApi();
