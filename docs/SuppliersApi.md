@@ -20,7 +20,7 @@ Returns a single supplier with a given ID.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.SuppliersApi;
+//import com.vendhq.api_2.SuppliersApi;
 
 
 SuppliersApi apiInstance = new SuppliersApi();
@@ -65,7 +65,7 @@ Returns a paginated list of suppliers.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.SuppliersApi;
+//import com.vendhq.api_2.SuppliersApi;
 
 
 SuppliersApi apiInstance = new SuppliersApi();

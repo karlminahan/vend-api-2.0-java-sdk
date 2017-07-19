@@ -20,7 +20,7 @@ Returns a single register with the requested ID.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.RegistersApi;
+//import com.vendhq.api_2.RegistersApi;
 
 
 RegistersApi apiInstance = new RegistersApi();
@@ -65,7 +65,7 @@ Returns a paginated list of registers.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.RegistersApi;
+//import com.vendhq.api_2.RegistersApi;
 
 
 RegistersApi apiInstance = new RegistersApi();

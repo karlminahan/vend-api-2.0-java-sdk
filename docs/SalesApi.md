@@ -20,7 +20,7 @@ Returns a single sale with a given ID.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.SalesApi;
+//import com.vendhq.api_2.SalesApi;
 
 
 SalesApi apiInstance = new SalesApi();
@@ -65,7 +65,7 @@ Returns a paginated list of sales.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.SalesApi;
+//import com.vendhq.api_2.SalesApi;
 
 
 SalesApi apiInstance = new SalesApi();

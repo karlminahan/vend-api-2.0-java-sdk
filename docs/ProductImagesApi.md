@@ -21,7 +21,7 @@ Deletes the product_image with the requested ID.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.ProductImagesApi;
+//import com.vendhq.api_2.ProductImagesApi;
 
 
 ProductImagesApi apiInstance = new ProductImagesApi();
@@ -65,7 +65,7 @@ Returns the metadata for a single product image with a given ID. This method is 
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.ProductImagesApi;
+//import com.vendhq.api_2.ProductImagesApi;
 
 
 ProductImagesApi apiInstance = new ProductImagesApi();
@@ -110,7 +110,7 @@ Allows for changing the image position in the list
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.ProductImagesApi;
+//import com.vendhq.api_2.ProductImagesApi;
 
 
 ProductImagesApi apiInstance = new ProductImagesApi();

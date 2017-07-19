@@ -20,7 +20,7 @@ Returns a single tag with a given ID.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.TagsApi;
+//import com.vendhq.api_2.TagsApi;
 
 
 TagsApi apiInstance = new TagsApi();
@@ -65,7 +65,7 @@ Returns a collection of tags.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.TagsApi;
+//import com.vendhq.api_2.TagsApi;
 
 
 TagsApi apiInstance = new TagsApi();

@@ -20,7 +20,7 @@ Returns a single product type with a given ID.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.ProductTypesApi;
+//import com.vendhq.api_2.ProductTypesApi;
 
 
 ProductTypesApi apiInstance = new ProductTypesApi();
@@ -65,7 +65,7 @@ Returns a paginated list of product types.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.ProductTypesApi;
+//import com.vendhq.api_2.ProductTypesApi;
 
 
 ProductTypesApi apiInstance = new ProductTypesApi();

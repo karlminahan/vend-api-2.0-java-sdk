@@ -22,7 +22,7 @@ Returns inventory data for a single product in all the outlets.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.ProductsApi;
+//import com.vendhq.api_2.ProductsApi;
 
 
 ProductsApi apiInstance = new ProductsApi();
@@ -73,7 +73,7 @@ Returns a single product object with a given ID.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.ProductsApi;
+//import com.vendhq.api_2.ProductsApi;
 
 
 ProductsApi apiInstance = new ProductsApi();
@@ -118,7 +118,7 @@ Returns a paginated list of products.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.ProductsApi;
+//import com.vendhq.api_2.ProductsApi;
 
 
 ProductsApi apiInstance = new ProductsApi();
@@ -169,7 +169,7 @@ Upload a binary file with an image to be used for a product. This request should
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.ProductsApi;
+//import com.vendhq.api_2.ProductsApi;
 
 
 ProductsApi apiInstance = new ProductsApi();
