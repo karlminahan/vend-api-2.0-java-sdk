@@ -20,7 +20,7 @@ Returns a single brand with a requested ID
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.BrandsApi;
+//import com.vendhq.api_2.BrandsApi;
 
 
 BrandsApi apiInstance = new BrandsApi();
@@ -65,7 +65,7 @@ Returns a paginated list of brands.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.BrandsApi;
+//import com.vendhq.api_2.BrandsApi;
 
 
 BrandsApi apiInstance = new BrandsApi();

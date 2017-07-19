@@ -19,7 +19,7 @@ Returns a paginated collection of payment types.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.PaymentTypesApi;
+//import com.vendhq.api_2.PaymentTypesApi;
 
 
 PaymentTypesApi apiInstance = new PaymentTypesApi();

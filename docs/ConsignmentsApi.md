@@ -26,7 +26,7 @@ Increases or decreases the count for a specific product within the inventory cou
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.ConsignmentsApi;
+//import com.vendhq.api_2.ConsignmentsApi;
 
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
@@ -73,7 +73,7 @@ Creates a new consignment of type &#x60;STOCKTAKE&#x60;. Currently, this endpoin
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.ConsignmentsApi;
+//import com.vendhq.api_2.ConsignmentsApi;
 
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
@@ -118,7 +118,7 @@ Deletes the consignment with the given ID.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.ConsignmentsApi;
+//import com.vendhq.api_2.ConsignmentsApi;
 
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
@@ -162,7 +162,7 @@ Removes the count for a specific product from the inventory count.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.ConsignmentsApi;
+//import com.vendhq.api_2.ConsignmentsApi;
 
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
@@ -208,7 +208,7 @@ Returns a single consignment with the requested ID.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.ConsignmentsApi;
+//import com.vendhq.api_2.ConsignmentsApi;
 
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
@@ -253,7 +253,7 @@ Returns a paginated list of consignments.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.ConsignmentsApi;
+//import com.vendhq.api_2.ConsignmentsApi;
 
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
@@ -302,7 +302,7 @@ Returns a collection of consignment products associated with the specified consi
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.ConsignmentsApi;
+//import com.vendhq.api_2.ConsignmentsApi;
 
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
@@ -353,7 +353,7 @@ Updates the inventory count with requested ID.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.ConsignmentsApi;
+//import com.vendhq.api_2.ConsignmentsApi;
 
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();

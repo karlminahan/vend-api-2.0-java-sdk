@@ -19,7 +19,7 @@ Returns a paginated list of customer groups.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.CustomerGroupsApi;
+//import com.vendhq.api_2.CustomerGroupsApi;
 
 
 CustomerGroupsApi apiInstance = new CustomerGroupsApi();
