@@ -19,7 +19,7 @@ Returns a paginated list of inventory records.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.InventoryApi;
+//import com.vendhq.api_2.InventoryApi;
 
 
 InventoryApi apiInstance = new InventoryApi();

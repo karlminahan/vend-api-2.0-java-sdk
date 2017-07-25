@@ -20,7 +20,7 @@ Returns a single user with the requested ID.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.UsersApi;
+//import com.vendhq.api_2.UsersApi;
 
 
 UsersApi apiInstance = new UsersApi();
@@ -65,7 +65,7 @@ Returns a paginated list of users.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.UsersApi;
+//import com.vendhq.api_2.UsersApi;
 
 
 UsersApi apiInstance = new UsersApi();

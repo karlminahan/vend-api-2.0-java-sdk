@@ -19,7 +19,7 @@ Returns a paginated list of outlet-product-tax records.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.OutletProductTaxesApi;
+//import com.vendhq.api_2.OutletProductTaxesApi;
 
 
 OutletProductTaxesApi apiInstance = new OutletProductTaxesApi();

@@ -20,7 +20,7 @@ Returns a single outlet with the requested ID.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.OutletsApi;
+//import com.vendhq.api_2.OutletsApi;
 
 
 OutletsApi apiInstance = new OutletsApi();
@@ -65,7 +65,7 @@ Returns a collection of outlets.
 ```java
 // Import classes:
 //import com.vendhq.api_2.ApiException;
-//import com.vendhq.api.OutletsApi;
+//import com.vendhq.api_2.OutletsApi;
 
 
 OutletsApi apiInstance = new OutletsApi();
