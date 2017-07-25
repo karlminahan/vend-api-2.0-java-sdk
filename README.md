@@ -60,8 +60,8 @@ Please follow the [installation](#installation) instruction and execute the foll
 
 import com.vendhq.api_2.*;
 import com.vendhq.api_2.auth.*;
-import com.vendhq.models.*;
-import com.vendhq.api.BrandsApi;
+import com.vendhq.models_2.*;
+import com.vendhq.api_2.BrandsApi;
 
 import java.io.File;
 import java.util.*;
