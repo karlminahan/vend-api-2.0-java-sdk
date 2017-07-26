@@ -159,7 +159,7 @@ public class InventoryCountItem {
    * @return isIncluded
   **/
   @ApiModelProperty(value = "Indicated whether the item was included via a filter. Can be `null`. For full count (no filters) always `true`.")
-  public Boolean getIsIncluded() {
+  public Boolean isIsIncluded() {
     return isIncluded;
   }
 

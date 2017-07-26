@@ -167,7 +167,7 @@ public class Register {
    * @return printNoteOnReceipt
   **/
   @ApiModelProperty(value = "")
-  public Boolean getPrintNoteOnReceipt() {
+  public Boolean isPrintNoteOnReceipt() {
     return printNoteOnReceipt;
   }
 
@@ -185,7 +185,7 @@ public class Register {
    * @return askForUserOnSale
   **/
   @ApiModelProperty(value = "")
-  public Boolean getAskForUserOnSale() {
+  public Boolean isAskForUserOnSale() {
     return askForUserOnSale;
   }
 
@@ -203,7 +203,7 @@ public class Register {
    * @return showDiscountsOnReceipts
   **/
   @ApiModelProperty(value = "")
-  public Boolean getShowDiscountsOnReceipts() {
+  public Boolean isShowDiscountsOnReceipts() {
     return showDiscountsOnReceipts;
   }
 
@@ -221,7 +221,7 @@ public class Register {
    * @return printReceipt
   **/
   @ApiModelProperty(value = "Indicates whether a receipt should be printed after a sale.")
-  public Boolean getPrintReceipt() {
+  public Boolean isPrintReceipt() {
     return printReceipt;
   }
 
@@ -239,7 +239,7 @@ public class Register {
    * @return emailReceipt
   **/
   @ApiModelProperty(value = "Indicates whether a receipt should be emailed after a sale.")
-  public Boolean getEmailReceipt() {
+  public Boolean isEmailReceipt() {
     return emailReceipt;
   }
 
@@ -329,7 +329,7 @@ public class Register {
    * @return isOpen
   **/
   @ApiModelProperty(value = "Indicates if the Register is currently open.")
-  public Boolean getIsOpen() {
+  public Boolean isIsOpen() {
     return isOpen;
   }
 

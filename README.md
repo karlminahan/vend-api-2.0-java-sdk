@@ -69,7 +69,18 @@ import java.util.*;
 public class BrandsApiExample {
 
     public static void main(String[] args) {
+        ApiClient defaultClient = Configuration.getDefaultApiClient();
         
+        // Configure OAuth2 access token for authorization: oauth
+        OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
+        oauth.setAccessToken("YOUR ACCESS TOKEN");
+
+        // Configure API key authorization: personal_token
+        ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
+        personal_token.setApiKey("YOUR API KEY");
+        // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+        //personal_token.setApiKeyPrefix("Token");
+
         BrandsApi apiInstance = new BrandsApi();
         String brandId = "brandId_example"; // String | Valid brand ID.
         try {
@@ -215,8 +226,20 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Authorization
 
-All endpoints do not require authorization.
 Authentication schemes defined for the API:
+### oauth
+
+- **Type**: OAuth
+- **Flow**: accessCode
+- **Authorization URL**: https://secure.vendhq.com/connect
+- **Scopes**: N/A
+
+### personal_token
+
+- **Type**: API key
+- **API key parameter name**: Authorization
+- **Location**: HTTP header
+
 
 ## Recommendation
 

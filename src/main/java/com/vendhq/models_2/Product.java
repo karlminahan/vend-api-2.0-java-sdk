@@ -268,7 +268,7 @@ public class Product {
    * @return active
   **/
   @ApiModelProperty(value = "Indicated whether the Product is active.")
-  public Boolean getActive() {
+  public Boolean isActive() {
     return active;
   }
 
@@ -286,7 +286,7 @@ public class Product {
    * @return hasInventory
   **/
   @ApiModelProperty(value = "Indicates whether inventory is being tracked for the Product.")
-  public Boolean getHasInventory() {
+  public Boolean isHasInventory() {
     return hasInventory;
   }
 
@@ -304,7 +304,7 @@ public class Product {
    * @return isComposite
   **/
   @ApiModelProperty(value = "Indicates whether the Product is a composite one.")
-  public Boolean getIsComposite() {
+  public Boolean isIsComposite() {
     return isComposite;
   }
 
@@ -322,7 +322,7 @@ public class Product {
    * @return hasVariants
   **/
   @ApiModelProperty(value = "Indicated whether product has variants.")
-  public Boolean getHasVariants() {
+  public Boolean isHasVariants() {
     return hasVariants;
   }
 

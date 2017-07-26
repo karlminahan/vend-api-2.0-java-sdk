@@ -128,7 +128,7 @@ public class LineItem {
    * @return isReturn
   **/
   @ApiModelProperty(value = "Indicates whether this line item is a return from another sale (referenced by `return_for` on the main sale object).")
-  public Boolean getIsReturn() {
+  public Boolean isIsReturn() {
     return isReturn;
   }
 
@@ -352,7 +352,7 @@ public class LineItem {
    * @return priceSet
   **/
   @ApiModelProperty(value = "Indicates whether the price was set manually. Using `true` means that the value will never be refreshed from the price book when reloaded (sale retrieved from parked sales).")
-  public Boolean getPriceSet() {
+  public Boolean isPriceSet() {
     return priceSet;
   }
 

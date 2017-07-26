@@ -59,7 +59,7 @@ public class PaymentTypeConfig {
    * @return print
   **/
   @ApiModelProperty(value = "Indicates whether a receipt will be printed???")
-  public Boolean getPrint() {
+  public Boolean isPrint() {
     return print;
   }
 

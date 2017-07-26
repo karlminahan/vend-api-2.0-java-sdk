@@ -430,7 +430,7 @@ public class User {
    * @return isPrimaryUser
   **/
   @ApiModelProperty(required = true, value = "Indicated whether this user is the primary user for the account.")
-  public Boolean getIsPrimaryUser() {
+  public Boolean isIsPrimaryUser() {
     return isPrimaryUser;
   }
 

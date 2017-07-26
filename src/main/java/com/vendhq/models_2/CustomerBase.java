@@ -209,7 +209,7 @@ public class CustomerBase {
    * @return enableLoyalty
   **/
   @ApiModelProperty(value = "")
-  public Boolean getEnableLoyalty() {
+  public Boolean isEnableLoyalty() {
     return enableLoyalty;
   }
 
@@ -317,7 +317,7 @@ public class CustomerBase {
    * @return doNotEmail
   **/
   @ApiModelProperty(value = "Indicates whether the customer opted out of email communications.")
-  public Boolean getDoNotEmail() {
+  public Boolean isDoNotEmail() {
     return doNotEmail;
   }
 

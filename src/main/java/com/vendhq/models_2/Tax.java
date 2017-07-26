@@ -158,7 +158,7 @@ public class Tax {
    * @return isDefault
   **/
   @ApiModelProperty(required = true, value = "Indicates whether the tax is used as the default one.")
-  public Boolean getIsDefault() {
+  public Boolean isIsDefault() {
     return isDefault;
   }
 

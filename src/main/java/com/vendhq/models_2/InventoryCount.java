@@ -96,7 +96,7 @@ public class InventoryCount {
    * @return showInactive
   **/
   @ApiModelProperty(value = "Indicates whether inactive products should be included in the count.")
-  public Boolean getShowInactive() {
+  public Boolean isShowInactive() {
     return showInactive;
   }
 
