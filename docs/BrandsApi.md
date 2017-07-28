@@ -23,7 +23,6 @@ Returns a single brand with a requested ID
 //import com.vendhq.api_2.ApiException;
 //import com.vendhq.api_2.Configuration;
 //import com.vendhq.api_2.auth.*;
-
 //import com.vendhq.api_2.BrandsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
@@ -91,8 +90,6 @@ ApiClient defaultClient = Configuration.getDefaultApiClient();
 OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
 oauth.setAccessToken("YOUR ACCESS TOKEN");
 
-//import com.vendhq.api_2.BrandsApi;
-
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
@@ -132,4 +129,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
