@@ -6,7 +6,7 @@
   <packaging>jar</packaging>
   <name>api-2</name>
   <version>2.0.1</version>
-  <url>https://github.com/vend/vend-api-0.2-java-sdk/</url>
+  <url>https://github.com/vend/vend-api-2.0-java-sdk/</url>
   <description>Java client library for the Vend API 2.0</description>
   <scm>
     <connection>scm:git:https://github.com/vend/vend-api-2.0-java-sdk.git</connection>
