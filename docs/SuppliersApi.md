@@ -38,7 +38,7 @@ personal_token.setApiKey("YOUR API KEY");
 //personal_token.setApiKeyPrefix("Token");
 
 SuppliersApi apiInstance = new SuppliersApi();
-String supplierId = "supplierId_example"; // String | 
+String supplierId = "supplierId_example"; // String |
 try {
     SupplierResponse result = apiInstance.getSupplierByID(supplierId);
     System.out.println(result);
@@ -129,4 +129,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-

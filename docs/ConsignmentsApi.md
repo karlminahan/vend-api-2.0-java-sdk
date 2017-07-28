@@ -45,7 +45,7 @@ personal_token.setApiKey("YOUR API KEY");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 UUID consignmentId = new UUID(); // UUID | Valid consignment ID.
-InventoryCountItemRequest body = new InventoryCountItemRequest(); // InventoryCountItemRequest | 
+InventoryCountItemRequest body = new InventoryCountItemRequest(); // InventoryCountItemRequest |
 try {
     InventoryCountItemResponse result = apiInstance.adjustInventoryItemCount(consignmentId, body);
     System.out.println(result);
@@ -105,7 +105,7 @@ personal_token.setApiKey("YOUR API KEY");
 //personal_token.setApiKeyPrefix("Token");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
-InventoryCount body = new InventoryCount(); // InventoryCount | 
+InventoryCount body = new InventoryCount(); // InventoryCount |
 try {
     ConsignmentResponse result = apiInstance.createInventoryCount(body);
     System.out.println(result);
@@ -164,7 +164,7 @@ personal_token.setApiKey("YOUR API KEY");
 //personal_token.setApiKeyPrefix("Token");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
-UUID consignmentId = new UUID(); // UUID | 
+UUID consignmentId = new UUID(); // UUID |
 try {
     apiInstance.deleteConsignmentByID(consignmentId);
 } catch (ApiException e) {
@@ -470,7 +470,7 @@ personal_token.setApiKey("YOUR API KEY");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 UUID consignmentId = new UUID(); // UUID | Valid consignment ID.
-InventoryCount body = new InventoryCount(); // InventoryCount | 
+InventoryCount body = new InventoryCount(); // InventoryCount |
 try {
     ConsignmentResponse result = apiInstance.updateInventoryCountByID(consignmentId, body);
     System.out.println(result);
@@ -499,4 +499,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
