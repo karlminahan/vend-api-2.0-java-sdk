@@ -78,6 +78,8 @@ public class ApiClient {
 
     // Setup authentications (key: authentication name, value: authentication).
     authentications = new HashMap<String, Authentication>();
+    authentications.put("oauth", new OAuth());
+    authentications.put("personal_token", new ApiKeyAuth("header", "Authorization"));
     // Prevent the authentications from being modified.
     authentications = Collections.unmodifiableMap(authentications);
   }
@@ -430,12 +432,13 @@ public class ApiClient {
    *   application/json; charset=UTF8
    *   APPLICATION/JSON
    *   application/vnd.company+json
+   * "* / *" is also default to JSON
    * @param mime MIME
    * @return True if the MIME type is JSON
    */
   public boolean isJsonMime(String mime) {
     String jsonMime = "(?i)^(application/json|[^;/ \t]+/[^;/ \t]+[+]json)[ \t]*(;.*)?$";
-    return mime != null && (mime.matches(jsonMime) || mime.equalsIgnoreCase("application/json-patch+json"));
+    return mime != null && (mime.matches(jsonMime) || mime.equals("*/*"));
   }
 
   /**

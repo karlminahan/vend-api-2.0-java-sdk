@@ -25,9 +25,23 @@ Increases or decreases the count for a specific product within the inventory cou
 ### Example
 ```java
 // Import classes:
+//import com.vendhq.api_2.ApiClient;
 //import com.vendhq.api_2.ApiException;
+//import com.vendhq.api_2.Configuration;
+//import com.vendhq.api_2.auth.*;
 //import com.vendhq.api_2.ConsignmentsApi;
 
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure OAuth2 access token for authorization: oauth
+OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
+oauth.setAccessToken("YOUR ACCESS TOKEN");
+
+// Configure API key authorization: personal_token
+ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
+personal_token.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//personal_token.setApiKeyPrefix("Token");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 UUID consignmentId = new UUID(); // UUID | Valid consignment ID.
@@ -54,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 
@@ -72,9 +86,23 @@ Creates a new consignment of type &#x60;STOCKTAKE&#x60;. Currently, this endpoin
 ### Example
 ```java
 // Import classes:
+//import com.vendhq.api_2.ApiClient;
 //import com.vendhq.api_2.ApiException;
+//import com.vendhq.api_2.Configuration;
+//import com.vendhq.api_2.auth.*;
 //import com.vendhq.api_2.ConsignmentsApi;
 
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure OAuth2 access token for authorization: oauth
+OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
+oauth.setAccessToken("YOUR ACCESS TOKEN");
+
+// Configure API key authorization: personal_token
+ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
+personal_token.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//personal_token.setApiKeyPrefix("Token");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 InventoryCount body = new InventoryCount(); // InventoryCount | 
@@ -99,7 +127,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 
@@ -117,9 +145,23 @@ Deletes the consignment with the given ID.
 ### Example
 ```java
 // Import classes:
+//import com.vendhq.api_2.ApiClient;
 //import com.vendhq.api_2.ApiException;
+//import com.vendhq.api_2.Configuration;
+//import com.vendhq.api_2.auth.*;
 //import com.vendhq.api_2.ConsignmentsApi;
 
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure OAuth2 access token for authorization: oauth
+OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
+oauth.setAccessToken("YOUR ACCESS TOKEN");
+
+// Configure API key authorization: personal_token
+ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
+personal_token.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//personal_token.setApiKeyPrefix("Token");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 UUID consignmentId = new UUID(); // UUID | 
@@ -143,7 +185,7 @@ null (empty response body)
 
 ### Authorization
 
-No authorization required
+[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 
@@ -161,9 +203,23 @@ Removes the count for a specific product from the inventory count.
 ### Example
 ```java
 // Import classes:
+//import com.vendhq.api_2.ApiClient;
 //import com.vendhq.api_2.ApiException;
+//import com.vendhq.api_2.Configuration;
+//import com.vendhq.api_2.auth.*;
 //import com.vendhq.api_2.ConsignmentsApi;
 
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure OAuth2 access token for authorization: oauth
+OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
+oauth.setAccessToken("YOUR ACCESS TOKEN");
+
+// Configure API key authorization: personal_token
+ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
+personal_token.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//personal_token.setApiKeyPrefix("Token");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 String consignmentId = "consignmentId_example"; // String | Valid consignment (inventory count) ID.
@@ -189,7 +245,7 @@ null (empty response body)
 
 ### Authorization
 
-No authorization required
+[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 
@@ -207,9 +263,23 @@ Returns a single consignment with the requested ID.
 ### Example
 ```java
 // Import classes:
+//import com.vendhq.api_2.ApiClient;
 //import com.vendhq.api_2.ApiException;
+//import com.vendhq.api_2.Configuration;
+//import com.vendhq.api_2.auth.*;
 //import com.vendhq.api_2.ConsignmentsApi;
 
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure OAuth2 access token for authorization: oauth
+OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
+oauth.setAccessToken("YOUR ACCESS TOKEN");
+
+// Configure API key authorization: personal_token
+ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
+personal_token.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//personal_token.setApiKeyPrefix("Token");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 UUID consignmentId = new UUID(); // UUID | Valid consignment ID.
@@ -234,7 +304,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 
@@ -252,9 +322,23 @@ Returns a paginated list of consignments.
 ### Example
 ```java
 // Import classes:
+//import com.vendhq.api_2.ApiClient;
 //import com.vendhq.api_2.ApiException;
+//import com.vendhq.api_2.Configuration;
+//import com.vendhq.api_2.auth.*;
 //import com.vendhq.api_2.ConsignmentsApi;
 
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure OAuth2 access token for authorization: oauth
+OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
+oauth.setAccessToken("YOUR ACCESS TOKEN");
+
+// Configure API key authorization: personal_token
+ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
+personal_token.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//personal_token.setApiKeyPrefix("Token");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 BigDecimal after = new BigDecimal(); // BigDecimal | The lower limit for the version numbers to be included in the response.
@@ -283,7 +367,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 
@@ -301,9 +385,23 @@ Returns a collection of consignment products associated with the specified consi
 ### Example
 ```java
 // Import classes:
+//import com.vendhq.api_2.ApiClient;
 //import com.vendhq.api_2.ApiException;
+//import com.vendhq.api_2.Configuration;
+//import com.vendhq.api_2.auth.*;
 //import com.vendhq.api_2.ConsignmentsApi;
 
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure OAuth2 access token for authorization: oauth
+OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
+oauth.setAccessToken("YOUR ACCESS TOKEN");
+
+// Configure API key authorization: personal_token
+ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
+personal_token.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//personal_token.setApiKeyPrefix("Token");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 UUID consignmentId = new UUID(); // UUID | The ID of the consignment for which products should be listed.
@@ -334,7 +432,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 
@@ -352,9 +450,23 @@ Updates the inventory count with requested ID.
 ### Example
 ```java
 // Import classes:
+//import com.vendhq.api_2.ApiClient;
 //import com.vendhq.api_2.ApiException;
+//import com.vendhq.api_2.Configuration;
+//import com.vendhq.api_2.auth.*;
 //import com.vendhq.api_2.ConsignmentsApi;
 
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure OAuth2 access token for authorization: oauth
+OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
+oauth.setAccessToken("YOUR ACCESS TOKEN");
+
+// Configure API key authorization: personal_token
+ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
+personal_token.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//personal_token.setApiKeyPrefix("Token");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 UUID consignmentId = new UUID(); // UUID | Valid consignment ID.
@@ -381,7 +493,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 
