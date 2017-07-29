@@ -1,5 +1,8 @@
 # api-2
 
+# WORK IN PROGRESS. NOT READY FOR PRODUCTION USE.
+## Comments and pull requests welcome.
+
 ## Requirements
 
 Building the API client library requires [Maven](https://maven.apache.org/) to be installed.
@@ -78,8 +81,8 @@ public class BrandsApiExample {
         // Configure API key authorization: personal_token
         ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
         personal_token.setApiKey("YOUR API KEY");
-        // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-        //personal_token.setApiKeyPrefix("Token");
+        // Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+        //personal_token.setApiKeyPrefix("Bearer");
 
         BrandsApi apiInstance = new BrandsApi();
         String brandId = "brandId_example"; // String | Valid brand ID.

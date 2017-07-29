@@ -36,8 +36,8 @@ oauth.setAccessToken("YOUR ACCESS TOKEN");
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//personal_token.setApiKeyPrefix("Token");
+// Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+//personal_token.setApiKeyPrefix("Bearer");
 
 ProductsApi apiInstance = new ProductsApi();
 UUID productId = new UUID(); // UUID | Valid product ID.
@@ -101,8 +101,8 @@ oauth.setAccessToken("YOUR ACCESS TOKEN");
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//personal_token.setApiKeyPrefix("Token");
+// Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+//personal_token.setApiKeyPrefix("Bearer");
 
 ProductsApi apiInstance = new ProductsApi();
 UUID productId = new UUID(); // UUID | Valid product ID.
@@ -160,8 +160,8 @@ oauth.setAccessToken("YOUR ACCESS TOKEN");
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//personal_token.setApiKeyPrefix("Token");
+// Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+//personal_token.setApiKeyPrefix("Bearer");
 
 ProductsApi apiInstance = new ProductsApi();
 BigDecimal after = new BigDecimal(); // BigDecimal | The lower limit for the version numbers to be included in the response.
@@ -225,8 +225,8 @@ oauth.setAccessToken("YOUR ACCESS TOKEN");
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//personal_token.setApiKeyPrefix("Token");
+// Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+//personal_token.setApiKeyPrefix("Bearer");
 
 ProductsApi apiInstance = new ProductsApi();
 String productId = "productId_example"; // String | The ID of the product which the imaged should be associated with.

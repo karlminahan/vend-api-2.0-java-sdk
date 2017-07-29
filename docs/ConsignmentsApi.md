@@ -40,8 +40,8 @@ oauth.setAccessToken("YOUR ACCESS TOKEN");
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//personal_token.setApiKeyPrefix("Token");
+// Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+//personal_token.setApiKeyPrefix("Bearer");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 UUID consignmentId = new UUID(); // UUID | Valid consignment ID.
@@ -101,8 +101,8 @@ oauth.setAccessToken("YOUR ACCESS TOKEN");
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//personal_token.setApiKeyPrefix("Token");
+// Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+//personal_token.setApiKeyPrefix("Bearer");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 InventoryCount body = new InventoryCount(); // InventoryCount | 
@@ -160,8 +160,8 @@ oauth.setAccessToken("YOUR ACCESS TOKEN");
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//personal_token.setApiKeyPrefix("Token");
+// Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+//personal_token.setApiKeyPrefix("Bearer");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 UUID consignmentId = new UUID(); // UUID | 
@@ -218,8 +218,8 @@ oauth.setAccessToken("YOUR ACCESS TOKEN");
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//personal_token.setApiKeyPrefix("Token");
+// Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+//personal_token.setApiKeyPrefix("Bearer");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 String consignmentId = "consignmentId_example"; // String | Valid consignment (inventory count) ID.
@@ -278,8 +278,8 @@ oauth.setAccessToken("YOUR ACCESS TOKEN");
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//personal_token.setApiKeyPrefix("Token");
+// Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+//personal_token.setApiKeyPrefix("Bearer");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 UUID consignmentId = new UUID(); // UUID | Valid consignment ID.
@@ -337,8 +337,8 @@ oauth.setAccessToken("YOUR ACCESS TOKEN");
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//personal_token.setApiKeyPrefix("Token");
+// Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+//personal_token.setApiKeyPrefix("Bearer");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 BigDecimal after = new BigDecimal(); // BigDecimal | The lower limit for the version numbers to be included in the response.
@@ -400,8 +400,8 @@ oauth.setAccessToken("YOUR ACCESS TOKEN");
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//personal_token.setApiKeyPrefix("Token");
+// Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+//personal_token.setApiKeyPrefix("Bearer");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 UUID consignmentId = new UUID(); // UUID | The ID of the consignment for which products should be listed.
@@ -465,8 +465,8 @@ oauth.setAccessToken("YOUR ACCESS TOKEN");
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//personal_token.setApiKeyPrefix("Token");
+// Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+//personal_token.setApiKeyPrefix("Bearer");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 UUID consignmentId = new UUID(); // UUID | Valid consignment ID.

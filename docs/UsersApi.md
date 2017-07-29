@@ -34,8 +34,8 @@ oauth.setAccessToken("YOUR ACCESS TOKEN");
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//personal_token.setApiKeyPrefix("Token");
+// Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+//personal_token.setApiKeyPrefix("Bearer");
 
 UsersApi apiInstance = new UsersApi();
 UUID userId = new UUID(); // UUID | Valid user ID.
@@ -93,8 +93,8 @@ oauth.setAccessToken("YOUR ACCESS TOKEN");
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//personal_token.setApiKeyPrefix("Token");
+// Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+//personal_token.setApiKeyPrefix("Bearer");
 
 UsersApi apiInstance = new UsersApi();
 BigDecimal after = new BigDecimal(); // BigDecimal | The lower limit for the version numbers to be included in the response.
