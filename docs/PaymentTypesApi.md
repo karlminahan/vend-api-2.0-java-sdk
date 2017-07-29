@@ -33,8 +33,8 @@ oauth.setAccessToken("YOUR ACCESS TOKEN");
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//personal_token.setApiKeyPrefix("Token");
+// Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+//personal_token.setApiKeyPrefix("Bearer");
 
 PaymentTypesApi apiInstance = new PaymentTypesApi();
 BigDecimal after = new BigDecimal(); // BigDecimal | The lower limit for the version numbers to be included in the response.

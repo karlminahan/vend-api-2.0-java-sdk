@@ -35,8 +35,8 @@ oauth.setAccessToken("YOUR ACCESS TOKEN");
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//personal_token.setApiKeyPrefix("Token");
+// Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+//personal_token.setApiKeyPrefix("Bearer");
 
 ProductImagesApi apiInstance = new ProductImagesApi();
 String productImageId = "productImageId_example"; // String |
@@ -93,8 +93,8 @@ oauth.setAccessToken("YOUR ACCESS TOKEN");
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//personal_token.setApiKeyPrefix("Token");
+// Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+//personal_token.setApiKeyPrefix("Bearer");
 
 ProductImagesApi apiInstance = new ProductImagesApi();
 UUID productImageId = new UUID(); // UUID | Valid product ID.
@@ -152,8 +152,8 @@ oauth.setAccessToken("YOUR ACCESS TOKEN");
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//personal_token.setApiKeyPrefix("Token");
+// Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+//personal_token.setApiKeyPrefix("Bearer");
 
 ProductImagesApi apiInstance = new ProductImagesApi();
 ImagePosition body = new ImagePosition(); // ImagePosition |
