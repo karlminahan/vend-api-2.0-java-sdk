@@ -15,7 +15,17 @@ package com.vendhq.api_2;
 
 
 public class Configuration {
-    private static ApiClient defaultApiClient = new ApiClient();
+
+    private String domainPrefix = "";
+    private String applicationName = "";
+
+    private static ApiClient defaultApiClient = new ApiClient(String domainPrefix, String applicationName);
+
+    public Configuration (String domainPrefix, String applicationName) {
+        this.domainPrefix = domainPrefix;
+        this.applicationName = applicationName;
+        return this;
+    }
 
     /**
      * Get the default API client, which would be used when creating API

@@ -41,7 +41,7 @@ personal_token.setApiKey("YOUR API KEY");
 //personal_token.setApiKeyPrefix("Bearer");
 
 CustomersApi apiInstance = new CustomersApi();
-CustomerBase body = new CustomerBase(); // CustomerBase |
+CustomerBase body = new CustomerBase(); // CustomerBase | 
 try {
     CustomerResponse result = apiInstance.createCustomer(body);
     System.out.println(result);
@@ -281,7 +281,7 @@ personal_token.setApiKey("YOUR API KEY");
 
 CustomersApi apiInstance = new CustomersApi();
 UUID customerId = new UUID(); // UUID | Valid customer ID.
-CustomerBase body = new CustomerBase(); // CustomerBase |
+CustomerBase body = new CustomerBase(); // CustomerBase | 
 try {
     CustomerResponse result = apiInstance.updateCustomerByID(customerId, body);
     System.out.println(result);
@@ -310,3 +310,4 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+
