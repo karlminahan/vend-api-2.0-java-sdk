@@ -18,11 +18,11 @@ Returns a paginated list of inventory records.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.InventoryApi;
+//import com.vendhq.api2.ApiClient;
+//import com.vendhq.api2.ApiException;
+//import com.vendhq.api2.Configuration;
+//import com.vendhq.api2.auth.*;
+//import com.vendhq.api2.InventoryApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 

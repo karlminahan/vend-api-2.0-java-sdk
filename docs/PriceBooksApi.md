@@ -20,11 +20,11 @@ Creates a new price book.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.PriceBooksApi;
+//import com.vendhq.api2.ApiClient;
+//import com.vendhq.api2.ApiException;
+//import com.vendhq.api2.Configuration;
+//import com.vendhq.api2.auth.*;
+//import com.vendhq.api2.PriceBooksApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -79,11 +79,11 @@ Returns a single price book with a requested ID
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.PriceBooksApi;
+//import com.vendhq.api2.ApiClient;
+//import com.vendhq.api2.ApiException;
+//import com.vendhq.api2.Configuration;
+//import com.vendhq.api2.auth.*;
+//import com.vendhq.api2.PriceBooksApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -138,11 +138,11 @@ Returns a paginated list of price books
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.PriceBooksApi;
+//import com.vendhq.api2.ApiClient;
+//import com.vendhq.api2.ApiException;
+//import com.vendhq.api2.Configuration;
+//import com.vendhq.api2.auth.*;
+//import com.vendhq.api2.PriceBooksApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
