@@ -38,7 +38,7 @@ personal_token.setApiKey("YOUR API KEY");
 //personal_token.setApiKeyPrefix("Bearer");
 
 TagsApi apiInstance = new TagsApi();
-String tagId = "tagId_example"; // String |
+String tagId = "tagId_example"; // String | 
 try {
     TagResponse result = apiInstance.getTagByID(tagId);
     System.out.println(result);
@@ -129,3 +129,4 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+
