@@ -19,11 +19,11 @@ Returns a single supplier with a given ID.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.SuppliersApi;
+//import com.vendhq.api2.ApiClient;
+//import com.vendhq.api2.ApiException;
+//import com.vendhq.api2.Configuration;
+//import com.vendhq.api2.auth.*;
+//import com.vendhq.api2.SuppliersApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -78,11 +78,11 @@ Returns a paginated list of suppliers.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.SuppliersApi;
+//import com.vendhq.api2.ApiClient;
+//import com.vendhq.api2.ApiException;
+//import com.vendhq.api2.Configuration;
+//import com.vendhq.api2.auth.*;
+//import com.vendhq.api2.SuppliersApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
