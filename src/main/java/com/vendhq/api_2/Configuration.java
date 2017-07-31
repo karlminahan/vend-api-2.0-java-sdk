@@ -16,15 +16,14 @@ package com.vendhq.api_2;
 
 public class Configuration {
 
-    private String domainPrefix = "";
-    private String applicationName = "";
+    private static String domainPrefix = "";
+    private static String applicationName = "";
 
-    private static ApiClient defaultApiClient = new ApiClient(String domainPrefix, String applicationName);
+    private static ApiClient defaultApiClient = new ApiClient(domainPrefix, applicationName);
 
     public Configuration (String domainPrefix, String applicationName) {
         this.domainPrefix = domainPrefix;
         this.applicationName = applicationName;
-        return this;
     }
 
     /**
