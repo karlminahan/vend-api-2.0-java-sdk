@@ -39,7 +39,7 @@ personal_token.setApiKey("YOUR API KEY");
 //personal_token.setApiKeyPrefix("Bearer");
 
 ProductImagesApi apiInstance = new ProductImagesApi();
-String productImageId = "productImageId_example"; // String |
+String productImageId = "productImageId_example"; // String | 
 try {
     apiInstance.deleteProductImageByID(productImageId);
 } catch (ApiException e) {
@@ -156,8 +156,8 @@ personal_token.setApiKey("YOUR API KEY");
 //personal_token.setApiKeyPrefix("Bearer");
 
 ProductImagesApi apiInstance = new ProductImagesApi();
-ImagePosition body = new ImagePosition(); // ImagePosition |
-String productImageId = "productImageId_example"; // String |
+ImagePosition body = new ImagePosition(); // ImagePosition | 
+String productImageId = "productImageId_example"; // String | 
 try {
     ImageResponse result = apiInstance.setImagePosition(body, productImageId);
     System.out.println(result);
@@ -186,3 +186,4 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+
