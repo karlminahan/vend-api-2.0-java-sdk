@@ -1,17 +1,17 @@
-# DefaultApi
+# SearchApi
 
 All URIs are relative to *https://domain_prefix.vendhq.com/api/2.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**searchGet**](DefaultApi.md#searchGet) | **GET** /search | 
+[**search**](SearchApi.md#search) | **GET** /search | Search
 
 
-<a name="searchGet"></a>
-# **searchGet**
-> SearchResponse searchGet(type, orderBy, orderDirection, pageSize, offset, id, id2, deleted, status, invoiceNumber, customerId, userId, outletId, dateFrom, dateTo, sku, sku2, supplierId, supplierId2, brandId, brandId2, tagId, tagId2, productTypeId, productTypeId2, variantParentId, variantParentId2, customerCode, firstName, lastName, companyName, phone, mobile, email)
+<a name="search"></a>
+# **search**
+> SearchResponse search(type, orderBy, orderDirection, pageSize, offset, id, id2, deleted, status, invoiceNumber, customerId, userId, outletId, dateFrom, dateTo, sku, sku2, supplierId, supplierId2, brandId, brandId2, tagId, tagId2, productTypeId, productTypeId2, variantParentId, variantParentId2, customerCode, firstName, lastName, companyName, phone, mobile, email)
 
-
+Search
 
 This endpoint enables seaching for a few types of entities (currently sales, products and customers) by a number of different attributes associated with them. The description for every query parameter indicates which type of object the parameter can be used to search for.
 
@@ -22,7 +22,7 @@ This endpoint enables seaching for a few types of entities (currently sales, pro
 //import com.vendhq.api2.ApiException;
 //import com.vendhq.api2.Configuration;
 //import com.vendhq.api2.auth.*;
-//import com.vendhq.api2.DefaultApi;
+//import com.vendhq.api2.SearchApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -36,7 +36,7 @@ personal_token.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
 //personal_token.setApiKeyPrefix("Bearer");
 
-DefaultApi apiInstance = new DefaultApi();
+SearchApi apiInstance = new SearchApi();
 String type = "type_example"; // String | The enity type to search for. One of: `sales`, `products`, `customers`.
 String orderBy = "orderBy_example"; // String | The attribute used to sort items returned in the response.
 String orderDirection = "orderDirection_example"; // String | Sorting direction. One of: `asc`, `desc`.
@@ -72,10 +72,10 @@ String phone = "phone_example"; // String | **CUSTOMERS** The `phone_number` for
 String mobile = "mobile_example"; // String | **CUSTOMERS** The `mobile` phone number for the customer(s) to find.
 String email = "email_example"; // String | **CUSTOMERS** The `email` for the customer(s) to find.
 try {
-    SearchResponse result = apiInstance.searchGet(type, orderBy, orderDirection, pageSize, offset, id, id2, deleted, status, invoiceNumber, customerId, userId, outletId, dateFrom, dateTo, sku, sku2, supplierId, supplierId2, brandId, brandId2, tagId, tagId2, productTypeId, productTypeId2, variantParentId, variantParentId2, customerCode, firstName, lastName, companyName, phone, mobile, email);
+    SearchResponse result = apiInstance.search(type, orderBy, orderDirection, pageSize, offset, id, id2, deleted, status, invoiceNumber, customerId, userId, outletId, dateFrom, dateTo, sku, sku2, supplierId, supplierId2, brandId, brandId2, tagId, tagId2, productTypeId, productTypeId2, variantParentId, variantParentId2, customerCode, firstName, lastName, companyName, phone, mobile, email);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling DefaultApi#searchGet");
+    System.err.println("Exception when calling SearchApi#search");
     e.printStackTrace();
 }
 ```

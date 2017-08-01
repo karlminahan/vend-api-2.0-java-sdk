@@ -15,14 +15,14 @@ import java.util.List;
 import java.util.Map;
 
 
-public class DefaultApi {
+public class SearchApi {
   private ApiClient apiClient;
 
-  public DefaultApi(Configuration config) {
+  public SearchApi(Configuration config) {
     this(config.getDefaultApiClient());
   }
 
-  public DefaultApi(ApiClient apiClient) {
+  public SearchApi(ApiClient apiClient) {
     this.apiClient = apiClient;
   }
 
@@ -35,7 +35,7 @@ public class DefaultApi {
   }
 
   /**
-   * 
+   * Search
    * This endpoint enables seaching for a few types of entities (currently sales, products and customers) by a number of different attributes associated with them. The description for every query parameter indicates which type of object the parameter can be used to search for.
    * @param type The enity type to search for. One of: &#x60;sales&#x60;, &#x60;products&#x60;, &#x60;customers&#x60;. (required)
    * @param orderBy The attribute used to sort items returned in the response. (optional)
@@ -74,12 +74,12 @@ public class DefaultApi {
    * @return SearchResponse
    * @throws ApiException if fails to make API call
    */
-  public SearchResponse searchGet(String type, String orderBy, String orderDirection, Integer pageSize, Integer offset, String id, String id2, Boolean deleted, String status, String invoiceNumber, String customerId, String userId, String outletId, String dateFrom, String dateTo, String sku, String sku2, String supplierId, String supplierId2, String brandId, String brandId2, String tagId, String tagId2, String productTypeId, String productTypeId2, String variantParentId, String variantParentId2, String customerCode, String firstName, String lastName, String companyName, String phone, String mobile, String email) throws ApiException {
+  public SearchResponse search(String type, String orderBy, String orderDirection, Integer pageSize, Integer offset, String id, String id2, Boolean deleted, String status, String invoiceNumber, String customerId, String userId, String outletId, String dateFrom, String dateTo, String sku, String sku2, String supplierId, String supplierId2, String brandId, String brandId2, String tagId, String tagId2, String productTypeId, String productTypeId2, String variantParentId, String variantParentId2, String customerCode, String firstName, String lastName, String companyName, String phone, String mobile, String email) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'type' is set
     if (type == null) {
-      throw new ApiException(400, "Missing the required parameter 'type' when calling searchGet");
+      throw new ApiException(400, "Missing the required parameter 'type' when calling search");
     }
     
     // create path and map variables
