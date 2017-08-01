@@ -120,6 +120,7 @@ Class | Method | HTTP request | Description
 *CustomersApi* | [**getCustomerByID**](docs/CustomersApi.md#getCustomerByID) | **GET** /customers/{customer_id} | Get a single customer
 *CustomersApi* | [**listCustomers**](docs/CustomersApi.md#listCustomers) | **GET** /customers | List customers
 *CustomersApi* | [**updateCustomerByID**](docs/CustomersApi.md#updateCustomerByID) | **PUT** /customers/{customer_id} | Update a customer
+*DefaultApi* | [**searchGet**](docs/DefaultApi.md#searchGet) | **GET** /search | 
 *InventoryApi* | [**listInventoryRecords**](docs/InventoryApi.md#listInventoryRecords) | **GET** /inventory | List inventory records
 *OutletProductTaxesApi* | [**listOutletProductTaxes**](docs/OutletProductTaxesApi.md#listOutletProductTaxes) | **GET** /outlet_taxes | List outlet product taxes
 *OutletsApi* | [**getOutletByID**](docs/OutletsApi.md#getOutletByID) | **GET** /outlets/{outlet_id} | Get a single outlet
@@ -209,6 +210,7 @@ Class | Method | HTTP request | Description
  - [SaleCollection](docs/SaleCollection.md)
  - [SaleResponse](docs/SaleResponse.md)
  - [SaleTax](docs/SaleTax.md)
+ - [SearchResponse](docs/SearchResponse.md)
  - [Supplier](docs/Supplier.md)
  - [SupplierCollection](docs/SupplierCollection.md)
  - [SupplierResponse](docs/SupplierResponse.md)
