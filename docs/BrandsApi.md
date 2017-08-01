@@ -19,11 +19,11 @@ Returns a single brand with a requested ID
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.BrandsApi;
+//import com.vendhq.api2.ApiClient;
+//import com.vendhq.api2.ApiException;
+//import com.vendhq.api2.Configuration;
+//import com.vendhq.api2.auth.*;
+//import com.vendhq.api2.BrandsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -78,11 +78,11 @@ Returns a paginated list of brands.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.BrandsApi;
+//import com.vendhq.api2.ApiClient;
+//import com.vendhq.api2.ApiException;
+//import com.vendhq.api2.Configuration;
+//import com.vendhq.api2.auth.*;
+//import com.vendhq.api2.BrandsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -129,3 +129,4 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+
