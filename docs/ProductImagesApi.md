@@ -20,11 +20,11 @@ Deletes the product_image with the requested ID.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.ProductImagesApi;
+//import com.vendhq.api2.ApiClient;
+//import com.vendhq.api2.ApiException;
+//import com.vendhq.api2.Configuration;
+//import com.vendhq.api2.auth.*;
+//import com.vendhq.api2.ProductImagesApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -39,7 +39,7 @@ personal_token.setApiKey("YOUR API KEY");
 //personal_token.setApiKeyPrefix("Bearer");
 
 ProductImagesApi apiInstance = new ProductImagesApi();
-String productImageId = "productImageId_example"; // String |
+String productImageId = "productImageId_example"; // String | 
 try {
     apiInstance.deleteProductImageByID(productImageId);
 } catch (ApiException e) {
@@ -78,11 +78,11 @@ Returns the metadata for a single product image with a given ID. This method is 
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.ProductImagesApi;
+//import com.vendhq.api2.ApiClient;
+//import com.vendhq.api2.ApiException;
+//import com.vendhq.api2.Configuration;
+//import com.vendhq.api2.auth.*;
+//import com.vendhq.api2.ProductImagesApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -137,11 +137,11 @@ Allows for changing the image position in the list
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.ProductImagesApi;
+//import com.vendhq.api2.ApiClient;
+//import com.vendhq.api2.ApiException;
+//import com.vendhq.api2.Configuration;
+//import com.vendhq.api2.auth.*;
+//import com.vendhq.api2.ProductImagesApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -156,8 +156,8 @@ personal_token.setApiKey("YOUR API KEY");
 //personal_token.setApiKeyPrefix("Bearer");
 
 ProductImagesApi apiInstance = new ProductImagesApi();
-ImagePosition body = new ImagePosition(); // ImagePosition |
-String productImageId = "productImageId_example"; // String |
+ImagePosition body = new ImagePosition(); // ImagePosition | 
+String productImageId = "productImageId_example"; // String | 
 try {
     ImageResponse result = apiInstance.setImagePosition(body, productImageId);
     System.out.println(result);
@@ -186,3 +186,4 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+

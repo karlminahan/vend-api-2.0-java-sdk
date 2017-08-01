@@ -1,4 +1,4 @@
-# api-2
+# api2
 
 # WORK IN PROGRESS. NOT READY FOR PRODUCTION USE.
 ## Comments and pull requests welcome.
@@ -30,7 +30,7 @@ Add this dependency to your project's POM:
 ```xml
 <dependency>
     <groupId>com.vendhq</groupId>
-    <artifactId>api-2</artifactId>
+    <artifactId>api2</artifactId>
     <version>2.0.1</version>
     <scope>compile</scope>
 </dependency>
@@ -41,7 +41,7 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "com.vendhq:api-2:2.0.1"
+compile "com.vendhq:api2:2.0.1"
 ```
 
 ### Others
@@ -52,7 +52,7 @@ At first generate the JAR by executing:
 
 Then manually install the following JARs:
 
-* target/api-2-2.0.1.jar
+* target/api2-2.0.1.jar
 * target/lib/*.jar
 
 ## Getting Started
@@ -61,10 +61,10 @@ Please follow the [installation](#installation) instruction and execute the foll
 
 ```java
 
-import com.vendhq.api_2.*;
-import com.vendhq.api_2.auth.*;
-import com.vendhq.models_2.*;
-import com.vendhq.api_2.BrandsApi;
+import com.vendhq.api2.*;
+import com.vendhq.api2.auth.*;
+import com.vendhq.models2.*;
+import com.vendhq.api2.BrandsApi;
 
 import java.io.File;
 import java.util.*;
@@ -120,6 +120,7 @@ Class | Method | HTTP request | Description
 *CustomersApi* | [**getCustomerByID**](docs/CustomersApi.md#getCustomerByID) | **GET** /customers/{customer_id} | Get a single customer
 *CustomersApi* | [**listCustomers**](docs/CustomersApi.md#listCustomers) | **GET** /customers | List customers
 *CustomersApi* | [**updateCustomerByID**](docs/CustomersApi.md#updateCustomerByID) | **PUT** /customers/{customer_id} | Update a customer
+*DefaultApi* | [**searchGet**](docs/DefaultApi.md#searchGet) | **GET** /search | 
 *InventoryApi* | [**listInventoryRecords**](docs/InventoryApi.md#listInventoryRecords) | **GET** /inventory | List inventory records
 *OutletProductTaxesApi* | [**listOutletProductTaxes**](docs/OutletProductTaxesApi.md#listOutletProductTaxes) | **GET** /outlet_taxes | List outlet product taxes
 *OutletsApi* | [**getOutletByID**](docs/OutletsApi.md#getOutletByID) | **GET** /outlets/{outlet_id} | Get a single outlet
@@ -209,6 +210,7 @@ Class | Method | HTTP request | Description
  - [SaleCollection](docs/SaleCollection.md)
  - [SaleResponse](docs/SaleResponse.md)
  - [SaleTax](docs/SaleTax.md)
+ - [SearchResponse](docs/SearchResponse.md)
  - [Supplier](docs/Supplier.md)
  - [SupplierCollection](docs/SupplierCollection.md)
  - [SupplierResponse](docs/SupplierResponse.md)
