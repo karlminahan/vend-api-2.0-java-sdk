@@ -142,7 +142,7 @@ Class | Method | HTTP request | Description
 *RegistersApi* | [**listRegisters**](docs/RegistersApi.md#listRegisters) | **GET** /registers | List registers
 *SalesApi* | [**getSaleByID**](docs/SalesApi.md#getSaleByID) | **GET** /sales/{sale_id} | Get a single sale
 *SalesApi* | [**listSales**](docs/SalesApi.md#listSales) | **GET** /sales | List Sales
-*SearchApi* | [**search**](docs/SearchApi.md#search) | **GET** /search | Search
+*SearchApi* | [**search**](docs/SearchApi.md#search) | **GET** /search | Search for resources
 *SuppliersApi* | [**getSupplierByID**](docs/SuppliersApi.md#getSupplierByID) | **GET** /suppliers/{supplier_id} | Get a single supplier
 *SuppliersApi* | [**listSuppliers**](docs/SuppliersApi.md#listSuppliers) | **GET** /suppliers | List suppliers
 *TagsApi* | [**getTagByID**](docs/TagsApi.md#getTagByID) | **GET** /tags/{tag_id} | Get a single tag

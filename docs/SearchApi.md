@@ -4,14 +4,14 @@ All URIs are relative to *https://domain_prefix.vendhq.com/api/2.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**search**](SearchApi.md#search) | **GET** /search | Search
+[**search**](SearchApi.md#search) | **GET** /search | Search for resources
 
 
 <a name="search"></a>
 # **search**
 > SearchResponse search(type, orderBy, orderDirection, pageSize, offset, id, id2, deleted, status, invoiceNumber, customerId, userId, outletId, dateFrom, dateTo, sku, sku2, supplierId, supplierId2, brandId, brandId2, tagId, tagId2, productTypeId, productTypeId2, variantParentId, variantParentId2, customerCode, firstName, lastName, companyName, phone, mobile, email)
 
-Search
+Search for resources
 
 This endpoint enables seaching for a few types of entities (currently sales, products and customers) by a number of different attributes associated with them. The description for every query parameter indicates which type of object the parameter can be used to search for.
 

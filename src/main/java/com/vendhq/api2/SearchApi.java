@@ -35,7 +35,7 @@ public class SearchApi {
   }
 
   /**
-   * Search
+   * Search for resources
    * This endpoint enables seaching for a few types of entities (currently sales, products and customers) by a number of different attributes associated with them. The description for every query parameter indicates which type of object the parameter can be used to search for.
    * @param type The enity type to search for. One of: &#x60;sales&#x60;, &#x60;products&#x60;, &#x60;customers&#x60;. (required)
    * @param orderBy The attribute used to sort items returned in the response. (optional)
