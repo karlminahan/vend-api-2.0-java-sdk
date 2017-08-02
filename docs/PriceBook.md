@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **outletId** | **String** | The ID of an outlet for which the price book should be used.+ type: GENERAL (string) - Internal value. Safe to ignore. |  [optional]
 **restrictToPlatformLabel** | **String** | One of &#x60;In Store&#x60;, &#x60;Ecommerce&#x60;, &#x60;All Platforms&#x60;. |  [optional]
 **customerGroup** | [**CustomerGroup**](CustomerGroup.md) |  |  [optional]
-**version** | **Double** | Auto-incrementing object version number. |  [optional]
+**version** | **Integer** | Auto-incrementing object version number. |  [optional]
 **deletedAt** | **String** | Deletion timestamp in UTC. |  [optional]
 
 

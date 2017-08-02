@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 **registerOpenSequenceId** | **String** | **internal** The ID of the current register closure object. |  [optional]
 **cashManagedPaymentTypeId** | **String** | **internal** The ID of the payment type used for cash management transactions in this regsiter. |  [optional]
 **deletedAt** | **String** | Deletion timestamp in UTC. |  [optional]
-**version** | **Double** | Auto-incrementing object version number. |  [optional]
+**version** | **Integer** | Auto-incrementing object version number. |  [optional]
 
 
 
