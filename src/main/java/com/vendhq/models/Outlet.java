@@ -71,7 +71,7 @@ public class Outlet {
   private String deletedAt = null;
 
   @JsonProperty("version")
-  private Integer version = null;
+  private Long version = null;
 
   public Outlet id(String id) {
     this.id = id;
@@ -343,7 +343,7 @@ public class Outlet {
     this.deletedAt = deletedAt;
   }
 
-  public Outlet version(Integer version) {
+  public Outlet version(Long version) {
     this.version = version;
     return this;
   }
@@ -353,11 +353,11 @@ public class Outlet {
    * @return version
   **/
   @ApiModelProperty(value = "Auto-incrementing object version number.")
-  public Integer getVersion() {
+  public Long getVersion() {
     return version;
   }
 
-  public void setVersion(Integer version) {
+  public void setVersion(Long version) {
     this.version = version;
   }
 

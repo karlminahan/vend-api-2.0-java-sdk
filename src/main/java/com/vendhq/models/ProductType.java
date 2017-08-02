@@ -35,7 +35,7 @@ public class ProductType {
   private String deletedAt = null;
 
   @JsonProperty("version")
-  private Integer version = null;
+  private Long version = null;
 
   public ProductType name(String name) {
     this.name = name;
@@ -91,7 +91,7 @@ public class ProductType {
     this.deletedAt = deletedAt;
   }
 
-  public ProductType version(Integer version) {
+  public ProductType version(Long version) {
     this.version = version;
     return this;
   }
@@ -101,11 +101,11 @@ public class ProductType {
    * @return version
   **/
   @ApiModelProperty(value = "Auto-incrementing object version number.")
-  public Integer getVersion() {
+  public Long getVersion() {
     return version;
   }
 
-  public void setVersion(Integer version) {
+  public void setVersion(Long version) {
     this.version = version;
   }
 

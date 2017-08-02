@@ -44,7 +44,7 @@ public class CustomerGroup {
   private String deletedAt = null;
 
   @JsonProperty("version")
-  private Integer version = null;
+  private Long version = null;
 
   public CustomerGroup name(String name) {
     this.name = name;
@@ -154,7 +154,7 @@ public class CustomerGroup {
     this.deletedAt = deletedAt;
   }
 
-  public CustomerGroup version(Integer version) {
+  public CustomerGroup version(Long version) {
     this.version = version;
     return this;
   }
@@ -164,11 +164,11 @@ public class CustomerGroup {
    * @return version
   **/
   @ApiModelProperty(value = "Auto-incrementing object version number.")
-  public Integer getVersion() {
+  public Long getVersion() {
     return version;
   }
 
-  public void setVersion(Integer version) {
+  public void setVersion(Long version) {
     this.version = version;
   }
 

@@ -80,7 +80,7 @@ public class Consignment {
   private String deletedAt = null;
 
   @JsonProperty("version")
-  private Integer version = null;
+  private Long version = null;
 
   @JsonProperty("total_count_gain")
   private Double totalCountGain = null;
@@ -409,7 +409,7 @@ public class Consignment {
     this.deletedAt = deletedAt;
   }
 
-  public Consignment version(Integer version) {
+  public Consignment version(Long version) {
     this.version = version;
     return this;
   }
@@ -419,11 +419,11 @@ public class Consignment {
    * @return version
   **/
   @ApiModelProperty(value = "Auto-incrementing object version number.")
-  public Integer getVersion() {
+  public Long getVersion() {
     return version;
   }
 
-  public void setVersion(Integer version) {
+  public void setVersion(Long version) {
     this.version = version;
   }
 

@@ -4,8 +4,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**min** | **Integer** | Lowest version number of the payload. | 
-**max** | **Integer** | Highest version number of the payload. | 
+**min** | **Long** | Lowest version number of the payload. | 
+**max** | **Long** | Highest version number of the payload. | 
 
 
 

@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **totalPrice** | **Double** | Sale total. |  [optional]
 **totalTax** | **Double** | Tax total. |  [optional]
 **deletedAt** | **String** | Deletion timestamp in UTC. |  [optional]
-**version** | **Integer** | Auto-incrementing object version number. |  [optional]
+**version** | **Long** | Auto-incrementing object version number. |  [optional]
 **taxes** | [**List&lt;SaleTax&gt;**](SaleTax.md) | Collection of taxes. |  [optional]
 **registerId** | **String** | Valid register ID for the retailer. |  [optional]
 **userId** | **String** | Valid user ID for the retailer. |  [optional]
