@@ -46,7 +46,7 @@ public class Sale {
   private String deletedAt = null;
 
   @JsonProperty("version")
-  private Integer version = null;
+  private Long version = null;
 
   @JsonProperty("taxes")
   private List<SaleTax> taxes = null;
@@ -174,7 +174,7 @@ public class Sale {
     this.deletedAt = deletedAt;
   }
 
-  public Sale version(Integer version) {
+  public Sale version(Long version) {
     this.version = version;
     return this;
   }
@@ -184,11 +184,11 @@ public class Sale {
    * @return version
   **/
   @ApiModelProperty(value = "Auto-incrementing object version number.")
-  public Integer getVersion() {
+  public Long getVersion() {
     return version;
   }
 
-  public void setVersion(Integer version) {
+  public void setVersion(Long version) {
     this.version = version;
   }
 
