@@ -30,7 +30,7 @@ public class Image {
   private UUID id = null;
 
   @JsonProperty("version")
-  private Double version = null;
+  private Integer version = null;
 
   @JsonProperty("product_id")
   private UUID productId = null;
@@ -59,7 +59,7 @@ public class Image {
     this.id = id;
   }
 
-  public Image version(Double version) {
+  public Image version(Integer version) {
     this.version = version;
     return this;
   }
@@ -69,11 +69,11 @@ public class Image {
    * @return version
   **/
   @ApiModelProperty(value = "Auto-incrementing object version number.")
-  public Double getVersion() {
+  public Integer getVersion() {
     return version;
   }
 
-  public void setVersion(Double version) {
+  public void setVersion(Integer version) {
     this.version = version;
   }
 

@@ -169,10 +169,10 @@ public class PriceBookProduct {
   }
 
    /**
-   * The maximum number of items for which this price will be used.+ version: 1288421 (number) - Auto-incrementing object version number.
+   * The maximum number of items for which this price will be used.
    * @return maxUnits
   **/
-  @ApiModelProperty(value = "The maximum number of items for which this price will be used.+ version: 1288421 (number) - Auto-incrementing object version number.")
+  @ApiModelProperty(value = "The maximum number of items for which this price will be used.")
   public Double getMaxUnits() {
     return maxUnits;
   }

@@ -32,7 +32,7 @@ public class ImageSample {
   private String url = null;
 
   @JsonProperty("version")
-  private Double version = null;
+  private Integer version = null;
 
   public ImageSample id(String id) {
     this.id = id;
@@ -70,7 +70,7 @@ public class ImageSample {
     this.url = url;
   }
 
-  public ImageSample version(Double version) {
+  public ImageSample version(Integer version) {
     this.version = version;
     return this;
   }
@@ -80,11 +80,11 @@ public class ImageSample {
    * @return version
   **/
   @ApiModelProperty(value = "Auto-incrementing object version number.")
-  public Double getVersion() {
+  public Integer getVersion() {
     return version;
   }
 
-  public void setVersion(Double version) {
+  public void setVersion(Integer version) {
     this.version = version;
   }
 

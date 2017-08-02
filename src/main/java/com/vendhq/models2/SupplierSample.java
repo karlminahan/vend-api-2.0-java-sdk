@@ -35,7 +35,7 @@ public class SupplierSample {
   private String deletedAt = null;
 
   @JsonProperty("version")
-  private Double version = null;
+  private Integer version = null;
 
   public SupplierSample id(String id) {
     this.id = id;
@@ -91,7 +91,7 @@ public class SupplierSample {
     this.deletedAt = deletedAt;
   }
 
-  public SupplierSample version(Double version) {
+  public SupplierSample version(Integer version) {
     this.version = version;
     return this;
   }
@@ -101,11 +101,11 @@ public class SupplierSample {
    * @return version
   **/
   @ApiModelProperty(value = "Auto-incrementing object version number.")
-  public Double getVersion() {
+  public Integer getVersion() {
     return version;
   }
 
-  public void setVersion(Double version) {
+  public void setVersion(Integer version) {
     this.version = version;
   }
 

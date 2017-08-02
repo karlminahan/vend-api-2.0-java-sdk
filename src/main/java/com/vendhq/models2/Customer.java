@@ -152,7 +152,7 @@ public class Customer {
   private String deletedAt = null;
 
   @JsonProperty("version")
-  private Double version = null;
+  private Integer version = null;
 
   public Customer firstName(String firstName) {
     this.firstName = firstName;
@@ -910,7 +910,7 @@ public class Customer {
     this.deletedAt = deletedAt;
   }
 
-  public Customer version(Double version) {
+  public Customer version(Integer version) {
     this.version = version;
     return this;
   }
@@ -920,11 +920,11 @@ public class Customer {
    * @return version
   **/
   @ApiModelProperty(value = "Auto-incrementing object version number.")
-  public Double getVersion() {
+  public Integer getVersion() {
     return version;
   }
 
-  public void setVersion(Double version) {
+  public void setVersion(Integer version) {
     this.version = version;
   }
 

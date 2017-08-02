@@ -83,7 +83,7 @@ public class Register {
   private String deletedAt = null;
 
   @JsonProperty("version")
-  private Double version = null;
+  private Integer version = null;
 
   public Register id(String id) {
     this.id = id;
@@ -427,7 +427,7 @@ public class Register {
     this.deletedAt = deletedAt;
   }
 
-  public Register version(Double version) {
+  public Register version(Integer version) {
     this.version = version;
     return this;
   }
@@ -437,11 +437,11 @@ public class Register {
    * @return version
   **/
   @ApiModelProperty(value = "Auto-incrementing object version number.")
-  public Double getVersion() {
+  public Integer getVersion() {
     return version;
   }
 
-  public void setVersion(Double version) {
+  public void setVersion(Integer version) {
     this.version = version;
   }
 

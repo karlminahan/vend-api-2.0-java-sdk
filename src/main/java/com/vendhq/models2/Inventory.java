@@ -139,10 +139,10 @@ public class Inventory {
   }
 
    /**
-   * Amount to be added to the automatic stock order.+ version: 1288421 (number) - Auto-incrementing object version number.
+   * Amount to be added to the automatic stock order.
    * @return reorderAmount
   **/
-  @ApiModelProperty(value = "Amount to be added to the automatic stock order.+ version: 1288421 (number) - Auto-incrementing object version number.")
+  @ApiModelProperty(value = "Amount to be added to the automatic stock order.")
   public Double getReorderAmount() {
     return reorderAmount;
   }
