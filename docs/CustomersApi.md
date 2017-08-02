@@ -22,11 +22,11 @@ Creates a new customer.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.CustomersApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.CustomersApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -41,7 +41,7 @@ personal_token.setApiKey("YOUR API KEY");
 //personal_token.setApiKeyPrefix("Bearer");
 
 CustomersApi apiInstance = new CustomersApi();
-CustomerBase body = new CustomerBase(); // CustomerBase |
+CustomerBase body = new CustomerBase(); // CustomerBase | 
 try {
     CustomerResponse result = apiInstance.createCustomer(body);
     System.out.println(result);
@@ -81,11 +81,11 @@ Deletes the customer with the requested ID.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.CustomersApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.CustomersApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -139,11 +139,11 @@ Returns a single customer with a requested ID.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.CustomersApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.CustomersApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -198,11 +198,11 @@ Returns a paginated list of customers.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.CustomersApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.CustomersApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -261,11 +261,11 @@ Updates the customer with the requested ID.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.CustomersApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.CustomersApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -281,7 +281,7 @@ personal_token.setApiKey("YOUR API KEY");
 
 CustomersApi apiInstance = new CustomersApi();
 UUID customerId = new UUID(); // UUID | Valid customer ID.
-CustomerBase body = new CustomerBase(); // CustomerBase |
+CustomerBase body = new CustomerBase(); // CustomerBase | 
 try {
     CustomerResponse result = apiInstance.updateCustomerByID(customerId, body);
     System.out.println(result);
@@ -310,3 +310,4 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+

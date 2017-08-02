@@ -21,11 +21,11 @@ Returns inventory data for a single product in all the outlets.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.ProductsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ProductsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -86,11 +86,11 @@ Returns a single product object with a given ID.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.ProductsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ProductsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -145,11 +145,11 @@ Returns a paginated list of products.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.ProductsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ProductsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -210,11 +210,11 @@ Upload a binary file with an image to be used for a product. This request should
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.ProductsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ProductsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -259,3 +259,4 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: multipart/form-data
  - **Accept**: application/json
+

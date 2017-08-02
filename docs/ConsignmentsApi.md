@@ -25,11 +25,11 @@ Increases or decreases the count for a specific product within the inventory cou
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.ConsignmentsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ConsignmentsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -45,7 +45,7 @@ personal_token.setApiKey("YOUR API KEY");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 UUID consignmentId = new UUID(); // UUID | Valid consignment ID.
-InventoryCountItemRequest body = new InventoryCountItemRequest(); // InventoryCountItemRequest |
+InventoryCountItemRequest body = new InventoryCountItemRequest(); // InventoryCountItemRequest | 
 try {
     InventoryCountItemResponse result = apiInstance.adjustInventoryItemCount(consignmentId, body);
     System.out.println(result);
@@ -86,11 +86,11 @@ Creates a new consignment of type &#x60;STOCKTAKE&#x60;. Currently, this endpoin
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.ConsignmentsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ConsignmentsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -105,7 +105,7 @@ personal_token.setApiKey("YOUR API KEY");
 //personal_token.setApiKeyPrefix("Bearer");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
-InventoryCount body = new InventoryCount(); // InventoryCount |
+InventoryCount body = new InventoryCount(); // InventoryCount | 
 try {
     ConsignmentResponse result = apiInstance.createInventoryCount(body);
     System.out.println(result);
@@ -145,11 +145,11 @@ Deletes the consignment with the given ID.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.ConsignmentsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ConsignmentsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -164,7 +164,7 @@ personal_token.setApiKey("YOUR API KEY");
 //personal_token.setApiKeyPrefix("Bearer");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
-UUID consignmentId = new UUID(); // UUID |
+UUID consignmentId = new UUID(); // UUID | 
 try {
     apiInstance.deleteConsignmentByID(consignmentId);
 } catch (ApiException e) {
@@ -203,11 +203,11 @@ Removes the count for a specific product from the inventory count.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.ConsignmentsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ConsignmentsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -263,11 +263,11 @@ Returns a single consignment with the requested ID.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.ConsignmentsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ConsignmentsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -322,11 +322,11 @@ Returns a paginated list of consignments.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.ConsignmentsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ConsignmentsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -385,11 +385,11 @@ Returns a collection of consignment products associated with the specified consi
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.ConsignmentsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ConsignmentsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -450,11 +450,11 @@ Updates the inventory count with requested ID.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.ConsignmentsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ConsignmentsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -470,7 +470,7 @@ personal_token.setApiKey("YOUR API KEY");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 UUID consignmentId = new UUID(); // UUID | Valid consignment ID.
-InventoryCount body = new InventoryCount(); // InventoryCount |
+InventoryCount body = new InventoryCount(); // InventoryCount | 
 try {
     ConsignmentResponse result = apiInstance.updateInventoryCountByID(consignmentId, body);
     System.out.println(result);
@@ -499,3 +499,4 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+

@@ -20,11 +20,11 @@ Creates a new price book.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.PriceBooksApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.PriceBooksApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -39,7 +39,7 @@ personal_token.setApiKey("YOUR API KEY");
 //personal_token.setApiKeyPrefix("Bearer");
 
 PriceBooksApi apiInstance = new PriceBooksApi();
-PriceBookBase body = new PriceBookBase(); // PriceBookBase |
+PriceBookBase body = new PriceBookBase(); // PriceBookBase | 
 try {
     PriceBookResponse result = apiInstance.createPriceBook(body);
     System.out.println(result);
@@ -79,11 +79,11 @@ Returns a single price book with a requested ID
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.PriceBooksApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.PriceBooksApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -138,11 +138,11 @@ Returns a paginated list of price books
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api_2.ApiClient;
-//import com.vendhq.api_2.ApiException;
-//import com.vendhq.api_2.Configuration;
-//import com.vendhq.api_2.auth.*;
-//import com.vendhq.api_2.PriceBooksApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.PriceBooksApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -189,3 +189,4 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+

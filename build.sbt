@@ -1,7 +1,7 @@
 lazy val root = (project in file(".")).
   settings(
     organization := "com.vendhq",
-    name := "api-2",
+    name := "api",
     version := "2.0.1",
     scalaVersion := "2.11.4",
     scalacOptions ++= Seq("-feature"),

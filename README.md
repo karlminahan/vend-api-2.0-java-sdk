@@ -1,4 +1,4 @@
-# api-2
+# api
 
 # WORK IN PROGRESS. NOT READY FOR PRODUCTION USE.
 ## Comments and pull requests welcome.
@@ -30,7 +30,7 @@ Add this dependency to your project's POM:
 ```xml
 <dependency>
     <groupId>com.vendhq</groupId>
-    <artifactId>api-2</artifactId>
+    <artifactId>api</artifactId>
     <version>2.0.1</version>
     <scope>compile</scope>
 </dependency>
@@ -41,7 +41,7 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "com.vendhq:api-2:2.0.1"
+compile "com.vendhq:api:2.0.1"
 ```
 
 ### Others
@@ -52,7 +52,7 @@ At first generate the JAR by executing:
 
 Then manually install the following JARs:
 
-* target/api-2-2.0.1.jar
+* target/api-2.0.1.jar
 * target/lib/*.jar
 
 ## Getting Started
@@ -61,10 +61,10 @@ Please follow the [installation](#installation) instruction and execute the foll
 
 ```java
 
-import com.vendhq.api_2.*;
-import com.vendhq.api_2.auth.*;
-import com.vendhq.models_2.*;
-import com.vendhq.api_2.BrandsApi;
+import com.vendhq.api.*;
+import com.vendhq.api.auth.*;
+import com.vendhq.models.*;
+import com.vendhq.api.BrandsApi;
 
 import java.io.File;
 import java.util.*;
@@ -142,6 +142,7 @@ Class | Method | HTTP request | Description
 *RegistersApi* | [**listRegisters**](docs/RegistersApi.md#listRegisters) | **GET** /registers | List registers
 *SalesApi* | [**getSaleByID**](docs/SalesApi.md#getSaleByID) | **GET** /sales/{sale_id} | Get a single sale
 *SalesApi* | [**listSales**](docs/SalesApi.md#listSales) | **GET** /sales | List Sales
+*SearchApi* | [**search**](docs/SearchApi.md#search) | **GET** /search | Search for resources
 *SuppliersApi* | [**getSupplierByID**](docs/SuppliersApi.md#getSupplierByID) | **GET** /suppliers/{supplier_id} | Get a single supplier
 *SuppliersApi* | [**listSuppliers**](docs/SuppliersApi.md#listSuppliers) | **GET** /suppliers | List suppliers
 *TagsApi* | [**getTagByID**](docs/TagsApi.md#getTagByID) | **GET** /tags/{tag_id} | Get a single tag
@@ -209,6 +210,7 @@ Class | Method | HTTP request | Description
  - [SaleCollection](docs/SaleCollection.md)
  - [SaleResponse](docs/SaleResponse.md)
  - [SaleTax](docs/SaleTax.md)
+ - [SearchResponse](docs/SearchResponse.md)
  - [Supplier](docs/Supplier.md)
  - [SupplierCollection](docs/SupplierCollection.md)
  - [SupplierResponse](docs/SupplierResponse.md)
