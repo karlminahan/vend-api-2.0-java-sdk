@@ -1,4 +1,4 @@
-# api2
+# api
 
 # WORK IN PROGRESS. NOT READY FOR PRODUCTION USE.
 ## Comments and pull requests welcome.
@@ -30,7 +30,7 @@ Add this dependency to your project's POM:
 ```xml
 <dependency>
     <groupId>com.vendhq</groupId>
-    <artifactId>api2</artifactId>
+    <artifactId>api</artifactId>
     <version>2.0.1</version>
     <scope>compile</scope>
 </dependency>
@@ -41,7 +41,7 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "com.vendhq:api2:2.0.1"
+compile "com.vendhq:api:2.0.1"
 ```
 
 ### Others
@@ -52,7 +52,7 @@ At first generate the JAR by executing:
 
 Then manually install the following JARs:
 
-* target/api2-2.0.1.jar
+* target/api-2.0.1.jar
 * target/lib/*.jar
 
 ## Getting Started
@@ -61,10 +61,10 @@ Please follow the [installation](#installation) instruction and execute the foll
 
 ```java
 
-import com.vendhq.api2.*;
-import com.vendhq.api2.auth.*;
-import com.vendhq.models2.*;
-import com.vendhq.api2.BrandsApi;
+import com.vendhq.api.*;
+import com.vendhq.api.auth.*;
+import com.vendhq.models.*;
+import com.vendhq.api.BrandsApi;
 
 import java.io.File;
 import java.util.*;

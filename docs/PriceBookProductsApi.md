@@ -18,11 +18,11 @@ Returns a paginated list of price book products.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api2.ApiClient;
-//import com.vendhq.api2.ApiException;
-//import com.vendhq.api2.Configuration;
-//import com.vendhq.api2.auth.*;
-//import com.vendhq.api2.PriceBookProductsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.PriceBookProductsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 

@@ -25,11 +25,11 @@ Increases or decreases the count for a specific product within the inventory cou
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api2.ApiClient;
-//import com.vendhq.api2.ApiException;
-//import com.vendhq.api2.Configuration;
-//import com.vendhq.api2.auth.*;
-//import com.vendhq.api2.ConsignmentsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ConsignmentsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -86,11 +86,11 @@ Creates a new consignment of type &#x60;STOCKTAKE&#x60;. Currently, this endpoin
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api2.ApiClient;
-//import com.vendhq.api2.ApiException;
-//import com.vendhq.api2.Configuration;
-//import com.vendhq.api2.auth.*;
-//import com.vendhq.api2.ConsignmentsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ConsignmentsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -145,11 +145,11 @@ Deletes the consignment with the given ID.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api2.ApiClient;
-//import com.vendhq.api2.ApiException;
-//import com.vendhq.api2.Configuration;
-//import com.vendhq.api2.auth.*;
-//import com.vendhq.api2.ConsignmentsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ConsignmentsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -203,11 +203,11 @@ Removes the count for a specific product from the inventory count.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api2.ApiClient;
-//import com.vendhq.api2.ApiException;
-//import com.vendhq.api2.Configuration;
-//import com.vendhq.api2.auth.*;
-//import com.vendhq.api2.ConsignmentsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ConsignmentsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -263,11 +263,11 @@ Returns a single consignment with the requested ID.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api2.ApiClient;
-//import com.vendhq.api2.ApiException;
-//import com.vendhq.api2.Configuration;
-//import com.vendhq.api2.auth.*;
-//import com.vendhq.api2.ConsignmentsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ConsignmentsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -322,11 +322,11 @@ Returns a paginated list of consignments.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api2.ApiClient;
-//import com.vendhq.api2.ApiException;
-//import com.vendhq.api2.Configuration;
-//import com.vendhq.api2.auth.*;
-//import com.vendhq.api2.ConsignmentsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ConsignmentsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -385,11 +385,11 @@ Returns a collection of consignment products associated with the specified consi
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api2.ApiClient;
-//import com.vendhq.api2.ApiException;
-//import com.vendhq.api2.Configuration;
-//import com.vendhq.api2.auth.*;
-//import com.vendhq.api2.ConsignmentsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ConsignmentsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -450,11 +450,11 @@ Updates the inventory count with requested ID.
 ### Example
 ```java
 // Import classes:
-//import com.vendhq.api2.ApiClient;
-//import com.vendhq.api2.ApiException;
-//import com.vendhq.api2.Configuration;
-//import com.vendhq.api2.auth.*;
-//import com.vendhq.api2.ConsignmentsApi;
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ConsignmentsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
