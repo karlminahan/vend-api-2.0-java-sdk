@@ -120,6 +120,6 @@ public class ConsignmentCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

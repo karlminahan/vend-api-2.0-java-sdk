@@ -505,6 +505,6 @@ public class Sale {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

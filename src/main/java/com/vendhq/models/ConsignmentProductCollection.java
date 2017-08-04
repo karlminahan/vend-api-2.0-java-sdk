@@ -96,6 +96,6 @@ public class ConsignmentProductCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

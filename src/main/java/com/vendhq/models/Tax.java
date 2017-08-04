@@ -235,6 +235,6 @@ public class Tax {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

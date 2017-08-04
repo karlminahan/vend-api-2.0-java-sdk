@@ -200,6 +200,6 @@ public class Inventory {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

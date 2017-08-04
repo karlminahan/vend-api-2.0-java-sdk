@@ -86,6 +86,6 @@ public class SaleResponse {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

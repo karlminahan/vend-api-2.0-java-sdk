@@ -86,6 +86,6 @@ public class SupplierResponse {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

@@ -154,6 +154,6 @@ public class ProductTypeSample {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

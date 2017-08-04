@@ -93,6 +93,6 @@ public class TaxCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

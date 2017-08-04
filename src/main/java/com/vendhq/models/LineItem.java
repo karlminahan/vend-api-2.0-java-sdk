@@ -487,6 +487,6 @@ public class LineItem {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

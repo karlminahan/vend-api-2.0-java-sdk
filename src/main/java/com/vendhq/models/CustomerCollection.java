@@ -120,6 +120,6 @@ public class CustomerCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

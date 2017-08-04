@@ -200,6 +200,6 @@ public class Payment {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

@@ -154,6 +154,6 @@ public class ProductType {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

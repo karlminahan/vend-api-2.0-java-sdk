@@ -179,6 +179,6 @@ public class PaymentType {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

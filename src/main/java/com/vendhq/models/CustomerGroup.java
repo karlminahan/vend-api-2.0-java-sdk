@@ -223,6 +223,6 @@ public class CustomerGroup {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

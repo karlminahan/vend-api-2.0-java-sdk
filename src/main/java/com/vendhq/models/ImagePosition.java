@@ -85,6 +85,6 @@ public class ImagePosition {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

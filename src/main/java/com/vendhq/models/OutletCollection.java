@@ -120,6 +120,6 @@ public class OutletCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

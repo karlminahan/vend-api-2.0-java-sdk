@@ -430,6 +430,6 @@ public class Outlet {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

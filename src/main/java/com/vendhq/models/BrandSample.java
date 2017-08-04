@@ -154,6 +154,6 @@ public class BrandSample {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

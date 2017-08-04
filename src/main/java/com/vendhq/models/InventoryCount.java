@@ -235,6 +235,6 @@ public class InventoryCount {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

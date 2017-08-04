@@ -120,6 +120,6 @@ public class InventoryCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

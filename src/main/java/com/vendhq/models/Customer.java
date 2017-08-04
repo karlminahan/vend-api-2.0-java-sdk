@@ -1051,6 +1051,6 @@ public class Customer {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

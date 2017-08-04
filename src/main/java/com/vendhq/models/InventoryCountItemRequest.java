@@ -108,6 +108,6 @@ public class InventoryCountItemRequest {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

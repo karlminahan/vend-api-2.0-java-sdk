@@ -120,6 +120,6 @@ public class OutletTaxCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

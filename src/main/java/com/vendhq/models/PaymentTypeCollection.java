@@ -120,6 +120,6 @@ public class PaymentTypeCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

@@ -155,6 +155,6 @@ public class TaxRate {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

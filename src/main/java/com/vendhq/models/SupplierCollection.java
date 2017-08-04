@@ -120,6 +120,6 @@ public class SupplierCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

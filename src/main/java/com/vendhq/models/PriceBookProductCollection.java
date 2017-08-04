@@ -120,6 +120,6 @@ public class PriceBookProductCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

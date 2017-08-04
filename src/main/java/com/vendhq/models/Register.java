@@ -522,6 +522,6 @@ public class Register {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

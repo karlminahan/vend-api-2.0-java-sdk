@@ -178,6 +178,6 @@ public class Image {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

@@ -522,6 +522,6 @@ public class Consignment {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

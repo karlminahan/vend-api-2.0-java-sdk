@@ -120,6 +120,6 @@ public class BrandCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

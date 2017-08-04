@@ -154,6 +154,6 @@ public class Brand {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

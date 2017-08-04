@@ -131,6 +131,6 @@ public class ImageSample {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

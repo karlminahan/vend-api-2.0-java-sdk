@@ -154,6 +154,6 @@ public class Supplier {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

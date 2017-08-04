@@ -86,6 +86,6 @@ public class PriceBookResponse {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

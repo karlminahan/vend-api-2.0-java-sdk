@@ -715,6 +715,6 @@ public class Product {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

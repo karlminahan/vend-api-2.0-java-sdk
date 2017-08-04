@@ -131,6 +131,6 @@ public class SaleTax {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

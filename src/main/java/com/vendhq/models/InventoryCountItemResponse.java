@@ -86,6 +86,6 @@ public class InventoryCountItemResponse {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

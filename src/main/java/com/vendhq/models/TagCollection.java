@@ -120,6 +120,6 @@ public class TagCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

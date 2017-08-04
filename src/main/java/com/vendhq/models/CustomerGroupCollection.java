@@ -120,6 +120,6 @@ public class CustomerGroupCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

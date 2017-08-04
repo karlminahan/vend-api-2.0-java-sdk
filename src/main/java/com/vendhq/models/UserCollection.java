@@ -117,6 +117,6 @@ public class UserCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

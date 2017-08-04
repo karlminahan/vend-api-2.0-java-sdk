@@ -86,6 +86,6 @@ public class OutletResponse {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

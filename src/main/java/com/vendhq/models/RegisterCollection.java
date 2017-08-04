@@ -120,6 +120,6 @@ public class RegisterCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

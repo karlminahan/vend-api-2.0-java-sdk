@@ -178,6 +178,6 @@ public class OutletTax {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

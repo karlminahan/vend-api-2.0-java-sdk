@@ -120,6 +120,6 @@ public class ProductTypeCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

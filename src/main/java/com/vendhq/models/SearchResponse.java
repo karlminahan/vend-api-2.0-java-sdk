@@ -96,6 +96,6 @@ public class SearchResponse {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 
