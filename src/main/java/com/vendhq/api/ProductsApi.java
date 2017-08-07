@@ -7,7 +7,6 @@ import com.vendhq.api.Pair;
 
 import javax.ws.rs.core.GenericType;
 
-import java.math.BigDecimal;
 import java.io.File;
 import com.vendhq.models.ImageResponse;
 import com.vendhq.models.InventoryCollection;
@@ -50,7 +49,7 @@ public class ProductsApi {
    * @return InventoryCollection
    * @throws ApiException if fails to make API call
    */
-  public InventoryCollection getInventoryByProductID(UUID productId, BigDecimal after, BigDecimal before, BigDecimal pageSize) throws ApiException {
+  public InventoryCollection getInventoryByProductID(UUID productId, Long after, Long before, Integer pageSize) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'productId' is set
@@ -140,7 +139,7 @@ public class ProductsApi {
    * @return ProductCollection
    * @throws ApiException if fails to make API call
    */
-  public ProductCollection listProducts(BigDecimal after, BigDecimal before, Boolean deleted, BigDecimal pageSize) throws ApiException {
+  public ProductCollection listProducts(Long after, Long before, Boolean deleted, Integer pageSize) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables

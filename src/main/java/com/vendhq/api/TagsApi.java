@@ -7,7 +7,6 @@ import com.vendhq.api.Pair;
 
 import javax.ws.rs.core.GenericType;
 
-import java.math.BigDecimal;
 import com.vendhq.models.TagCollection;
 import com.vendhq.models.TagResponse;
 
@@ -87,7 +86,7 @@ public class TagsApi {
    * @return TagCollection
    * @throws ApiException if fails to make API call
    */
-  public TagCollection listTags(BigDecimal after, BigDecimal before, BigDecimal pageSize) throws ApiException {
+  public TagCollection listTags(Long after, Long before, Integer pageSize) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables

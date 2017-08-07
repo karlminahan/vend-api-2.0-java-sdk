@@ -7,7 +7,6 @@ import com.vendhq.api.Pair;
 
 import javax.ws.rs.core.GenericType;
 
-import java.math.BigDecimal;
 import com.vendhq.models.SaleCollection;
 import com.vendhq.models.SaleResponse;
 import java.util.UUID;
@@ -88,7 +87,7 @@ public class SalesApi {
    * @return SaleCollection
    * @throws ApiException if fails to make API call
    */
-  public SaleCollection listSales(BigDecimal after, BigDecimal before, BigDecimal pageSize) throws ApiException {
+  public SaleCollection listSales(Long after, Long before, Integer pageSize) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables

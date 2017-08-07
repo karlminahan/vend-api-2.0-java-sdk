@@ -7,7 +7,6 @@ import com.vendhq.api.Pair;
 
 import javax.ws.rs.core.GenericType;
 
-import java.math.BigDecimal;
 import com.vendhq.models.ConsignmentCollection;
 import com.vendhq.models.ConsignmentProductCollection;
 import com.vendhq.models.ConsignmentResponse;
@@ -270,7 +269,7 @@ public class ConsignmentsApi {
    * @return ConsignmentCollection
    * @throws ApiException if fails to make API call
    */
-  public ConsignmentCollection listConsignments(BigDecimal after, BigDecimal before, BigDecimal pageSize) throws ApiException {
+  public ConsignmentCollection listConsignments(Long after, Long before, Integer pageSize) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -312,7 +311,7 @@ public class ConsignmentsApi {
    * @return ConsignmentProductCollection
    * @throws ApiException if fails to make API call
    */
-  public ConsignmentProductCollection listProductsByConsignmentID(UUID consignmentId, BigDecimal after, BigDecimal before, BigDecimal pageSize) throws ApiException {
+  public ConsignmentProductCollection listProductsByConsignmentID(UUID consignmentId, Long after, Long before, Integer pageSize) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'consignmentId' is set

@@ -97,10 +97,10 @@ personal_token.setApiKey("YOUR API KEY");
 //personal_token.setApiKeyPrefix("Bearer");
 
 RegistersApi apiInstance = new RegistersApi();
-BigDecimal after = new BigDecimal(); // BigDecimal | The lower limit for the version numbers to be included in the response.
-BigDecimal before = new BigDecimal(); // BigDecimal | The upper limit for the version numbers to be included in the response.
+Long after = 789L; // Long | The lower limit for the version numbers to be included in the response.
+Long before = 789L; // Long | The upper limit for the version numbers to be included in the response.
 Boolean deleted = true; // Boolean | Indicates whether deleted items should be included in the response.
-BigDecimal pageSize = new BigDecimal(); // BigDecimal | The maximum number of items to be returned in the response.
+Integer pageSize = 56; // Integer | The maximum number of items to be returned in the response.
 try {
     RegisterCollection result = apiInstance.listRegisters(after, before, deleted, pageSize);
     System.out.println(result);
@@ -114,10 +114,10 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **after** | **BigDecimal**| The lower limit for the version numbers to be included in the response. | [optional]
- **before** | **BigDecimal**| The upper limit for the version numbers to be included in the response. | [optional]
+ **after** | **Long**| The lower limit for the version numbers to be included in the response. | [optional]
+ **before** | **Long**| The upper limit for the version numbers to be included in the response. | [optional]
  **deleted** | **Boolean**| Indicates whether deleted items should be included in the response. | [optional]
- **pageSize** | **BigDecimal**| The maximum number of items to be returned in the response. | [optional]
+ **pageSize** | **Integer**| The maximum number of items to be returned in the response. | [optional]
 
 ### Return type
 

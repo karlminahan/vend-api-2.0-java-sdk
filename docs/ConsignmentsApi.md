@@ -341,9 +341,9 @@ personal_token.setApiKey("YOUR API KEY");
 //personal_token.setApiKeyPrefix("Bearer");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
-BigDecimal after = new BigDecimal(); // BigDecimal | The lower limit for the version numbers to be included in the response.
-BigDecimal before = new BigDecimal(); // BigDecimal | The upper limit for the version numbers to be included in the response.
-BigDecimal pageSize = new BigDecimal(); // BigDecimal | The maximum number of items to be returned in the response.
+Long after = 789L; // Long | The lower limit for the version numbers to be included in the response.
+Long before = 789L; // Long | The upper limit for the version numbers to be included in the response.
+Integer pageSize = 56; // Integer | The maximum number of items to be returned in the response.
 try {
     ConsignmentCollection result = apiInstance.listConsignments(after, before, pageSize);
     System.out.println(result);
@@ -357,9 +357,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **after** | **BigDecimal**| The lower limit for the version numbers to be included in the response. | [optional]
- **before** | **BigDecimal**| The upper limit for the version numbers to be included in the response. | [optional]
- **pageSize** | **BigDecimal**| The maximum number of items to be returned in the response. | [optional]
+ **after** | **Long**| The lower limit for the version numbers to be included in the response. | [optional]
+ **before** | **Long**| The upper limit for the version numbers to be included in the response. | [optional]
+ **pageSize** | **Integer**| The maximum number of items to be returned in the response. | [optional]
 
 ### Return type
 
@@ -405,9 +405,9 @@ personal_token.setApiKey("YOUR API KEY");
 
 ConsignmentsApi apiInstance = new ConsignmentsApi();
 UUID consignmentId = new UUID(); // UUID | The ID of the consignment for which products should be listed.
-BigDecimal after = new BigDecimal(); // BigDecimal | The lower limit for the version numbers to be included in the response.
-BigDecimal before = new BigDecimal(); // BigDecimal | The upper limit for the version numbers to be included in the response.
-BigDecimal pageSize = new BigDecimal(); // BigDecimal | The maximum number of items to be returned in the response.
+Long after = 789L; // Long | The lower limit for the version numbers to be included in the response.
+Long before = 789L; // Long | The upper limit for the version numbers to be included in the response.
+Integer pageSize = 56; // Integer | The maximum number of items to be returned in the response.
 try {
     ConsignmentProductCollection result = apiInstance.listProductsByConsignmentID(consignmentId, after, before, pageSize);
     System.out.println(result);
@@ -422,9 +422,9 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **consignmentId** | **UUID**| The ID of the consignment for which products should be listed. |
- **after** | **BigDecimal**| The lower limit for the version numbers to be included in the response. | [optional]
- **before** | **BigDecimal**| The upper limit for the version numbers to be included in the response. | [optional]
- **pageSize** | **BigDecimal**| The maximum number of items to be returned in the response. | [optional]
+ **after** | **Long**| The lower limit for the version numbers to be included in the response. | [optional]
+ **before** | **Long**| The upper limit for the version numbers to be included in the response. | [optional]
+ **pageSize** | **Integer**| The maximum number of items to be returned in the response. | [optional]
 
 ### Return type
 
