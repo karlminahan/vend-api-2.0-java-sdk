@@ -20,7 +20,6 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import com.vendhq.models.PaymentTypeConfig;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import java.math.BigDecimal;
 
 /**
  * PaymentType
@@ -40,7 +39,7 @@ public class PaymentType {
   private PaymentTypeConfig config = null;
 
   @JsonProperty("version")
-  private BigDecimal version = null;
+  private Long version = null;
 
   public PaymentType id(String id) {
     this.id = id;
@@ -114,21 +113,21 @@ public class PaymentType {
     this.config = config;
   }
 
-  public PaymentType version(BigDecimal version) {
+  public PaymentType version(Long version) {
     this.version = version;
     return this;
   }
 
    /**
-   * Auto
+   * Auto-incrementing object version number.
    * @return version
   **/
-  @ApiModelProperty(required = true, value = "Auto")
-  public BigDecimal getVersion() {
+  @ApiModelProperty(required = true, value = "Auto-incrementing object version number.")
+  public Long getVersion() {
     return version;
   }
 
-  public void setVersion(BigDecimal version) {
+  public void setVersion(Long version) {
     this.version = version;
   }
 
