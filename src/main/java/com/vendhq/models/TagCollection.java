@@ -42,7 +42,7 @@ public class TagCollection {
 
   public TagCollection addDataItem(Tag dataItem) {
     if (this.data == null) {
-      this.data = new ArrayList<Tag>();
+      this.data = new ArrayList<>();
     }
     this.data.add(dataItem);
     return this;

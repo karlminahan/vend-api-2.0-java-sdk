@@ -239,7 +239,7 @@ public class User {
 
   public User addRestrictedOutletIdsItem(UUID restrictedOutletIdsItem) {
     if (this.restrictedOutletIds == null) {
-      this.restrictedOutletIds = new ArrayList<UUID>();
+      this.restrictedOutletIds = new ArrayList<>();
     }
     this.restrictedOutletIds.add(restrictedOutletIdsItem);
     return this;

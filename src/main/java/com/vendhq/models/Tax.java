@@ -129,7 +129,7 @@ public class Tax {
 
   public Tax addRatesItem(TaxRate ratesItem) {
     if (this.rates == null) {
-      this.rates = new ArrayList<TaxRate>();
+      this.rates = new ArrayList<>();
     }
     this.rates.add(ratesItem);
     return this;

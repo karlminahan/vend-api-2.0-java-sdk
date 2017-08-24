@@ -42,7 +42,7 @@ public class BrandCollection {
 
   public BrandCollection addDataItem(Brand dataItem) {
     if (this.data == null) {
-      this.data = new ArrayList<Brand>();
+      this.data = new ArrayList<>();
     }
     this.data.add(dataItem);
     return this;

@@ -147,7 +147,7 @@ public class InventoryCount {
 
   public InventoryCount addFiltersItem(InventoryCountFilter filtersItem) {
     if (this.filters == null) {
-      this.filters = new ArrayList<InventoryCountFilter>();
+      this.filters = new ArrayList<>();
     }
     this.filters.add(filtersItem);
     return this;

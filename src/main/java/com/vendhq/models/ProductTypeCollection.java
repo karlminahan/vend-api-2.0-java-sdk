@@ -42,7 +42,7 @@ public class ProductTypeCollection {
 
   public ProductTypeCollection addDataItem(ProductType dataItem) {
     if (this.data == null) {
-      this.data = new ArrayList<ProductType>();
+      this.data = new ArrayList<>();
     }
     this.data.add(dataItem);
     return this;

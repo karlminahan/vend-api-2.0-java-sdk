@@ -30,7 +30,7 @@ import java.util.List;
 
 public class UserCollection {
   @JsonProperty("data")
-  private List<User> data = new ArrayList<User>();
+  private List<User> data = new ArrayList<>();
 
   @JsonProperty("version")
   private Version version = null;

@@ -42,7 +42,7 @@ public class OutletTaxCollection {
 
   public OutletTaxCollection addDataItem(OutletTax dataItem) {
     if (this.data == null) {
-      this.data = new ArrayList<OutletTax>();
+      this.data = new ArrayList<>();
     }
     this.data.add(dataItem);
     return this;

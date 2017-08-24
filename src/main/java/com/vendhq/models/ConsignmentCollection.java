@@ -42,7 +42,7 @@ public class ConsignmentCollection {
 
   public ConsignmentCollection addDataItem(Consignment dataItem) {
     if (this.data == null) {
-      this.data = new ArrayList<Consignment>();
+      this.data = new ArrayList<>();
     }
     this.data.add(dataItem);
     return this;

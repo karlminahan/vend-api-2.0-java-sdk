@@ -50,8 +50,8 @@ String invoiceNumber = "invoiceNumber_example"; // String | **SALES** Invoice nu
 String customerId = "customerId_example"; // String | **SALES** The `ID` of the customer associated with the sales.
 String userId = "userId_example"; // String | **SALES** The `ID` of the user associated with the sales.
 String outletId = "outletId_example"; // String | **SALES** The `ID` of the outlet associated with the sales.
-String dateFrom = "dateFrom_example"; // String | **SALES** The lower limit for the sale date.
-String dateTo = "dateTo_example"; // String | **SALES** The upper limit for the sale date.
+String dateFrom = "dateFrom_example"; // String | **SALES** Lower limit for the sale date.
+String dateTo = "dateTo_example"; // String | **SALES** The `ID` Upper limit for the sale date.
 String sku = "sku_example"; // String | __PRODUCTS__ The SKU of products to include in the search. Can be used multiple times to search for objects with different values of this parameter.
 String sku2 = "sku_example"; // String | __PRODUCTS__ The SKU of products to exclude from the search. Can be used multiple times to search for objects with different values of this parameter.
 String supplierId = "supplierId_example"; // String | __PRODUCTS__ The ID of the supplier associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter.
@@ -97,8 +97,8 @@ Name | Type | Description  | Notes
  **customerId** | **String**| **SALES** The &#x60;ID&#x60; of the customer associated with the sales. | [optional]
  **userId** | **String**| **SALES** The &#x60;ID&#x60; of the user associated with the sales. | [optional]
  **outletId** | **String**| **SALES** The &#x60;ID&#x60; of the outlet associated with the sales. | [optional]
- **dateFrom** | **String**| **SALES** The lower limit for the sale date. | [optional]
- **dateTo** | **String**| **SALES** The upper limit for the sale date. | [optional]
+ **dateFrom** | **String**| **SALES** Lower limit for the sale date. | [optional]
+ **dateTo** | **String**| **SALES** The &#x60;ID&#x60; Upper limit for the sale date. | [optional]
  **sku** | **String**| __PRODUCTS__ The SKU of products to include in the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
  **sku2** | **String**| __PRODUCTS__ The SKU of products to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
  **supplierId** | **String**| __PRODUCTS__ The ID of the supplier associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
