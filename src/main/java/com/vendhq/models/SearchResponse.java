@@ -38,7 +38,7 @@ public class SearchResponse {
 
   public SearchResponse addDataItem(Object dataItem) {
     if (this.data == null) {
-      this.data = new ArrayList<Object>();
+      this.data = new ArrayList<>();
     }
     this.data.add(dataItem);
     return this;
@@ -96,6 +96,6 @@ public class SearchResponse {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

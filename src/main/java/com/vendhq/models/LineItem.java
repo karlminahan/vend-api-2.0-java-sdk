@@ -287,7 +287,7 @@ public class LineItem {
 
   public LineItem addTaxComponentsItem(LineItemTaxComponent taxComponentsItem) {
     if (this.taxComponents == null) {
-      this.taxComponents = new ArrayList<LineItemTaxComponent>();
+      this.taxComponents = new ArrayList<>();
     }
     this.taxComponents.add(taxComponentsItem);
     return this;
@@ -487,6 +487,6 @@ public class LineItem {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

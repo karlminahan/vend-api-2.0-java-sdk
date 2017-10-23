@@ -36,7 +36,7 @@ public class Tax {
   private String name = null;
 
   @JsonProperty("version")
-  private Integer version = null;
+  private Long version = null;
 
   @JsonProperty("deleted_at")
   private String deletedAt = null;
@@ -86,21 +86,21 @@ public class Tax {
     this.name = name;
   }
 
-  public Tax version(Integer version) {
+  public Tax version(Long version) {
     this.version = version;
     return this;
   }
 
    /**
-   * Get version
+   * Auto-incrementing object version number.
    * @return version
   **/
-  @ApiModelProperty(required = true, value = "")
-  public Integer getVersion() {
+  @ApiModelProperty(required = true, value = "Auto-incrementing object version number.")
+  public Long getVersion() {
     return version;
   }
 
-  public void setVersion(Integer version) {
+  public void setVersion(Long version) {
     this.version = version;
   }
 
@@ -129,7 +129,7 @@ public class Tax {
 
   public Tax addRatesItem(TaxRate ratesItem) {
     if (this.rates == null) {
-      this.rates = new ArrayList<TaxRate>();
+      this.rates = new ArrayList<>();
     }
     this.rates.add(ratesItem);
     return this;
@@ -235,6 +235,6 @@ public class Tax {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

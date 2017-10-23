@@ -38,7 +38,7 @@ public class ConsignmentProductCollection {
 
   public ConsignmentProductCollection addDataItem(InventoryCountItem dataItem) {
     if (this.data == null) {
-      this.data = new ArrayList<InventoryCountItem>();
+      this.data = new ArrayList<>();
     }
     this.data.add(dataItem);
     return this;
@@ -96,6 +96,6 @@ public class ConsignmentProductCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

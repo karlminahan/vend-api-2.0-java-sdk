@@ -108,6 +108,6 @@ public class VariantOption {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

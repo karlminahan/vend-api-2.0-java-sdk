@@ -7,7 +7,6 @@ import com.vendhq.api.Pair;
 
 import javax.ws.rs.core.GenericType;
 
-import java.math.BigDecimal;
 import com.vendhq.models.OutletCollection;
 import com.vendhq.models.OutletResponse;
 import java.util.UUID;
@@ -88,7 +87,7 @@ public class OutletsApi {
    * @return OutletCollection
    * @throws ApiException if fails to make API call
    */
-  public OutletCollection listOutlets(BigDecimal after, BigDecimal before, BigDecimal pageSize) throws ApiException {
+  public OutletCollection listOutlets(Long after, Long before, Integer pageSize) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables

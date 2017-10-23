@@ -86,6 +86,6 @@ public class ImageResponse {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

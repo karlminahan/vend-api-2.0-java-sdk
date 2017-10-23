@@ -86,6 +86,6 @@ public class ProductTypeResponse {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

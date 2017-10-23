@@ -42,7 +42,7 @@ public class PaymentTypeCollection {
 
   public PaymentTypeCollection addDataItem(PaymentType dataItem) {
     if (this.data == null) {
-      this.data = new ArrayList<PaymentType>();
+      this.data = new ArrayList<>();
     }
     this.data.add(dataItem);
     return this;
@@ -120,6 +120,6 @@ public class PaymentTypeCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

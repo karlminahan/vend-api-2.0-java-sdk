@@ -86,6 +86,6 @@ public class ConsignmentResponse {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

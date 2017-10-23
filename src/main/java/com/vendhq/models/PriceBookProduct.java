@@ -292,6 +292,6 @@ public class PriceBookProduct {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

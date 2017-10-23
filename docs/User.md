@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **targetDaily** | [**BigDecimal**](BigDecimal.md) | Daily sales target for the user. |  [optional]
 **targetWeekly** | [**BigDecimal**](BigDecimal.md) | Weekly sales target for the user. |  [optional]
 **targetMonthly** | [**BigDecimal**](BigDecimal.md) | Monthly sales target for the user. |  [optional]
-**version** | **Integer** | Auto-incrementing version number | 
+**version** | **Long** | Auto-incrementing object version number. | 
 **isPrimaryUser** | **Boolean** | Indicated whether this user is the primary user for the account. | 
 **imageSource** | **String** | URL of the default-sized user&#39;s avatar. |  [optional]
 **images** | [**UserImages**](UserImages.md) |  |  [optional]

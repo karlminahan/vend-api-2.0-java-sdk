@@ -42,7 +42,7 @@ public class SaleCollection {
 
   public SaleCollection addDataItem(Sale dataItem) {
     if (this.data == null) {
-      this.data = new ArrayList<Sale>();
+      this.data = new ArrayList<>();
     }
     this.data.add(dataItem);
     return this;
@@ -120,6 +120,6 @@ public class SaleCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

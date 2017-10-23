@@ -7,7 +7,6 @@ import com.vendhq.api.Pair;
 
 import javax.ws.rs.core.GenericType;
 
-import java.math.BigDecimal;
 import com.vendhq.models.OutletTaxCollection;
 
 import java.util.ArrayList;
@@ -46,7 +45,7 @@ public class OutletProductTaxesApi {
    * @return OutletTaxCollection
    * @throws ApiException if fails to make API call
    */
-  public OutletTaxCollection listOutletProductTaxes(String outletId, BigDecimal after, BigDecimal before, BigDecimal pageSize, Boolean deleted) throws ApiException {
+  public OutletTaxCollection listOutletProductTaxes(String outletId, Long after, Long before, Integer pageSize, Boolean deleted) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables

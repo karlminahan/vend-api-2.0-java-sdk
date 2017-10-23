@@ -86,6 +86,6 @@ public class RegisterResponse {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

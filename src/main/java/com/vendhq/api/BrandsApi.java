@@ -7,7 +7,6 @@ import com.vendhq.api.Pair;
 
 import javax.ws.rs.core.GenericType;
 
-import java.math.BigDecimal;
 import com.vendhq.models.BrandCollection;
 import com.vendhq.models.BrandResponse;
 
@@ -87,7 +86,7 @@ public class BrandsApi {
    * @return BrandCollection
    * @throws ApiException if fails to make API call
    */
-  public BrandCollection listBrands(BigDecimal after, BigDecimal before, BigDecimal pageSize) throws ApiException {
+  public BrandCollection listBrands(Long after, Long before, Integer pageSize) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables

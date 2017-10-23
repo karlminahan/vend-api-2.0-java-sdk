@@ -844,6 +844,6 @@ public class CustomerBase {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

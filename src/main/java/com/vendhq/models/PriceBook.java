@@ -54,7 +54,7 @@ public class PriceBook {
   private CustomerGroup customerGroup = null;
 
   @JsonProperty("version")
-  private Integer version = null;
+  private Long version = null;
 
   @JsonProperty("deleted_at")
   private String deletedAt = null;
@@ -221,7 +221,7 @@ public class PriceBook {
     this.customerGroup = customerGroup;
   }
 
-  public PriceBook version(Integer version) {
+  public PriceBook version(Long version) {
     this.version = version;
     return this;
   }
@@ -231,11 +231,11 @@ public class PriceBook {
    * @return version
   **/
   @ApiModelProperty(value = "Auto-incrementing object version number.")
-  public Integer getVersion() {
+  public Long getVersion() {
     return version;
   }
 
-  public void setVersion(Integer version) {
+  public void setVersion(Long version) {
     this.version = version;
   }
 
@@ -316,6 +316,6 @@ public class PriceBook {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

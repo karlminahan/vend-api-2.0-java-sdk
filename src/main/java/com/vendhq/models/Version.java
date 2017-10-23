@@ -27,12 +27,12 @@ import io.swagger.annotations.ApiModelProperty;
 
 public class Version {
   @JsonProperty("min")
-  private Integer min = null;
+  private Long min = null;
 
   @JsonProperty("max")
-  private Integer max = null;
+  private Long max = null;
 
-  public Version min(Integer min) {
+  public Version min(Long min) {
     this.min = min;
     return this;
   }
@@ -42,15 +42,15 @@ public class Version {
    * @return min
   **/
   @ApiModelProperty(required = true, value = "Lowest version number of the payload.")
-  public Integer getMin() {
+  public Long getMin() {
     return min;
   }
 
-  public void setMin(Integer min) {
+  public void setMin(Long min) {
     this.min = min;
   }
 
-  public Version max(Integer max) {
+  public Version max(Long max) {
     this.max = max;
     return this;
   }
@@ -60,11 +60,11 @@ public class Version {
    * @return max
   **/
   @ApiModelProperty(required = true, value = "Highest version number of the payload.")
-  public Integer getMax() {
+  public Long getMax() {
     return max;
   }
 
-  public void setMax(Integer max) {
+  public void setMax(Long max) {
     this.max = max;
   }
 
@@ -109,6 +109,6 @@ public class Version {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

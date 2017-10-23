@@ -86,6 +86,6 @@ public class BrandResponse {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

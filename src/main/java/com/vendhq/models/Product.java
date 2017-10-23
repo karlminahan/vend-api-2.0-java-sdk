@@ -112,7 +112,7 @@ public class Product {
   private String deletedAt = null;
 
   @JsonProperty("version")
-  private Integer version = null;
+  private Long version = null;
 
   public Product name(String name) {
     this.name = name;
@@ -445,7 +445,7 @@ public class Product {
 
   public Product addVariantOptionsItem(VariantOption variantOptionsItem) {
     if (this.variantOptions == null) {
-      this.variantOptions = new ArrayList<VariantOption>();
+      this.variantOptions = new ArrayList<>();
     }
     this.variantOptions.add(variantOptionsItem);
     return this;
@@ -471,7 +471,7 @@ public class Product {
 
   public Product addCategoriesItem(Tag categoriesItem) {
     if (this.categories == null) {
-      this.categories = new ArrayList<Tag>();
+      this.categories = new ArrayList<>();
     }
     this.categories.add(categoriesItem);
     return this;
@@ -533,7 +533,7 @@ public class Product {
 
   public Product addImagesItem(ImageSample imagesItem) {
     if (this.images == null) {
-      this.images = new ArrayList<ImageSample>();
+      this.images = new ArrayList<>();
     }
     this.images.add(imagesItem);
     return this;
@@ -606,7 +606,7 @@ public class Product {
     this.deletedAt = deletedAt;
   }
 
-  public Product version(Integer version) {
+  public Product version(Long version) {
     this.version = version;
     return this;
   }
@@ -616,11 +616,11 @@ public class Product {
    * @return version
   **/
   @ApiModelProperty(value = "Auto-incrementing object version number.")
-  public Integer getVersion() {
+  public Long getVersion() {
     return version;
   }
 
-  public void setVersion(Integer version) {
+  public void setVersion(Long version) {
     this.version = version;
   }
 
@@ -715,6 +715,6 @@ public class Product {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

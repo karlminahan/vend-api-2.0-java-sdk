@@ -42,7 +42,7 @@ public class PriceBookCollection {
 
   public PriceBookCollection addDataItem(PriceBook dataItem) {
     if (this.data == null) {
-      this.data = new ArrayList<PriceBook>();
+      this.data = new ArrayList<>();
     }
     this.data.add(dataItem);
     return this;
@@ -120,6 +120,6 @@ public class PriceBookCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

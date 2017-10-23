@@ -57,7 +57,7 @@ public class InventoryCountItem {
   private String deletedAt = null;
 
   @JsonProperty("version")
-  private Integer version = null;
+  private Long version = null;
 
   public InventoryCountItem productId(UUID productId) {
     this.productId = productId;
@@ -239,7 +239,7 @@ public class InventoryCountItem {
     this.deletedAt = deletedAt;
   }
 
-  public InventoryCountItem version(Integer version) {
+  public InventoryCountItem version(Long version) {
     this.version = version;
     return this;
   }
@@ -249,11 +249,11 @@ public class InventoryCountItem {
    * @return version
   **/
   @ApiModelProperty(required = true, value = "Auto-incrementing object version number.")
-  public Integer getVersion() {
+  public Long getVersion() {
     return version;
   }
 
-  public void setVersion(Integer version) {
+  public void setVersion(Long version) {
     this.version = version;
   }
 
@@ -316,6 +316,6 @@ public class InventoryCountItem {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

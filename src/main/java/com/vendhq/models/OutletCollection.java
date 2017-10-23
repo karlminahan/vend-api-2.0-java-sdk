@@ -42,7 +42,7 @@ public class OutletCollection {
 
   public OutletCollection addDataItem(Outlet dataItem) {
     if (this.data == null) {
-      this.data = new ArrayList<Outlet>();
+      this.data = new ArrayList<>();
     }
     this.data.add(dataItem);
     return this;
@@ -120,6 +120,6 @@ public class OutletCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

@@ -108,6 +108,6 @@ public class LineItemTaxComponent {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

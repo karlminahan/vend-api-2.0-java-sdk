@@ -97,9 +97,9 @@ personal_token.setApiKey("YOUR API KEY");
 //personal_token.setApiKeyPrefix("Bearer");
 
 UsersApi apiInstance = new UsersApi();
-BigDecimal after = new BigDecimal(); // BigDecimal | The lower limit for the version numbers to be included in the response.
-BigDecimal before = new BigDecimal(); // BigDecimal | The upper limit for the version numbers to be included in the response.
-BigDecimal pageSize = new BigDecimal(); // BigDecimal | The maximum number of items to be returned in the response.
+Long after = 789L; // Long | The lower limit for the version numbers to be included in the response.
+Long before = 789L; // Long | The upper limit for the version numbers to be included in the response.
+Integer pageSize = 56; // Integer | The maximum number of items to be returned in the response.
 try {
     UserCollection result = apiInstance.listUsers(after, before, pageSize);
     System.out.println(result);
@@ -113,9 +113,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **after** | **BigDecimal**| The lower limit for the version numbers to be included in the response. | [optional]
- **before** | **BigDecimal**| The upper limit for the version numbers to be included in the response. | [optional]
- **pageSize** | **BigDecimal**| The maximum number of items to be returned in the response. | [optional]
+ **after** | **Long**| The lower limit for the version numbers to be included in the response. | [optional]
+ **before** | **Long**| The upper limit for the version numbers to be included in the response. | [optional]
+ **pageSize** | **Integer**| The maximum number of items to be returned in the response. | [optional]
 
 ### Return type
 

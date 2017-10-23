@@ -7,7 +7,6 @@ import com.vendhq.api.Pair;
 
 import javax.ws.rs.core.GenericType;
 
-import java.math.BigDecimal;
 import com.vendhq.models.RegisterCollection;
 import com.vendhq.models.RegisterResponse;
 import java.util.UUID;
@@ -89,7 +88,7 @@ public class RegistersApi {
    * @return RegisterCollection
    * @throws ApiException if fails to make API call
    */
-  public RegisterCollection listRegisters(BigDecimal after, BigDecimal before, Boolean deleted, BigDecimal pageSize) throws ApiException {
+  public RegisterCollection listRegisters(Long after, Long before, Boolean deleted, Integer pageSize) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables

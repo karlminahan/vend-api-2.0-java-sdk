@@ -109,6 +109,6 @@ public class InventoryCountFilter {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

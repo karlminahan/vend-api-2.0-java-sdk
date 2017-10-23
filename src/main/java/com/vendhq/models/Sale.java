@@ -46,7 +46,7 @@ public class Sale {
   private String deletedAt = null;
 
   @JsonProperty("version")
-  private Integer version = null;
+  private Long version = null;
 
   @JsonProperty("taxes")
   private List<SaleTax> taxes = null;
@@ -174,7 +174,7 @@ public class Sale {
     this.deletedAt = deletedAt;
   }
 
-  public Sale version(Integer version) {
+  public Sale version(Long version) {
     this.version = version;
     return this;
   }
@@ -184,11 +184,11 @@ public class Sale {
    * @return version
   **/
   @ApiModelProperty(value = "Auto-incrementing object version number.")
-  public Integer getVersion() {
+  public Long getVersion() {
     return version;
   }
 
-  public void setVersion(Integer version) {
+  public void setVersion(Long version) {
     this.version = version;
   }
 
@@ -199,7 +199,7 @@ public class Sale {
 
   public Sale addTaxesItem(SaleTax taxesItem) {
     if (this.taxes == null) {
-      this.taxes = new ArrayList<SaleTax>();
+      this.taxes = new ArrayList<>();
     }
     this.taxes.add(taxesItem);
     return this;
@@ -279,7 +279,7 @@ public class Sale {
 
   public Sale addLineItemsItem(LineItem lineItemsItem) {
     if (this.lineItems == null) {
-      this.lineItems = new ArrayList<LineItem>();
+      this.lineItems = new ArrayList<>();
     }
     this.lineItems.add(lineItemsItem);
     return this;
@@ -305,7 +305,7 @@ public class Sale {
 
   public Sale addPaymentsItem(Payment paymentsItem) {
     if (this.payments == null) {
-      this.payments = new ArrayList<Payment>();
+      this.payments = new ArrayList<>();
     }
     this.payments.add(paymentsItem);
     return this;
@@ -505,6 +505,6 @@ public class Sale {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

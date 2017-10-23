@@ -7,7 +7,6 @@ import com.vendhq.api.Pair;
 
 import javax.ws.rs.core.GenericType;
 
-import java.math.BigDecimal;
 import com.vendhq.models.PriceBookBase;
 import com.vendhq.models.PriceBookCollection;
 import com.vendhq.models.PriceBookResponse;
@@ -130,7 +129,7 @@ public class PriceBooksApi {
    * @return PriceBookCollection
    * @throws ApiException if fails to make API call
    */
-  public PriceBookCollection listPriceBooks(BigDecimal after, BigDecimal before, BigDecimal pageSize) throws ApiException {
+  public PriceBookCollection listPriceBooks(Long after, Long before, Integer pageSize) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables

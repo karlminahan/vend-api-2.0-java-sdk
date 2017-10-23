@@ -200,6 +200,6 @@ public class PriceBookBase {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 
