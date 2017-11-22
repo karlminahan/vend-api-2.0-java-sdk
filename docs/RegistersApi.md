@@ -52,7 +52,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **registerId** | **UUID**| Valid register ID. |
+ **registerId** | [**UUID**](.md)| Valid register ID. |
 
 ### Return type
 

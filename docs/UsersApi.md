@@ -52,7 +52,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userId** | **UUID**| Valid user ID. |
+ **userId** | [**UUID**](.md)| Valid user ID. |
 
 ### Return type
 

@@ -52,7 +52,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **saleId** | **UUID**| Valid sale ID. |
+ **saleId** | [**UUID**](.md)| Valid sale ID. |
 
 ### Return type
 

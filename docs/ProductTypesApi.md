@@ -52,7 +52,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **productTypeId** | **UUID**| Valid product type ID. |
+ **productTypeId** | [**UUID**](.md)| Valid product type ID. |
 
 ### Return type
 

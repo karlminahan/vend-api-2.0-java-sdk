@@ -59,7 +59,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consignmentId** | **UUID**| Valid consignment ID. |
+ **consignmentId** | [**UUID**](.md)| Valid consignment ID. |
  **body** | [**InventoryCountItemRequest**](InventoryCountItemRequest.md)|  |
 
 ### Return type
@@ -177,7 +177,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consignmentId** | **UUID**|  |
+ **consignmentId** | [**UUID**](.md)|  |
 
 ### Return type
 
@@ -296,7 +296,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consignmentId** | **UUID**| Valid consignment ID. |
+ **consignmentId** | [**UUID**](.md)| Valid consignment ID. |
 
 ### Return type
 
@@ -427,7 +427,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consignmentId** | **UUID**| The ID of the consignment for which products should be listed. |
+ **consignmentId** | [**UUID**](.md)| The ID of the consignment for which products should be listed. |
  **after** | **Long**| The lower limit for the version numbers to be included in the response. | [optional]
  **before** | **Long**| The upper limit for the version numbers to be included in the response. | [optional]
  **pageSize** | **Integer**| The maximum number of items to be returned in the response. | [optional]
@@ -490,7 +490,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consignmentId** | **UUID**| Valid consignment ID. |
+ **consignmentId** | [**UUID**](.md)| Valid consignment ID. |
  **body** | [**InventoryCount**](InventoryCount.md)|  |
 
 ### Return type

@@ -113,7 +113,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **customerId** | **UUID**| Valid customer ID. |
+ **customerId** | [**UUID**](.md)| Valid customer ID. |
 
 ### Return type
 
@@ -172,7 +172,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **customerId** | **UUID**| Valid customer ID. |
+ **customerId** | [**UUID**](.md)| Valid customer ID. |
 
 ### Return type
 
@@ -295,7 +295,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **customerId** | **UUID**| Valid customer ID. |
+ **customerId** | [**UUID**](.md)| Valid customer ID. |
  **body** | [**CustomerBase**](CustomerBase.md)|  |
 
 ### Return type

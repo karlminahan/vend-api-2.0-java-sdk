@@ -111,7 +111,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **productImageId** | **UUID**| Valid product ID. |
+ **productImageId** | [**UUID**](.md)| Valid product ID. |
 
 ### Return type
 
