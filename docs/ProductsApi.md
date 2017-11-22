@@ -57,7 +57,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **productId** | **UUID**| Valid product ID. |
+ **productId** | [**UUID**](.md)| Valid product ID. |
  **after** | **Long**| The lower limit for the version numbers to be included in the response. | [optional]
  **before** | **Long**| The upper limit for the version numbers to be included in the response. | [optional]
  **pageSize** | **Integer**| The maximum number of items to be returned in the response. | [optional]
@@ -119,7 +119,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **productId** | **UUID**| Valid product ID. |
+ **productId** | [**UUID**](.md)| Valid product ID. |
 
 ### Return type
 

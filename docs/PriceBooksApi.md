@@ -112,7 +112,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **priceBookId** | **UUID**| Valid price book ID. |
+ **priceBookId** | [**UUID**](.md)| Valid price book ID. |
 
 ### Return type
 

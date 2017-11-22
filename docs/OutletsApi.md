@@ -52,7 +52,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **outletId** | **UUID**| Valid Outlet ID. |
+ **outletId** | [**UUID**](.md)| Valid Outlet ID. |
 
 ### Return type
 

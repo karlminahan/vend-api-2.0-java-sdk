@@ -59,7 +59,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consignmentId** | **UUID**| Valid consignment ID. |
+ **consignmentId** | [**UUID**](.md)| Valid consignment ID. |
  **body** | [**InventoryCountItemRequest**](InventoryCountItemRequest.md)|  |
 
 ### Return type
@@ -177,7 +177,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consignmentId** | **UUID**|  |
+ **consignmentId** | [**UUID**](.md)|  |
 
 ### Return type
 
@@ -296,7 +296,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consignmentId** | **UUID**| Valid consignment ID. |
+ **consignmentId** | [**UUID**](.md)| Valid consignment ID. |
 
 ### Return type
 
@@ -313,7 +313,7 @@ Name | Type | Description  | Notes
 
 <a name="listConsignments"></a>
 # **listConsignments**
-> ConsignmentCollection listConsignments(after, before, pageSize)
+> ConsignmentCollection listConsignments(after, before, pageSize, outletId, type, status)
 
 List consignments
 
@@ -344,8 +344,11 @@ ConsignmentsApi apiInstance = new ConsignmentsApi();
 Long after = 789L; // Long | The lower limit for the version numbers to be included in the response.
 Long before = 789L; // Long | The upper limit for the version numbers to be included in the response.
 Integer pageSize = 56; // Integer | The maximum number of items to be returned in the response.
+String outletId = "outletId_example"; // String | The ID of the outlet which the consignment is targeted at.
+String type = "type_example"; // String | The type of consignments to be returned.
+String status = "status_example"; // String | The status of consignments to be returned.
 try {
-    ConsignmentCollection result = apiInstance.listConsignments(after, before, pageSize);
+    ConsignmentCollection result = apiInstance.listConsignments(after, before, pageSize, outletId, type, status);
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling ConsignmentsApi#listConsignments");
@@ -360,6 +363,9 @@ Name | Type | Description  | Notes
  **after** | **Long**| The lower limit for the version numbers to be included in the response. | [optional]
  **before** | **Long**| The upper limit for the version numbers to be included in the response. | [optional]
  **pageSize** | **Integer**| The maximum number of items to be returned in the response. | [optional]
+ **outletId** | **String**| The ID of the outlet which the consignment is targeted at. | [optional]
+ **type** | **String**| The type of consignments to be returned. | [optional] [enum: SUPPLIER, OUTLET, STOCKTAKE]
+ **status** | **String**| The status of consignments to be returned. | [optional] [enum: RECEIVED, CANCELLED, OPEN, STOCKTAKE, SENT, STOCKTAKE_COMPLETE, STOCKTAKE_IN_PROGRESS, STOCKTAKE_SCHEDULED, STOCKTAKE_IN_PROGRESS_PROCESSED]
 
 ### Return type
 
@@ -421,7 +427,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consignmentId** | **UUID**| The ID of the consignment for which products should be listed. |
+ **consignmentId** | [**UUID**](.md)| The ID of the consignment for which products should be listed. |
  **after** | **Long**| The lower limit for the version numbers to be included in the response. | [optional]
  **before** | **Long**| The upper limit for the version numbers to be included in the response. | [optional]
  **pageSize** | **Integer**| The maximum number of items to be returned in the response. | [optional]
@@ -484,7 +490,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consignmentId** | **UUID**| Valid consignment ID. |
+ **consignmentId** | [**UUID**](.md)| Valid consignment ID. |
  **body** | [**InventoryCount**](InventoryCount.md)|  |
 
 ### Return type
