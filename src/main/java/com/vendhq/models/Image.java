@@ -14,6 +14,7 @@
 package com.vendhq.models;
 
 import java.util.Objects;
+import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
@@ -30,7 +31,7 @@ public class Image {
   private UUID id = null;
 
   @JsonProperty("version")
-  private Integer version = null;
+  private Long version = null;
 
   @JsonProperty("product_id")
   private UUID productId = null;
@@ -59,7 +60,7 @@ public class Image {
     this.id = id;
   }
 
-  public Image version(Integer version) {
+  public Image version(Long version) {
     this.version = version;
     return this;
   }
@@ -69,11 +70,11 @@ public class Image {
    * @return version
   **/
   @ApiModelProperty(value = "Auto-incrementing object version number.")
-  public Integer getVersion() {
+  public Long getVersion() {
     return version;
   }
 
-  public void setVersion(Integer version) {
+  public void setVersion(Long version) {
     this.version = version;
   }
 
@@ -178,6 +179,6 @@ public class Image {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

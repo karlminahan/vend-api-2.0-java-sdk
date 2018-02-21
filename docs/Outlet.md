@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **physicalState** | **String** | Physical address, state. |  [optional]
 **physicalCountryId** | **String** | Physical address, country code. |  [optional]
 **deletedAt** | **String** | Deletion timestamp in UTC. |  [optional]
-**version** | **Integer** | Auto-incrementing object version number. |  [optional]
+**version** | **Long** | Auto-incrementing object version number. |  [optional]
 
 
 

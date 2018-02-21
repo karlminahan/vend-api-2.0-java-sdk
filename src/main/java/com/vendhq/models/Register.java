@@ -14,6 +14,7 @@
 package com.vendhq.models;
 
 import java.util.Objects;
+import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
@@ -83,7 +84,7 @@ public class Register {
   private String deletedAt = null;
 
   @JsonProperty("version")
-  private Integer version = null;
+  private Long version = null;
 
   public Register id(String id) {
     this.id = id;
@@ -427,7 +428,7 @@ public class Register {
     this.deletedAt = deletedAt;
   }
 
-  public Register version(Integer version) {
+  public Register version(Long version) {
     this.version = version;
     return this;
   }
@@ -437,11 +438,11 @@ public class Register {
    * @return version
   **/
   @ApiModelProperty(value = "Auto-incrementing object version number.")
-  public Integer getVersion() {
+  public Long getVersion() {
     return version;
   }
 
-  public void setVersion(Integer version) {
+  public void setVersion(Long version) {
     this.version = version;
   }
 
@@ -522,6 +523,6 @@ public class Register {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

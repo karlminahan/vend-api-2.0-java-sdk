@@ -7,7 +7,6 @@ import com.vendhq.api.Pair;
 
 import javax.ws.rs.core.GenericType;
 
-import java.math.BigDecimal;
 import java.util.UUID;
 import com.vendhq.models.UserCollection;
 import com.vendhq.models.UserResponse;
@@ -88,7 +87,7 @@ public class UsersApi {
    * @return UserCollection
    * @throws ApiException if fails to make API call
    */
-  public UserCollection listUsers(BigDecimal after, BigDecimal before, BigDecimal pageSize) throws ApiException {
+  public UserCollection listUsers(Long after, Long before, Integer pageSize) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables

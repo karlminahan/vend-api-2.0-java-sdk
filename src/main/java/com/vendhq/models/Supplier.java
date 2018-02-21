@@ -14,6 +14,7 @@
 package com.vendhq.models;
 
 import java.util.Objects;
+import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
@@ -35,7 +36,7 @@ public class Supplier {
   private String deletedAt = null;
 
   @JsonProperty("version")
-  private Integer version = null;
+  private Long version = null;
 
   public Supplier name(String name) {
     this.name = name;
@@ -91,7 +92,7 @@ public class Supplier {
     this.deletedAt = deletedAt;
   }
 
-  public Supplier version(Integer version) {
+  public Supplier version(Long version) {
     this.version = version;
     return this;
   }
@@ -101,11 +102,11 @@ public class Supplier {
    * @return version
   **/
   @ApiModelProperty(value = "Auto-incrementing object version number.")
-  public Integer getVersion() {
+  public Long getVersion() {
     return version;
   }
 
-  public void setVersion(Integer version) {
+  public void setVersion(Long version) {
     this.version = version;
   }
 
@@ -154,6 +155,6 @@ public class Supplier {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

@@ -14,6 +14,7 @@
 package com.vendhq.models;
 
 import java.util.Objects;
+import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
@@ -147,7 +148,7 @@ public class InventoryCount {
 
   public InventoryCount addFiltersItem(InventoryCountFilter filtersItem) {
     if (this.filters == null) {
-      this.filters = new ArrayList<InventoryCountFilter>();
+      this.filters = new ArrayList<>();
     }
     this.filters.add(filtersItem);
     return this;
@@ -235,6 +236,6 @@ public class InventoryCount {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

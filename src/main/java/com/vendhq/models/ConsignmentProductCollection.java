@@ -14,6 +14,7 @@
 package com.vendhq.models;
 
 import java.util.Objects;
+import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
@@ -38,7 +39,7 @@ public class ConsignmentProductCollection {
 
   public ConsignmentProductCollection addDataItem(InventoryCountItem dataItem) {
     if (this.data == null) {
-      this.data = new ArrayList<InventoryCountItem>();
+      this.data = new ArrayList<>();
     }
     this.data.add(dataItem);
     return this;
@@ -96,6 +97,6 @@ public class ConsignmentProductCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

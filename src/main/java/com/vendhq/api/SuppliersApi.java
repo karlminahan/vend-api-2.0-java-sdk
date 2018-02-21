@@ -7,7 +7,6 @@ import com.vendhq.api.Pair;
 
 import javax.ws.rs.core.GenericType;
 
-import java.math.BigDecimal;
 import com.vendhq.models.SupplierCollection;
 import com.vendhq.models.SupplierResponse;
 
@@ -87,7 +86,7 @@ public class SuppliersApi {
    * @return SupplierCollection
    * @throws ApiException if fails to make API call
    */
-  public SupplierCollection listSuppliers(BigDecimal after, BigDecimal before, BigDecimal pageSize) throws ApiException {
+  public SupplierCollection listSuppliers(Long after, Long before, Integer pageSize) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables

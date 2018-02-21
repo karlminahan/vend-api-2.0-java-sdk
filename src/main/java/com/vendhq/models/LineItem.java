@@ -14,6 +14,7 @@
 package com.vendhq.models;
 
 import java.util.Objects;
+import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
@@ -287,7 +288,7 @@ public class LineItem {
 
   public LineItem addTaxComponentsItem(LineItemTaxComponent taxComponentsItem) {
     if (this.taxComponents == null) {
-      this.taxComponents = new ArrayList<LineItemTaxComponent>();
+      this.taxComponents = new ArrayList<>();
     }
     this.taxComponents.add(taxComponentsItem);
     return this;
@@ -487,6 +488,6 @@ public class LineItem {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

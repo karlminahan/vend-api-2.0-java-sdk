@@ -7,7 +7,6 @@ import com.vendhq.api.Pair;
 
 import javax.ws.rs.core.GenericType;
 
-import java.math.BigDecimal;
 import com.vendhq.models.CustomerGroupCollection;
 
 import java.util.ArrayList;
@@ -44,7 +43,7 @@ public class CustomerGroupsApi {
    * @return CustomerGroupCollection
    * @throws ApiException if fails to make API call
    */
-  public CustomerGroupCollection listCustomerGroups(BigDecimal after, BigDecimal before, BigDecimal pageSize) throws ApiException {
+  public CustomerGroupCollection listCustomerGroups(Long after, Long before, Integer pageSize) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables

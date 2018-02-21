@@ -14,6 +14,7 @@
 package com.vendhq.models;
 
 import java.util.Objects;
+import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
@@ -39,7 +40,7 @@ public class OutletTax {
   private String deletedAt = null;
 
   @JsonProperty("version")
-  private Integer version = null;
+  private Long version = null;
 
   public OutletTax outletId(UUID outletId) {
     this.outletId = outletId;
@@ -113,7 +114,7 @@ public class OutletTax {
     this.deletedAt = deletedAt;
   }
 
-  public OutletTax version(Integer version) {
+  public OutletTax version(Long version) {
     this.version = version;
     return this;
   }
@@ -123,11 +124,11 @@ public class OutletTax {
    * @return version
   **/
   @ApiModelProperty(required = true, value = "Auto-incrementing object version number.")
-  public Integer getVersion() {
+  public Long getVersion() {
     return version;
   }
 
-  public void setVersion(Integer version) {
+  public void setVersion(Long version) {
     this.version = version;
   }
 
@@ -178,6 +179,6 @@ public class OutletTax {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

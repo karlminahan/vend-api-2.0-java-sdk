@@ -38,9 +38,9 @@ personal_token.setApiKey("YOUR API KEY");
 
 OutletProductTaxesApi apiInstance = new OutletProductTaxesApi();
 String outletId = "outletId_example"; // String | The ID of the outlet for which the results should be returned.
-BigDecimal after = new BigDecimal(); // BigDecimal | The lower limit for the version numbers to be included in the response.
-BigDecimal before = new BigDecimal(); // BigDecimal | The upper limit for the version numbers to be included in the response.
-BigDecimal pageSize = new BigDecimal(); // BigDecimal | The maximum number of items to be returned in the response.
+Long after = 789L; // Long | The lower limit for the version numbers to be included in the response.
+Long before = 789L; // Long | The upper limit for the version numbers to be included in the response.
+Integer pageSize = 56; // Integer | The maximum number of items to be returned in the response.
 Boolean deleted = true; // Boolean | Indicates whether deleted items should be included in the response.
 try {
     OutletTaxCollection result = apiInstance.listOutletProductTaxes(outletId, after, before, pageSize, deleted);
@@ -56,9 +56,9 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **outletId** | **String**| The ID of the outlet for which the results should be returned. | [optional]
- **after** | **BigDecimal**| The lower limit for the version numbers to be included in the response. | [optional]
- **before** | **BigDecimal**| The upper limit for the version numbers to be included in the response. | [optional]
- **pageSize** | **BigDecimal**| The maximum number of items to be returned in the response. | [optional]
+ **after** | **Long**| The lower limit for the version numbers to be included in the response. | [optional]
+ **before** | **Long**| The upper limit for the version numbers to be included in the response. | [optional]
+ **pageSize** | **Integer**| The maximum number of items to be returned in the response. | [optional]
  **deleted** | **Boolean**| Indicates whether deleted items should be included in the response. | [optional]
 
 ### Return type

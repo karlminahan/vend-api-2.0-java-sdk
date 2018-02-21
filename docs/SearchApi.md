@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 Search for resources
 
-This endpoint enables seaching for a few types of entities (currently sales, products and customers) by a number of different attributes associated with them. The description for every query parameter indicates which type of object the parameter can be used to search for.
+This endpoint allows integrators to search all of the most commonly used resources, **sales**, **products** and **customers**. Each type allowing search by a number of different parameters.  ### Supported resource types and attributes  - **Sales**   - date_from   - date_to   - status   - invoice_number   - customer_id   - user_id   - outlet_id - **Products**   - sku   - supplier_id   - brand_id   - tag_id   - product_type_id   - variant_parent_id - **Customers**   - customer_code   - first_name   - last_name   - company_name   - phone   - mobile   - email    ### Sorting and pagination  Unlike other endpoints in the API 2.0, search results from this endpoint can be sorted by any of the attributes above. Because of that, the default [pagination](https://docs.vendhq.com/v0.9/reference#section-api-2-0) mechanism is not appropriate for this endpoint. Instead, this endpoint uses &#x60;offset&#x60; and &#x60;page_size&#x60; attributes to handle search results spanning multiple pages.
 
 ### Example
 ```java

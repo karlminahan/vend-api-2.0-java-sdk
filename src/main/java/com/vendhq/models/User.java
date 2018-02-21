@@ -14,6 +14,7 @@
 package com.vendhq.models;
 
 import java.util.Objects;
+import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
@@ -113,7 +114,7 @@ public class User {
   private BigDecimal targetMonthly = null;
 
   @JsonProperty("version")
-  private Integer version = null;
+  private Long version = null;
 
   @JsonProperty("is_primary_user")
   private Boolean isPrimaryUser = null;
@@ -239,7 +240,7 @@ public class User {
 
   public User addRestrictedOutletIdsItem(UUID restrictedOutletIdsItem) {
     if (this.restrictedOutletIds == null) {
-      this.restrictedOutletIds = new ArrayList<UUID>();
+      this.restrictedOutletIds = new ArrayList<>();
     }
     this.restrictedOutletIds.add(restrictedOutletIdsItem);
     return this;
@@ -402,21 +403,21 @@ public class User {
     this.targetMonthly = targetMonthly;
   }
 
-  public User version(Integer version) {
+  public User version(Long version) {
     this.version = version;
     return this;
   }
 
    /**
-   * Auto-incrementing version number
+   * Auto-incrementing object version number.
    * @return version
   **/
-  @ApiModelProperty(required = true, value = "Auto-incrementing version number")
-  public Integer getVersion() {
+  @ApiModelProperty(required = true, value = "Auto-incrementing object version number.")
+  public Long getVersion() {
     return version;
   }
 
-  public void setVersion(Integer version) {
+  public void setVersion(Long version) {
     this.version = version;
   }
 
@@ -549,6 +550,6 @@ public class User {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

@@ -14,6 +14,7 @@
 package com.vendhq.models;
 
 import java.util.Objects;
+import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
@@ -29,7 +30,7 @@ import java.util.List;
 
 public class TaxCollection {
   @JsonProperty("data")
-  private List<Tax> data = new ArrayList<Tax>();
+  private List<Tax> data = new ArrayList<>();
 
   public TaxCollection data(List<Tax> data) {
     this.data = data;
@@ -93,6 +94,6 @@ public class TaxCollection {
     }
     return o.toString().replace("\n", "\n    ");
   }
-  
+
 }
 

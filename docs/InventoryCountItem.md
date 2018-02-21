@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **createdAt** | **String** | The creation timestamp in UTC. | 
 **updatedAt** | **String** | Last update timestamp in UTC. | 
 **deletedAt** | **String** | The deletion timestamp in UTC. | 
-**version** | **Integer** | Auto-incrementing object version number. | 
+**version** | **Long** | Auto-incrementing object version number. | 
 
 
 

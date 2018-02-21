@@ -7,7 +7,6 @@ import com.vendhq.api.Pair;
 
 import javax.ws.rs.core.GenericType;
 
-import java.math.BigDecimal;
 import com.vendhq.models.OutletCollection;
 import com.vendhq.models.OutletResponse;
 import java.util.UUID;
@@ -85,10 +84,11 @@ public class OutletsApi {
    * @param after The lower limit for the version numbers to be included in the response. (optional)
    * @param before The upper limit for the version numbers to be included in the response. (optional)
    * @param pageSize The maximum number of items to be returned in the response. (optional)
+   * @param deleted Indicates whether deleted items should be included in the response. (optional)
    * @return OutletCollection
    * @throws ApiException if fails to make API call
    */
-  public OutletCollection listOutlets(BigDecimal after, BigDecimal before, BigDecimal pageSize) throws ApiException {
+  public OutletCollection listOutlets(Long after, Long before, Integer pageSize, Boolean deleted) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -102,6 +102,7 @@ public class OutletsApi {
     localVarQueryParams.addAll(apiClient.parameterToPairs("", "after", after));
     localVarQueryParams.addAll(apiClient.parameterToPairs("", "before", before));
     localVarQueryParams.addAll(apiClient.parameterToPairs("", "page_size", pageSize));
+    localVarQueryParams.addAll(apiClient.parameterToPairs("", "deleted", deleted));
 
     
     

@@ -7,7 +7,6 @@ import com.vendhq.api.Pair;
 
 import javax.ws.rs.core.GenericType;
 
-import java.math.BigDecimal;
 import com.vendhq.models.CustomerBase;
 import com.vendhq.models.CustomerCollection;
 import com.vendhq.models.CustomerResponse;
@@ -171,7 +170,7 @@ public class CustomersApi {
    * @return CustomerCollection
    * @throws ApiException if fails to make API call
    */
-  public CustomerCollection listCustomers(BigDecimal after, BigDecimal before, BigDecimal pageSize) throws ApiException {
+  public CustomerCollection listCustomers(Long after, Long before, Integer pageSize) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables

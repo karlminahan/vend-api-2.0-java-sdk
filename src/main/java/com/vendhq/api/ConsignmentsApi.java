@@ -7,7 +7,6 @@ import com.vendhq.api.Pair;
 
 import javax.ws.rs.core.GenericType;
 
-import java.math.BigDecimal;
 import com.vendhq.models.ConsignmentCollection;
 import com.vendhq.models.ConsignmentProductCollection;
 import com.vendhq.models.ConsignmentResponse;
@@ -267,10 +266,13 @@ public class ConsignmentsApi {
    * @param after The lower limit for the version numbers to be included in the response. (optional)
    * @param before The upper limit for the version numbers to be included in the response. (optional)
    * @param pageSize The maximum number of items to be returned in the response. (optional)
+   * @param outletId The ID of the outlet which the consignment is targeted at. (optional)
+   * @param type The type of consignments to be returned. (optional)
+   * @param status The status of consignments to be returned. (optional)
    * @return ConsignmentCollection
    * @throws ApiException if fails to make API call
    */
-  public ConsignmentCollection listConsignments(BigDecimal after, BigDecimal before, BigDecimal pageSize) throws ApiException {
+  public ConsignmentCollection listConsignments(Long after, Long before, Integer pageSize, String outletId, String type, String status) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -284,6 +286,9 @@ public class ConsignmentsApi {
     localVarQueryParams.addAll(apiClient.parameterToPairs("", "after", after));
     localVarQueryParams.addAll(apiClient.parameterToPairs("", "before", before));
     localVarQueryParams.addAll(apiClient.parameterToPairs("", "page_size", pageSize));
+    localVarQueryParams.addAll(apiClient.parameterToPairs("", "outlet_id", outletId));
+    localVarQueryParams.addAll(apiClient.parameterToPairs("", "type", type));
+    localVarQueryParams.addAll(apiClient.parameterToPairs("", "status", status));
 
     
     
@@ -312,7 +317,7 @@ public class ConsignmentsApi {
    * @return ConsignmentProductCollection
    * @throws ApiException if fails to make API call
    */
-  public ConsignmentProductCollection listProductsByConsignmentID(UUID consignmentId, BigDecimal after, BigDecimal before, BigDecimal pageSize) throws ApiException {
+  public ConsignmentProductCollection listProductsByConsignmentID(UUID consignmentId, Long after, Long before, Integer pageSize) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'consignmentId' is set

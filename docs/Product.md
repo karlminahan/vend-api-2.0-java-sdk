@@ -30,7 +30,7 @@ Name | Type | Description | Notes
 **createdAt** | **String** | Creation timestamp in UTC. |  [optional]
 **updatedAt** | **String** | Last update timestamp in UTC. |  [optional]
 **deletedAt** | **String** | Deletion timestamp in UTC. |  [optional]
-**version** | **Integer** | Auto-incrementing object version number. |  [optional]
+**version** | **Long** | Auto-incrementing object version number. |  [optional]
 
 
 

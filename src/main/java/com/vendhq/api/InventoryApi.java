@@ -7,7 +7,6 @@ import com.vendhq.api.Pair;
 
 import javax.ws.rs.core.GenericType;
 
-import java.math.BigDecimal;
 import com.vendhq.models.InventoryCollection;
 
 import java.util.ArrayList;
@@ -44,7 +43,7 @@ public class InventoryApi {
    * @return InventoryCollection
    * @throws ApiException if fails to make API call
    */
-  public InventoryCollection listInventoryRecords(BigDecimal after, BigDecimal before, BigDecimal pageSize) throws ApiException {
+  public InventoryCollection listInventoryRecords(Long after, Long before, Integer pageSize) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
