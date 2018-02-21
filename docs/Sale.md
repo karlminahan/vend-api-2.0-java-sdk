@@ -20,14 +20,14 @@ Name | Type | Description | Notes
 **totalPrice** | **Double** | Total (tax exclusive) price of the sale |  [optional]
 **totalTax** | **Double** | Total tax. |  [optional]
 **totalLoyalty** | **Double** | Total incurred loyalty. |  [optional]
-**taxes** | [**List&lt;SaleTax&gt;**](SaleTax.md) | Collection of taxes. |  [optional]
-**lineItems** | [**List&lt;LineItem&gt;**](LineItem.md) | A collection of line items. |  [optional]
-**payments** | [**List&lt;Payment&gt;**](Payment.md) | Collection of payments. |  [optional]
 **saleDate** | **String** | Sale timestamp in UTC. |  [optional]
 **createdAt** | **String** | Creation timestamp in UTC. |  [optional]
 **updatedAt** | **String** | Last update timestamp in UTC. |  [optional]
 **deletedAt** | **String** | Deletion timestamp in UTC. |  [optional]
 **version** | **Long** | Auto-incrementing object version number. |  [optional]
+**taxes** | [**List&lt;SaleTax&gt;**](SaleTax.md) | Collection of taxes. |  [optional]
+**lineItems** | [**List&lt;LineItem&gt;**](LineItem.md) | A collection of line items. |  [optional]
+**payments** | [**List&lt;Payment&gt;**](Payment.md) | Collection of payments. |  [optional]
 
 
 

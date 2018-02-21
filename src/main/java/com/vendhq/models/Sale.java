@@ -79,15 +79,6 @@ public class Sale {
   @JsonProperty("total_loyalty")
   private Double totalLoyalty = null;
 
-  @JsonProperty("taxes")
-  private List<SaleTax> taxes = null;
-
-  @JsonProperty("line_items")
-  private List<LineItem> lineItems = null;
-
-  @JsonProperty("payments")
-  private List<Payment> payments = null;
-
   @JsonProperty("sale_date")
   private String saleDate = null;
 
@@ -102,6 +93,15 @@ public class Sale {
 
   @JsonProperty("version")
   private Long version = null;
+
+  @JsonProperty("taxes")
+  private List<SaleTax> taxes = null;
+
+  @JsonProperty("line_items")
+  private List<LineItem> lineItems = null;
+
+  @JsonProperty("payments")
+  private List<Payment> payments = null;
 
   public Sale id(String id) {
     this.id = id;
@@ -391,84 +391,6 @@ public class Sale {
     this.totalLoyalty = totalLoyalty;
   }
 
-  public Sale taxes(List<SaleTax> taxes) {
-    this.taxes = taxes;
-    return this;
-  }
-
-  public Sale addTaxesItem(SaleTax taxesItem) {
-    if (this.taxes == null) {
-      this.taxes = new ArrayList<>();
-    }
-    this.taxes.add(taxesItem);
-    return this;
-  }
-
-   /**
-   * Collection of taxes.
-   * @return taxes
-  **/
-  @ApiModelProperty(value = "Collection of taxes.")
-  public List<SaleTax> getTaxes() {
-    return taxes;
-  }
-
-  public void setTaxes(List<SaleTax> taxes) {
-    this.taxes = taxes;
-  }
-
-  public Sale lineItems(List<LineItem> lineItems) {
-    this.lineItems = lineItems;
-    return this;
-  }
-
-  public Sale addLineItemsItem(LineItem lineItemsItem) {
-    if (this.lineItems == null) {
-      this.lineItems = new ArrayList<>();
-    }
-    this.lineItems.add(lineItemsItem);
-    return this;
-  }
-
-   /**
-   * A collection of line items.
-   * @return lineItems
-  **/
-  @ApiModelProperty(value = "A collection of line items.")
-  public List<LineItem> getLineItems() {
-    return lineItems;
-  }
-
-  public void setLineItems(List<LineItem> lineItems) {
-    this.lineItems = lineItems;
-  }
-
-  public Sale payments(List<Payment> payments) {
-    this.payments = payments;
-    return this;
-  }
-
-  public Sale addPaymentsItem(Payment paymentsItem) {
-    if (this.payments == null) {
-      this.payments = new ArrayList<>();
-    }
-    this.payments.add(paymentsItem);
-    return this;
-  }
-
-   /**
-   * Collection of payments.
-   * @return payments
-  **/
-  @ApiModelProperty(value = "Collection of payments.")
-  public List<Payment> getPayments() {
-    return payments;
-  }
-
-  public void setPayments(List<Payment> payments) {
-    this.payments = payments;
-  }
-
   public Sale saleDate(String saleDate) {
     this.saleDate = saleDate;
     return this;
@@ -559,6 +481,84 @@ public class Sale {
     this.version = version;
   }
 
+  public Sale taxes(List<SaleTax> taxes) {
+    this.taxes = taxes;
+    return this;
+  }
+
+  public Sale addTaxesItem(SaleTax taxesItem) {
+    if (this.taxes == null) {
+      this.taxes = new ArrayList<>();
+    }
+    this.taxes.add(taxesItem);
+    return this;
+  }
+
+   /**
+   * Collection of taxes.
+   * @return taxes
+  **/
+  @ApiModelProperty(value = "Collection of taxes.")
+  public List<SaleTax> getTaxes() {
+    return taxes;
+  }
+
+  public void setTaxes(List<SaleTax> taxes) {
+    this.taxes = taxes;
+  }
+
+  public Sale lineItems(List<LineItem> lineItems) {
+    this.lineItems = lineItems;
+    return this;
+  }
+
+  public Sale addLineItemsItem(LineItem lineItemsItem) {
+    if (this.lineItems == null) {
+      this.lineItems = new ArrayList<>();
+    }
+    this.lineItems.add(lineItemsItem);
+    return this;
+  }
+
+   /**
+   * A collection of line items.
+   * @return lineItems
+  **/
+  @ApiModelProperty(value = "A collection of line items.")
+  public List<LineItem> getLineItems() {
+    return lineItems;
+  }
+
+  public void setLineItems(List<LineItem> lineItems) {
+    this.lineItems = lineItems;
+  }
+
+  public Sale payments(List<Payment> payments) {
+    this.payments = payments;
+    return this;
+  }
+
+  public Sale addPaymentsItem(Payment paymentsItem) {
+    if (this.payments == null) {
+      this.payments = new ArrayList<>();
+    }
+    this.payments.add(paymentsItem);
+    return this;
+  }
+
+   /**
+   * Collection of payments.
+   * @return payments
+  **/
+  @ApiModelProperty(value = "Collection of payments.")
+  public List<Payment> getPayments() {
+    return payments;
+  }
+
+  public void setPayments(List<Payment> payments) {
+    this.payments = payments;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -585,19 +585,19 @@ public class Sale {
         Objects.equals(this.totalPrice, sale.totalPrice) &&
         Objects.equals(this.totalTax, sale.totalTax) &&
         Objects.equals(this.totalLoyalty, sale.totalLoyalty) &&
-        Objects.equals(this.taxes, sale.taxes) &&
-        Objects.equals(this.lineItems, sale.lineItems) &&
-        Objects.equals(this.payments, sale.payments) &&
         Objects.equals(this.saleDate, sale.saleDate) &&
         Objects.equals(this.createdAt, sale.createdAt) &&
         Objects.equals(this.updatedAt, sale.updatedAt) &&
         Objects.equals(this.deletedAt, sale.deletedAt) &&
-        Objects.equals(this.version, sale.version);
+        Objects.equals(this.version, sale.version) &&
+        Objects.equals(this.taxes, sale.taxes) &&
+        Objects.equals(this.lineItems, sale.lineItems) &&
+        Objects.equals(this.payments, sale.payments);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, outletId, registerId, userId, customerId, invoiceNumber, invoiceSequence, source, sourceId, status, note, shortCode, returnFor, totalPrice, totalTax, totalLoyalty, taxes, lineItems, payments, saleDate, createdAt, updatedAt, deletedAt, version);
+    return Objects.hash(id, outletId, registerId, userId, customerId, invoiceNumber, invoiceSequence, source, sourceId, status, note, shortCode, returnFor, totalPrice, totalTax, totalLoyalty, saleDate, createdAt, updatedAt, deletedAt, version, taxes, lineItems, payments);
   }
 
 
@@ -622,14 +622,14 @@ public class Sale {
     sb.append("    totalPrice: ").append(toIndentedString(totalPrice)).append("\n");
     sb.append("    totalTax: ").append(toIndentedString(totalTax)).append("\n");
     sb.append("    totalLoyalty: ").append(toIndentedString(totalLoyalty)).append("\n");
-    sb.append("    taxes: ").append(toIndentedString(taxes)).append("\n");
-    sb.append("    lineItems: ").append(toIndentedString(lineItems)).append("\n");
-    sb.append("    payments: ").append(toIndentedString(payments)).append("\n");
     sb.append("    saleDate: ").append(toIndentedString(saleDate)).append("\n");
     sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
     sb.append("    updatedAt: ").append(toIndentedString(updatedAt)).append("\n");
     sb.append("    deletedAt: ").append(toIndentedString(deletedAt)).append("\n");
     sb.append("    version: ").append(toIndentedString(version)).append("\n");
+    sb.append("    taxes: ").append(toIndentedString(taxes)).append("\n");
+    sb.append("    lineItems: ").append(toIndentedString(lineItems)).append("\n");
+    sb.append("    payments: ").append(toIndentedString(payments)).append("\n");
     sb.append("}");
     return sb.toString();
   }
