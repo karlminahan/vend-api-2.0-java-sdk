@@ -52,29 +52,26 @@ public class SearchApi {
    * @param outletId **SALES** The &#x60;ID&#x60; of the outlet associated with the sales. (optional)
    * @param dateFrom **SALES** Lower limit for the sale date as UTC timestamp. Format: &#x60;2016-08-08T12:00:00Z&#x60;. (optional)
    * @param dateTo **SALES** Upper limit for the sale date as UTC timestamp. Format: &#x60;2016-08-08T12:00:00Z&#x60;. (optional)
-   * @param sku __PRODUCTS__ The SKU of products to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param sku2 __PRODUCTS__ The SKU of products to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param supplierId __PRODUCTS__ The ID of the supplier associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param supplierId2 __PRODUCTS__ The ID of the supplier associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param brandId __PRODUCTS__ The ID of the brand associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param brandId2 __PRODUCTS__ The ID of the brand associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param tagId __PRODUCTS__ The ID of the tag associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param tagId2 __PRODUCTS__ The ID of the brand associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param productTypeId __PRODUCTS__ The ID of the product type associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param productTypeId2 __PRODUCTS__ The ID of the product type associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param variantParentId __PRODUCTS__ The ID of the variant parent product associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param variantParentId2 __PRODUCTS__ The ID of the variant parent product associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param sku **PRODUCTS** The SKU of products to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param sku2 **PRODUCTS** The SKU of products to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param supplierId **PRODUCTS** The ID of the supplier associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param supplierId2 **PRODUCTS** The ID of the supplier associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param brandId **PRODUCTS** The ID of the brand associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param brandId2 **PRODUCTS** The ID of the brand associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param tagId **PRODUCTS** The ID of the tag associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param tagId2 **PRODUCTS** The ID of the brand associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param productTypeId **PRODUCTS** The ID of the product type associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param productTypeId2 **PRODUCTS** The ID of the product type associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param variantParentId **PRODUCTS** The ID of the variant parent product associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param variantParentId2 **PRODUCTS** The ID of the variant parent product associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
    * @param customerCode **CUSTOMERS** The &#x60;customer_code&#x60; associated with the customer to find. (optional)
    * @param firstName **CUSTOMERS** The &#x60;first_name&#x60; for the customers to find. (optional)
    * @param lastName **CUSTOMERS** The &#x60;last_name&#x60; for the customers to find. (optional)
    * @param companyName **CUSTOMERS** The &#x60;company_name&#x60; for the customers to find. (optional)
-   * @param phone **CUSTOMERS** The &#x60;phone_number&#x60; for the customer(s) to find. (optional)
-   * @param mobile **CUSTOMERS** The &#x60;mobile&#x60; phone number for the customer(s) to find. (optional)
-   * @param email **CUSTOMERS** The &#x60;email&#x60; for the customer(s) to find. (optional)
    * @return SearchResponse
    * @throws ApiException if fails to make API call
    */
-  public SearchResponse search(String type, String orderBy, String orderDirection, Integer pageSize, Integer offset, String id, String id2, Boolean deleted, String status, String invoiceNumber, String customerId, String userId, String outletId, String dateFrom, String dateTo, String sku, String sku2, String supplierId, String supplierId2, String brandId, String brandId2, String tagId, String tagId2, String productTypeId, String productTypeId2, String variantParentId, String variantParentId2, String customerCode, String firstName, String lastName, String companyName, String phone, String mobile, String email) throws ApiException {
+  public SearchResponse search(String type, String orderBy, String orderDirection, Integer pageSize, Integer offset, String id, String id2, Boolean deleted, String status, String invoiceNumber, String customerId, String userId, String outletId, String dateFrom, String dateTo, String sku, String sku2, String supplierId, String supplierId2, String brandId, String brandId2, String tagId, String tagId2, String productTypeId, String productTypeId2, String variantParentId, String variantParentId2, String customerCode, String firstName, String lastName, String companyName) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'type' is set
@@ -121,9 +118,6 @@ public class SearchApi {
     localVarQueryParams.addAll(apiClient.parameterToPairs("", "first_name", firstName));
     localVarQueryParams.addAll(apiClient.parameterToPairs("", "last_name", lastName));
     localVarQueryParams.addAll(apiClient.parameterToPairs("", "company_name", companyName));
-    localVarQueryParams.addAll(apiClient.parameterToPairs("", "phone", phone));
-    localVarQueryParams.addAll(apiClient.parameterToPairs("", "mobile", mobile));
-    localVarQueryParams.addAll(apiClient.parameterToPairs("", "email", email));
 
     
     
