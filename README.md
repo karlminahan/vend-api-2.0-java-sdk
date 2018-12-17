@@ -107,6 +107,7 @@ Class | Method | HTTP request | Description
 *BrandsApi* | [**getBrandByID**](docs/BrandsApi.md#getBrandByID) | **GET** /brands/{brand_id} | Get a single brand
 *BrandsApi* | [**listBrands**](docs/BrandsApi.md#listBrands) | **GET** /brands | List brands
 *ChannelRequestLogApi* | [**getSingleRequest**](docs/ChannelRequestLogApi.md#getSingleRequest) | **GET** /channel_requests/{request_log_id} | Get a single request log
+*ChannelRequestLogApi* | [**getSingleRequestText**](docs/ChannelRequestLogApi.md#getSingleRequestText) | **GET** /channel_requests/{request_log_id}.txt | Get a single request log as text
 *ChannelRequestLogApi* | [**listChannels**](docs/ChannelRequestLogApi.md#listChannels) | **GET** /channels | List channel records
 *ChannelRequestLogApi* | [**listRequests**](docs/ChannelRequestLogApi.md#listRequests) | **GET** /channel_requests | List request records
 *ConsignmentsApi* | [**adjustInventoryItemCount**](docs/ConsignmentsApi.md#adjustInventoryItemCount) | **POST** /consignments/{consignment_id}/products | Adjust the inventory item count

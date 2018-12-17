@@ -5,6 +5,7 @@ All URIs are relative to *https://domain_prefix.vendhq.com/api/2.0*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getSingleRequest**](ChannelRequestLogApi.md#getSingleRequest) | **GET** /channel_requests/{request_log_id} | Get a single request log
+[**getSingleRequestText**](ChannelRequestLogApi.md#getSingleRequestText) | **GET** /channel_requests/{request_log_id}.txt | Get a single request log as text
 [**listChannels**](ChannelRequestLogApi.md#listChannels) | **GET** /channels | List channel records
 [**listRequests**](ChannelRequestLogApi.md#listRequests) | **GET** /channel_requests | List request records
 
@@ -67,6 +68,65 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
+
+<a name="getSingleRequestText"></a>
+# **getSingleRequestText**
+> String getSingleRequestText(requestLogId)
+
+Get a single request log as text
+
+Returns a text representation of a single request log entry with a specific ID.
+
+### Example
+```java
+// Import classes:
+//import com.vendhq.api.ApiClient;
+//import com.vendhq.api.ApiException;
+//import com.vendhq.api.Configuration;
+//import com.vendhq.api.auth.*;
+//import com.vendhq.api.ChannelRequestLogApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure OAuth2 access token for authorization: oauth
+OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
+oauth.setAccessToken("YOUR ACCESS TOKEN");
+
+// Configure API key authorization: personal_token
+ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
+personal_token.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Bearer" (defaults to null)
+//personal_token.setApiKeyPrefix("Bearer");
+
+ChannelRequestLogApi apiInstance = new ChannelRequestLogApi();
+String requestLogId = "requestLogId_example"; // String | 
+try {
+    String result = apiInstance.getSingleRequestText(requestLogId);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling ChannelRequestLogApi#getSingleRequestText");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **requestLogId** | **String**|  |
+
+### Return type
+
+**String**
+
+### Authorization
+
+[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: text/plain
 
 <a name="listChannels"></a>
 # **listChannels**

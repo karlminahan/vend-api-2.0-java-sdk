@@ -80,6 +80,48 @@ public class ChannelRequestLogApi {
     return apiClient.invokeAPI(localVarPath, "GET", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);
       }
   /**
+   * Get a single request log as text
+   * Returns a text representation of a single request log entry with a specific ID.
+   * @param requestLogId  (required)
+   * @return String
+   * @throws ApiException if fails to make API call
+   */
+  public String getSingleRequestText(String requestLogId) throws ApiException {
+    Object localVarPostBody = null;
+    
+    // verify the required parameter 'requestLogId' is set
+    if (requestLogId == null) {
+      throw new ApiException(400, "Missing the required parameter 'requestLogId' when calling getSingleRequestText");
+    }
+    
+    // create path and map variables
+    String localVarPath = "/channel_requests/{request_log_id}.txt"
+      .replaceAll("\\{" + "request_log_id" + "\\}", apiClient.escapeString(requestLogId.toString()));
+
+    // query params
+    List<Pair> localVarQueryParams = new ArrayList<Pair>();
+    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+
+    
+    
+    final String[] localVarAccepts = {
+      "text/plain"
+    };
+    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
+
+    final String[] localVarContentTypes = {
+      "application/json"
+    };
+    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
+
+    String[] localVarAuthNames = new String[] { "oauth", "personal_token" };
+
+    GenericType<String> localVarReturnType = new GenericType<String>() {};
+    return apiClient.invokeAPI(localVarPath, "GET", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);
+      }
+  /**
    * List channel records
    * Returns a list of configured channels.
    * @return ChannelCollectionResponse
