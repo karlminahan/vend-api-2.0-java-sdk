@@ -106,6 +106,9 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *BrandsApi* | [**getBrandByID**](docs/BrandsApi.md#getBrandByID) | **GET** /brands/{brand_id} | Get a single brand
 *BrandsApi* | [**listBrands**](docs/BrandsApi.md#listBrands) | **GET** /brands | List brands
+*ChannelRequestLogApi* | [**getSingleRequest**](docs/ChannelRequestLogApi.md#getSingleRequest) | **GET** /channel_requests/{request_log_id} | Get a single request log
+*ChannelRequestLogApi* | [**listChannels**](docs/ChannelRequestLogApi.md#listChannels) | **GET** /channels | List channel records
+*ChannelRequestLogApi* | [**listRequests**](docs/ChannelRequestLogApi.md#listRequests) | **GET** /channel_requests | List request records
 *ConsignmentsApi* | [**adjustInventoryItemCount**](docs/ConsignmentsApi.md#adjustInventoryItemCount) | **POST** /consignments/{consignment_id}/products | Adjust the inventory item count
 *ConsignmentsApi* | [**createInventoryCount**](docs/ConsignmentsApi.md#createInventoryCount) | **POST** /consignments | Create an inventory count
 *ConsignmentsApi* | [**deleteConsignmentByID**](docs/ConsignmentsApi.md#deleteConsignmentByID) | **DELETE** /consignments/{consignment_id} | Delete a consignment
@@ -158,6 +161,8 @@ Class | Method | HTTP request | Description
  - [BrandCollection](docs/BrandCollection.md)
  - [BrandResponse](docs/BrandResponse.md)
  - [BrandSample](docs/BrandSample.md)
+ - [Channel](docs/Channel.md)
+ - [ChannelCollectionResponse](docs/ChannelCollectionResponse.md)
  - [Consignment](docs/Consignment.md)
  - [ConsignmentCollection](docs/ConsignmentCollection.md)
  - [ConsignmentProductCollection](docs/ConsignmentProductCollection.md)
@@ -206,6 +211,9 @@ Class | Method | HTTP request | Description
  - [Register](docs/Register.md)
  - [RegisterCollection](docs/RegisterCollection.md)
  - [RegisterResponse](docs/RegisterResponse.md)
+ - [RequestCollectionResponse](docs/RequestCollectionResponse.md)
+ - [RequestLog](docs/RequestLog.md)
+ - [RequestSingleResponse](docs/RequestSingleResponse.md)
  - [Sale](docs/Sale.md)
  - [SaleCollection](docs/SaleCollection.md)
  - [SaleResponse](docs/SaleResponse.md)
