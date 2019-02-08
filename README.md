@@ -130,7 +130,6 @@ Class | Method | HTTP request | Description
 *OutletsApi* | [**listOutlets**](docs/OutletsApi.md#listOutlets) | **GET** /outlets | List outlets
 *PaymentTypesApi* | [**listPaymentTypes**](docs/PaymentTypesApi.md#listPaymentTypes) | **GET** /payment_types | List payment types
 *PriceBookProductsApi* | [**listPriceBookProducts**](docs/PriceBookProductsApi.md#listPriceBookProducts) | **GET** /price_book_products | List price book products
-*PriceBooksApi* | [**createPriceBook**](docs/PriceBooksApi.md#createPriceBook) | **POST** /price_books | Create a price book
 *PriceBooksApi* | [**getPriceBookbyID**](docs/PriceBooksApi.md#getPriceBookbyID) | **GET** /price_books/{price_book_id} | Get a single price book
 *PriceBooksApi* | [**listPriceBooks**](docs/PriceBooksApi.md#listPriceBooks) | **GET** /price_books | List price books
 *ProductImagesApi* | [**deleteProductImageByID**](docs/ProductImagesApi.md#deleteProductImageByID) | **DELETE** /product_images/{product_image_id} | Delete a product_image
