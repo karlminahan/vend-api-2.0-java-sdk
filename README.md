@@ -106,6 +106,10 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *BrandsApi* | [**getBrandByID**](docs/BrandsApi.md#getBrandByID) | **GET** /brands/{brand_id} | Get a single brand
 *BrandsApi* | [**listBrands**](docs/BrandsApi.md#listBrands) | **GET** /brands | List brands
+*ChannelRequestLogApi* | [**getSingleRequest**](docs/ChannelRequestLogApi.md#getSingleRequest) | **GET** /channel_requests/{request_log_id} | Get a single request log
+*ChannelRequestLogApi* | [**getSingleRequestText**](docs/ChannelRequestLogApi.md#getSingleRequestText) | **GET** /channel_requests/{request_log_id}.txt | Get a single request log as text
+*ChannelRequestLogApi* | [**listChannels**](docs/ChannelRequestLogApi.md#listChannels) | **GET** /channels | List channel records
+*ChannelRequestLogApi* | [**listRequests**](docs/ChannelRequestLogApi.md#listRequests) | **GET** /channel_requests | List request records
 *ConsignmentsApi* | [**adjustInventoryItemCount**](docs/ConsignmentsApi.md#adjustInventoryItemCount) | **POST** /consignments/{consignment_id}/products | Adjust the inventory item count
 *ConsignmentsApi* | [**createInventoryCount**](docs/ConsignmentsApi.md#createInventoryCount) | **POST** /consignments | Create an inventory count
 *ConsignmentsApi* | [**deleteConsignmentByID**](docs/ConsignmentsApi.md#deleteConsignmentByID) | **DELETE** /consignments/{consignment_id} | Delete a consignment
@@ -126,7 +130,6 @@ Class | Method | HTTP request | Description
 *OutletsApi* | [**listOutlets**](docs/OutletsApi.md#listOutlets) | **GET** /outlets | List outlets
 *PaymentTypesApi* | [**listPaymentTypes**](docs/PaymentTypesApi.md#listPaymentTypes) | **GET** /payment_types | List payment types
 *PriceBookProductsApi* | [**listPriceBookProducts**](docs/PriceBookProductsApi.md#listPriceBookProducts) | **GET** /price_book_products | List price book products
-*PriceBooksApi* | [**createPriceBook**](docs/PriceBooksApi.md#createPriceBook) | **POST** /price_books | Create a price book
 *PriceBooksApi* | [**getPriceBookbyID**](docs/PriceBooksApi.md#getPriceBookbyID) | **GET** /price_books/{price_book_id} | Get a single price book
 *PriceBooksApi* | [**listPriceBooks**](docs/PriceBooksApi.md#listPriceBooks) | **GET** /price_books | List price books
 *ProductImagesApi* | [**deleteProductImageByID**](docs/ProductImagesApi.md#deleteProductImageByID) | **DELETE** /product_images/{product_image_id} | Delete a product_image
@@ -158,6 +161,8 @@ Class | Method | HTTP request | Description
  - [BrandCollection](docs/BrandCollection.md)
  - [BrandResponse](docs/BrandResponse.md)
  - [BrandSample](docs/BrandSample.md)
+ - [Channel](docs/Channel.md)
+ - [ChannelCollectionResponse](docs/ChannelCollectionResponse.md)
  - [Consignment](docs/Consignment.md)
  - [ConsignmentCollection](docs/ConsignmentCollection.md)
  - [ConsignmentProductCollection](docs/ConsignmentProductCollection.md)
@@ -206,6 +211,9 @@ Class | Method | HTTP request | Description
  - [Register](docs/Register.md)
  - [RegisterCollection](docs/RegisterCollection.md)
  - [RegisterResponse](docs/RegisterResponse.md)
+ - [RequestCollectionResponse](docs/RequestCollectionResponse.md)
+ - [RequestLog](docs/RequestLog.md)
+ - [RequestSingleResponse](docs/RequestSingleResponse.md)
  - [Sale](docs/Sale.md)
  - [SaleCollection](docs/SaleCollection.md)
  - [SaleResponse](docs/SaleResponse.md)
