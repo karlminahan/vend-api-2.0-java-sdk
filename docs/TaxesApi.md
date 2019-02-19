@@ -1,6 +1,6 @@
 # TaxesApi
 
-All URIs are relative to *https://domain_prefix.vendhq.com/api/2.0*
+All URIs are relative to *https://{domain_prefix}.vendhq.com/api/2.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

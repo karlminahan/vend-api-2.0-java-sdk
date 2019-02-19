@@ -100,7 +100,7 @@ public class BrandsApiExample {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://domain_prefix.vendhq.com/api/2.0*
+All URIs are relative to *https://{domain_prefix}.vendhq.com/api/2.0*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
