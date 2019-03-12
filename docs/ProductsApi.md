@@ -29,10 +29,6 @@ Returns inventory data for a single product in all the outlets.
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure OAuth2 access token for authorization: oauth
-OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
-oauth.setAccessToken("YOUR ACCESS TOKEN");
-
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
@@ -68,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
+[personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 
@@ -93,10 +89,6 @@ Returns a single product object with a given ID.
 //import com.vendhq.api.ProductsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
-
-// Configure OAuth2 access token for authorization: oauth
-OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
-oauth.setAccessToken("YOUR ACCESS TOKEN");
 
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
@@ -127,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
+[personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 
@@ -152,10 +144,6 @@ Returns a paginated list of products.
 //import com.vendhq.api.ProductsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
-
-// Configure OAuth2 access token for authorization: oauth
-OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
-oauth.setAccessToken("YOUR ACCESS TOKEN");
 
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
@@ -192,7 +180,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
+[personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 
@@ -217,10 +205,6 @@ Upload a binary file with an image to be used for a product. This request should
 //import com.vendhq.api.ProductsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
-
-// Configure OAuth2 access token for authorization: oauth
-OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
-oauth.setAccessToken("YOUR ACCESS TOKEN");
 
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
@@ -253,7 +237,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
+[personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 

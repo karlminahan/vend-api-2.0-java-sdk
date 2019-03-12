@@ -74,10 +74,6 @@ public class BrandsApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
         
-        // Configure OAuth2 access token for authorization: oauth
-        OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
-        oauth.setAccessToken("YOUR ACCESS TOKEN");
-
         // Configure API key authorization: personal_token
         ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
         personal_token.setApiKey("YOUR API KEY");
@@ -240,13 +236,6 @@ Class | Method | HTTP request | Description
 ## Documentation for Authorization
 
 Authentication schemes defined for the API:
-### oauth
-
-- **Type**: OAuth
-- **Flow**: accessCode
-- **Authorization URL**: https://secure.vendhq.com/connect
-- **Scopes**: N/A
-
 ### personal_token
 
 - **Type**: API key
