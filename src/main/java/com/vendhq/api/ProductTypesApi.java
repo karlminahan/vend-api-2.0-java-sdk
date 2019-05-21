@@ -73,7 +73,7 @@ public class ProductTypesApi {
     };
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-    String[] localVarAuthNames = new String[] { "oauth", "personal_token" };
+    String[] localVarAuthNames = new String[] { "personal_token" };
 
     GenericType<ProductTypeResponse> localVarReturnType = new GenericType<ProductTypeResponse>() {};
     return apiClient.invokeAPI(localVarPath, "GET", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);
@@ -114,7 +114,7 @@ public class ProductTypesApi {
     };
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-    String[] localVarAuthNames = new String[] { "oauth", "personal_token" };
+    String[] localVarAuthNames = new String[] { "personal_token" };
 
     GenericType<ProductTypeCollection> localVarReturnType = new GenericType<ProductTypeCollection>() {};
     return apiClient.invokeAPI(localVarPath, "GET", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);

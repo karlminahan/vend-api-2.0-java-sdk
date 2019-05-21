@@ -1,6 +1,6 @@
 # SearchApi
 
-All URIs are relative to *https://domain_prefix.vendhq.com/api/2.0*
+All URIs are relative to *https://{domain_prefix}.vendhq.com/api/2.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,11 +9,11 @@ Method | HTTP request | Description
 
 <a name="search"></a>
 # **search**
-> SearchResponse search(type, orderBy, orderDirection, pageSize, offset, id, id2, deleted, status, invoiceNumber, customerId, userId, outletId, dateFrom, dateTo, sku, sku2, supplierId, supplierId2, brandId, brandId2, tagId, tagId2, productTypeId, productTypeId2, variantParentId, variantParentId2, customerCode, firstName, lastName, companyName, phone, mobile, email)
+> SearchResponse search(type, orderBy, orderDirection, pageSize, offset, id, id2, deleted, status, invoiceNumber, customerId, userId, outletId, dateFrom, dateTo, sku, sku2, supplierId, supplierId2, brandId, brandId2, tagId, tagId2, productTypeId, productTypeId2, variantParentId, variantParentId2, customerCode, firstName, lastName, companyName)
 
 Search for resources
 
-This endpoint allows integrators to search all of the most commonly used resources, **sales**, **products** and **customers**. Each type allowing search by a number of different parameters.  ### Supported resource types and attributes  - **Sales**   - date_from   - date_to   - status   - invoice_number   - customer_id   - user_id   - outlet_id - **Products**   - sku   - supplier_id   - brand_id   - tag_id   - product_type_id   - variant_parent_id - **Customers**   - customer_code   - first_name   - last_name   - company_name   - phone   - mobile   - email    ### Sorting and pagination  Unlike other endpoints in the API 2.0, search results from this endpoint can be sorted by any of the attributes above. Because of that, the default [pagination](https://docs.vendhq.com/v0.9/reference#section-api-2-0) mechanism is not appropriate for this endpoint. Instead, this endpoint uses &#x60;offset&#x60; and &#x60;page_size&#x60; attributes to handle search results spanning multiple pages.
+This endpoint allows integrators to search all of the most commonly used resources, **sales**, **products** and **customers**. Each type allowing search by a number of different parameters.  ### Supported resource types and attributes  - **Sales**   - date_from   - date_to   - status   - invoice_number   - customer_id   - user_id   - outlet_id - **Products**   - sku   - supplier_id   - brand_id   - tag_id   - product_type_id   - variant_parent_id - **Customers**   - customer_code   - first_name   - last_name   - company_name   ### Sorting and pagination  Unlike other endpoints in the API 2.0, search results from this endpoint can be sorted by any of the attributes above. Because of that, the default [pagination](https://docs.vendhq.com/v0.9/reference#section-api-2-0) mechanism is not appropriate for this endpoint. Instead, this endpoint uses &#x60;offset&#x60; and &#x60;page_size&#x60; attributes to handle search results spanning multiple pages.
 
 ### Example
 ```java
@@ -25,10 +25,6 @@ This endpoint allows integrators to search all of the most commonly used resourc
 //import com.vendhq.api.SearchApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
-
-// Configure OAuth2 access token for authorization: oauth
-OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
-oauth.setAccessToken("YOUR ACCESS TOKEN");
 
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
@@ -50,29 +46,26 @@ String invoiceNumber = "invoiceNumber_example"; // String | **SALES** Invoice nu
 String customerId = "customerId_example"; // String | **SALES** The `ID` of the customer associated with the sales.
 String userId = "userId_example"; // String | **SALES** The `ID` of the user associated with the sales.
 String outletId = "outletId_example"; // String | **SALES** The `ID` of the outlet associated with the sales.
-String dateFrom = "dateFrom_example"; // String | **SALES** Lower limit for the sale date.
-String dateTo = "dateTo_example"; // String | **SALES** The `ID` Upper limit for the sale date.
-String sku = "sku_example"; // String | __PRODUCTS__ The SKU of products to include in the search. Can be used multiple times to search for objects with different values of this parameter.
-String sku2 = "sku_example"; // String | __PRODUCTS__ The SKU of products to exclude from the search. Can be used multiple times to search for objects with different values of this parameter.
-String supplierId = "supplierId_example"; // String | __PRODUCTS__ The ID of the supplier associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter.
-String supplierId2 = "supplierId_example"; // String | __PRODUCTS__ The ID of the supplier associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter.
-String brandId = "brandId_example"; // String | __PRODUCTS__ The ID of the brand associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter.
-String brandId2 = "brandId_example"; // String | __PRODUCTS__ The ID of the brand associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter.
-String tagId = "tagId_example"; // String | __PRODUCTS__ The ID of the tag associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter.
-String tagId2 = "tagId_example"; // String | __PRODUCTS__ The ID of the brand associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter.
-String productTypeId = "productTypeId_example"; // String | __PRODUCTS__ The ID of the product type associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter.
-String productTypeId2 = "productTypeId_example"; // String | __PRODUCTS__ The ID of the product type associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter.
-String variantParentId = "variantParentId_example"; // String | __PRODUCTS__ The ID of the variant parent product associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter.
-String variantParentId2 = "variantParentId_example"; // String | __PRODUCTS__ The ID of the variant parent product associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter.
+String dateFrom = "dateFrom_example"; // String | **SALES** Lower limit for the sale date as UTC timestamp. Format: `2016-08-08T12:00:00Z`.
+String dateTo = "dateTo_example"; // String | **SALES** Upper limit for the sale date as UTC timestamp. Format: `2016-08-08T12:00:00Z`.
+String sku = "sku_example"; // String | **PRODUCTS** The SKU of products to include in the search. Can be used multiple times to search for objects with different values of this parameter.
+String sku2 = "sku_example"; // String | **PRODUCTS** The SKU of products to exclude from the search. Can be used multiple times to search for objects with different values of this parameter.
+String supplierId = "supplierId_example"; // String | **PRODUCTS** The ID of the supplier associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter.
+String supplierId2 = "supplierId_example"; // String | **PRODUCTS** The ID of the supplier associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter.
+String brandId = "brandId_example"; // String | **PRODUCTS** The ID of the brand associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter.
+String brandId2 = "brandId_example"; // String | **PRODUCTS** The ID of the brand associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter.
+String tagId = "tagId_example"; // String | **PRODUCTS** The ID of the tag associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter.
+String tagId2 = "tagId_example"; // String | **PRODUCTS** The ID of the brand associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter.
+String productTypeId = "productTypeId_example"; // String | **PRODUCTS** The ID of the product type associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter.
+String productTypeId2 = "productTypeId_example"; // String | **PRODUCTS** The ID of the product type associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter.
+String variantParentId = "variantParentId_example"; // String | **PRODUCTS** The ID of the variant parent product associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter.
+String variantParentId2 = "variantParentId_example"; // String | **PRODUCTS** The ID of the variant parent product associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter.
 String customerCode = "customerCode_example"; // String | **CUSTOMERS** The `customer_code` associated with the customer to find.
 String firstName = "firstName_example"; // String | **CUSTOMERS** The `first_name` for the customers to find.
 String lastName = "lastName_example"; // String | **CUSTOMERS** The `last_name` for the customers to find.
 String companyName = "companyName_example"; // String | **CUSTOMERS** The `company_name` for the customers to find.
-String phone = "phone_example"; // String | **CUSTOMERS** The `phone_number` for the customer(s) to find.
-String mobile = "mobile_example"; // String | **CUSTOMERS** The `mobile` phone number for the customer(s) to find.
-String email = "email_example"; // String | **CUSTOMERS** The `email` for the customer(s) to find.
 try {
-    SearchResponse result = apiInstance.search(type, orderBy, orderDirection, pageSize, offset, id, id2, deleted, status, invoiceNumber, customerId, userId, outletId, dateFrom, dateTo, sku, sku2, supplierId, supplierId2, brandId, brandId2, tagId, tagId2, productTypeId, productTypeId2, variantParentId, variantParentId2, customerCode, firstName, lastName, companyName, phone, mobile, email);
+    SearchResponse result = apiInstance.search(type, orderBy, orderDirection, pageSize, offset, id, id2, deleted, status, invoiceNumber, customerId, userId, outletId, dateFrom, dateTo, sku, sku2, supplierId, supplierId2, brandId, brandId2, tagId, tagId2, productTypeId, productTypeId2, variantParentId, variantParentId2, customerCode, firstName, lastName, companyName);
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling SearchApi#search");
@@ -97,27 +90,24 @@ Name | Type | Description  | Notes
  **customerId** | **String**| **SALES** The &#x60;ID&#x60; of the customer associated with the sales. | [optional]
  **userId** | **String**| **SALES** The &#x60;ID&#x60; of the user associated with the sales. | [optional]
  **outletId** | **String**| **SALES** The &#x60;ID&#x60; of the outlet associated with the sales. | [optional]
- **dateFrom** | **String**| **SALES** Lower limit for the sale date. | [optional]
- **dateTo** | **String**| **SALES** The &#x60;ID&#x60; Upper limit for the sale date. | [optional]
- **sku** | **String**| __PRODUCTS__ The SKU of products to include in the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
- **sku2** | **String**| __PRODUCTS__ The SKU of products to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
- **supplierId** | **String**| __PRODUCTS__ The ID of the supplier associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
- **supplierId2** | **String**| __PRODUCTS__ The ID of the supplier associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
- **brandId** | **String**| __PRODUCTS__ The ID of the brand associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
- **brandId2** | **String**| __PRODUCTS__ The ID of the brand associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
- **tagId** | **String**| __PRODUCTS__ The ID of the tag associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
- **tagId2** | **String**| __PRODUCTS__ The ID of the brand associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
- **productTypeId** | **String**| __PRODUCTS__ The ID of the product type associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
- **productTypeId2** | **String**| __PRODUCTS__ The ID of the product type associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
- **variantParentId** | **String**| __PRODUCTS__ The ID of the variant parent product associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
- **variantParentId2** | **String**| __PRODUCTS__ The ID of the variant parent product associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
+ **dateFrom** | **String**| **SALES** Lower limit for the sale date as UTC timestamp. Format: &#x60;2016-08-08T12:00:00Z&#x60;. | [optional]
+ **dateTo** | **String**| **SALES** Upper limit for the sale date as UTC timestamp. Format: &#x60;2016-08-08T12:00:00Z&#x60;. | [optional]
+ **sku** | **String**| **PRODUCTS** The SKU of products to include in the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
+ **sku2** | **String**| **PRODUCTS** The SKU of products to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
+ **supplierId** | **String**| **PRODUCTS** The ID of the supplier associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
+ **supplierId2** | **String**| **PRODUCTS** The ID of the supplier associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
+ **brandId** | **String**| **PRODUCTS** The ID of the brand associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
+ **brandId2** | **String**| **PRODUCTS** The ID of the brand associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
+ **tagId** | **String**| **PRODUCTS** The ID of the tag associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
+ **tagId2** | **String**| **PRODUCTS** The ID of the brand associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
+ **productTypeId** | **String**| **PRODUCTS** The ID of the product type associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
+ **productTypeId2** | **String**| **PRODUCTS** The ID of the product type associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
+ **variantParentId** | **String**| **PRODUCTS** The ID of the variant parent product associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
+ **variantParentId2** | **String**| **PRODUCTS** The ID of the variant parent product associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. | [optional]
  **customerCode** | **String**| **CUSTOMERS** The &#x60;customer_code&#x60; associated with the customer to find. | [optional]
  **firstName** | **String**| **CUSTOMERS** The &#x60;first_name&#x60; for the customers to find. | [optional]
  **lastName** | **String**| **CUSTOMERS** The &#x60;last_name&#x60; for the customers to find. | [optional]
  **companyName** | **String**| **CUSTOMERS** The &#x60;company_name&#x60; for the customers to find. | [optional]
- **phone** | **String**| **CUSTOMERS** The &#x60;phone_number&#x60; for the customer(s) to find. | [optional]
- **mobile** | **String**| **CUSTOMERS** The &#x60;mobile&#x60; phone number for the customer(s) to find. | [optional]
- **email** | **String**| **CUSTOMERS** The &#x60;email&#x60; for the customer(s) to find. | [optional]
 
 ### Return type
 
@@ -125,7 +115,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
+[personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 

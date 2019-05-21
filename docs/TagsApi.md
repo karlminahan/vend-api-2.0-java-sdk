@@ -1,6 +1,6 @@
 # TagsApi
 
-All URIs are relative to *https://domain_prefix.vendhq.com/api/2.0*
+All URIs are relative to *https://{domain_prefix}.vendhq.com/api/2.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -26,10 +26,6 @@ Returns a single tag with a given ID.
 //import com.vendhq.api.TagsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
-
-// Configure OAuth2 access token for authorization: oauth
-OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
-oauth.setAccessToken("YOUR ACCESS TOKEN");
 
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
@@ -60,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
+[personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 
@@ -85,10 +81,6 @@ Returns a collection of tags.
 //import com.vendhq.api.TagsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
-
-// Configure OAuth2 access token for authorization: oauth
-OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
-oauth.setAccessToken("YOUR ACCESS TOKEN");
 
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
@@ -123,7 +115,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
+[personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 

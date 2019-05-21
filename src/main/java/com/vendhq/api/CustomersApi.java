@@ -73,7 +73,7 @@ public class CustomersApi {
     };
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-    String[] localVarAuthNames = new String[] { "oauth", "personal_token" };
+    String[] localVarAuthNames = new String[] { "personal_token" };
 
     GenericType<CustomerResponse> localVarReturnType = new GenericType<CustomerResponse>() {};
     return apiClient.invokeAPI(localVarPath, "POST", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);
@@ -114,7 +114,7 @@ public class CustomersApi {
     };
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-    String[] localVarAuthNames = new String[] { "oauth", "personal_token" };
+    String[] localVarAuthNames = new String[] { "personal_token" };
 
 
     apiClient.invokeAPI(localVarPath, "DELETE", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, null);
@@ -156,7 +156,7 @@ public class CustomersApi {
     };
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-    String[] localVarAuthNames = new String[] { "oauth", "personal_token" };
+    String[] localVarAuthNames = new String[] { "personal_token" };
 
     GenericType<CustomerResponse> localVarReturnType = new GenericType<CustomerResponse>() {};
     return apiClient.invokeAPI(localVarPath, "GET", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);
@@ -167,10 +167,11 @@ public class CustomersApi {
    * @param after The lower limit for the version numbers to be included in the response. (optional)
    * @param before The upper limit for the version numbers to be included in the response. (optional)
    * @param pageSize The maximum number of items to be returned in the response. (optional)
+   * @param deleted Indicates whether deleted items should be included in the response. (optional)
    * @return CustomerCollection
    * @throws ApiException if fails to make API call
    */
-  public CustomerCollection listCustomers(Long after, Long before, Integer pageSize) throws ApiException {
+  public CustomerCollection listCustomers(Long after, Long before, Integer pageSize, Boolean deleted) throws ApiException {
     Object localVarPostBody = null;
     
     // create path and map variables
@@ -184,6 +185,7 @@ public class CustomersApi {
     localVarQueryParams.addAll(apiClient.parameterToPairs("", "after", after));
     localVarQueryParams.addAll(apiClient.parameterToPairs("", "before", before));
     localVarQueryParams.addAll(apiClient.parameterToPairs("", "page_size", pageSize));
+    localVarQueryParams.addAll(apiClient.parameterToPairs("", "deleted", deleted));
 
     
     
@@ -197,7 +199,7 @@ public class CustomersApi {
     };
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-    String[] localVarAuthNames = new String[] { "oauth", "personal_token" };
+    String[] localVarAuthNames = new String[] { "personal_token" };
 
     GenericType<CustomerCollection> localVarReturnType = new GenericType<CustomerCollection>() {};
     return apiClient.invokeAPI(localVarPath, "GET", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);
@@ -245,7 +247,7 @@ public class CustomersApi {
     };
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-    String[] localVarAuthNames = new String[] { "oauth", "personal_token" };
+    String[] localVarAuthNames = new String[] { "personal_token" };
 
     GenericType<CustomerResponse> localVarReturnType = new GenericType<CustomerResponse>() {};
     return apiClient.invokeAPI(localVarPath, "PUT", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);

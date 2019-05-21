@@ -1,6 +1,6 @@
 # CustomersApi
 
-All URIs are relative to *https://domain_prefix.vendhq.com/api/2.0*
+All URIs are relative to *https://{domain_prefix}.vendhq.com/api/2.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -29,10 +29,6 @@ Creates a new customer.
 //import com.vendhq.api.CustomersApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
-
-// Configure OAuth2 access token for authorization: oauth
-OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
-oauth.setAccessToken("YOUR ACCESS TOKEN");
 
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
@@ -63,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
+[personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 
@@ -88,10 +84,6 @@ Deletes the customer with the requested ID.
 //import com.vendhq.api.CustomersApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
-
-// Configure OAuth2 access token for authorization: oauth
-OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
-oauth.setAccessToken("YOUR ACCESS TOKEN");
 
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
@@ -121,7 +113,7 @@ null (empty response body)
 
 ### Authorization
 
-[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
+[personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 
@@ -146,10 +138,6 @@ Returns a single customer with a requested ID.
 //import com.vendhq.api.CustomersApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
-
-// Configure OAuth2 access token for authorization: oauth
-OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
-oauth.setAccessToken("YOUR ACCESS TOKEN");
 
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
@@ -180,7 +168,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
+[personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 
@@ -189,7 +177,7 @@ Name | Type | Description  | Notes
 
 <a name="listCustomers"></a>
 # **listCustomers**
-> CustomerCollection listCustomers(after, before, pageSize)
+> CustomerCollection listCustomers(after, before, pageSize, deleted)
 
 List customers
 
@@ -206,10 +194,6 @@ Returns a paginated list of customers.
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure OAuth2 access token for authorization: oauth
-OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
-oauth.setAccessToken("YOUR ACCESS TOKEN");
-
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
 personal_token.setApiKey("YOUR API KEY");
@@ -220,8 +204,9 @@ CustomersApi apiInstance = new CustomersApi();
 Long after = 789L; // Long | The lower limit for the version numbers to be included in the response.
 Long before = 789L; // Long | The upper limit for the version numbers to be included in the response.
 Integer pageSize = 56; // Integer | The maximum number of items to be returned in the response.
+Boolean deleted = true; // Boolean | Indicates whether deleted items should be included in the response.
 try {
-    CustomerCollection result = apiInstance.listCustomers(after, before, pageSize);
+    CustomerCollection result = apiInstance.listCustomers(after, before, pageSize, deleted);
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling CustomersApi#listCustomers");
@@ -236,6 +221,7 @@ Name | Type | Description  | Notes
  **after** | **Long**| The lower limit for the version numbers to be included in the response. | [optional]
  **before** | **Long**| The upper limit for the version numbers to be included in the response. | [optional]
  **pageSize** | **Integer**| The maximum number of items to be returned in the response. | [optional]
+ **deleted** | **Boolean**| Indicates whether deleted items should be included in the response. | [optional]
 
 ### Return type
 
@@ -243,7 +229,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
+[personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 
@@ -268,10 +254,6 @@ Updates the customer with the requested ID.
 //import com.vendhq.api.CustomersApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
-
-// Configure OAuth2 access token for authorization: oauth
-OAuth oauth = (OAuth) defaultClient.getAuthentication("oauth");
-oauth.setAccessToken("YOUR ACCESS TOKEN");
 
 // Configure API key authorization: personal_token
 ApiKeyAuth personal_token = (ApiKeyAuth) defaultClient.getAuthentication("personal_token");
@@ -304,7 +286,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[oauth](../README.md#oauth), [personal_token](../README.md#personal_token)
+[personal_token](../README.md#personal_token)
 
 ### HTTP request headers
 

@@ -7,7 +7,6 @@ import com.vendhq.api.Pair;
 
 import javax.ws.rs.core.GenericType;
 
-import com.vendhq.models.PriceBookBase;
 import com.vendhq.models.PriceBookCollection;
 import com.vendhq.models.PriceBookResponse;
 import java.util.UUID;
@@ -37,47 +36,6 @@ public class PriceBooksApi {
     this.apiClient = apiClient;
   }
 
-  /**
-   * Create a price book
-   * Creates a new price book.
-   * @param body  (required)
-   * @return PriceBookResponse
-   * @throws ApiException if fails to make API call
-   */
-  public PriceBookResponse createPriceBook(PriceBookBase body) throws ApiException {
-    Object localVarPostBody = body;
-    
-    // verify the required parameter 'body' is set
-    if (body == null) {
-      throw new ApiException(400, "Missing the required parameter 'body' when calling createPriceBook");
-    }
-    
-    // create path and map variables
-    String localVarPath = "/price_books";
-
-    // query params
-    List<Pair> localVarQueryParams = new ArrayList<Pair>();
-    Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-    Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-
-    
-    
-    final String[] localVarAccepts = {
-      "application/json"
-    };
-    final String localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
-
-    final String[] localVarContentTypes = {
-      "application/json"
-    };
-    final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
-
-    String[] localVarAuthNames = new String[] { "oauth", "personal_token" };
-
-    GenericType<PriceBookResponse> localVarReturnType = new GenericType<PriceBookResponse>() {};
-    return apiClient.invokeAPI(localVarPath, "POST", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);
-      }
   /**
    * Get a single price book
    * Returns a single price book with a requested ID
@@ -115,7 +73,7 @@ public class PriceBooksApi {
     };
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-    String[] localVarAuthNames = new String[] { "oauth", "personal_token" };
+    String[] localVarAuthNames = new String[] { "personal_token" };
 
     GenericType<PriceBookResponse> localVarReturnType = new GenericType<PriceBookResponse>() {};
     return apiClient.invokeAPI(localVarPath, "GET", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);
@@ -156,7 +114,7 @@ public class PriceBooksApi {
     };
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-    String[] localVarAuthNames = new String[] { "oauth", "personal_token" };
+    String[] localVarAuthNames = new String[] { "personal_token" };
 
     GenericType<PriceBookCollection> localVarReturnType = new GenericType<PriceBookCollection>() {};
     return apiClient.invokeAPI(localVarPath, "GET", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);

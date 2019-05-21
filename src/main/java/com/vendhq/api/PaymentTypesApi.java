@@ -70,7 +70,7 @@ public class PaymentTypesApi {
     };
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-    String[] localVarAuthNames = new String[] { "oauth", "personal_token" };
+    String[] localVarAuthNames = new String[] { "personal_token" };
 
     GenericType<PaymentTypeCollection> localVarReturnType = new GenericType<PaymentTypeCollection>() {};
     return apiClient.invokeAPI(localVarPath, "GET", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);

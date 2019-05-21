@@ -36,7 +36,7 @@ public class SearchApi {
 
   /**
    * Search for resources
-   * This endpoint allows integrators to search all of the most commonly used resources, **sales**, **products** and **customers**. Each type allowing search by a number of different parameters.  ### Supported resource types and attributes  - **Sales**   - date_from   - date_to   - status   - invoice_number   - customer_id   - user_id   - outlet_id - **Products**   - sku   - supplier_id   - brand_id   - tag_id   - product_type_id   - variant_parent_id - **Customers**   - customer_code   - first_name   - last_name   - company_name   - phone   - mobile   - email    ### Sorting and pagination  Unlike other endpoints in the API 2.0, search results from this endpoint can be sorted by any of the attributes above. Because of that, the default [pagination](https://docs.vendhq.com/v0.9/reference#section-api-2-0) mechanism is not appropriate for this endpoint. Instead, this endpoint uses &#x60;offset&#x60; and &#x60;page_size&#x60; attributes to handle search results spanning multiple pages.
+   * This endpoint allows integrators to search all of the most commonly used resources, **sales**, **products** and **customers**. Each type allowing search by a number of different parameters.  ### Supported resource types and attributes  - **Sales**   - date_from   - date_to   - status   - invoice_number   - customer_id   - user_id   - outlet_id - **Products**   - sku   - supplier_id   - brand_id   - tag_id   - product_type_id   - variant_parent_id - **Customers**   - customer_code   - first_name   - last_name   - company_name   ### Sorting and pagination  Unlike other endpoints in the API 2.0, search results from this endpoint can be sorted by any of the attributes above. Because of that, the default [pagination](https://docs.vendhq.com/v0.9/reference#section-api-2-0) mechanism is not appropriate for this endpoint. Instead, this endpoint uses &#x60;offset&#x60; and &#x60;page_size&#x60; attributes to handle search results spanning multiple pages.
    * @param type The enity type to search for. One of: &#x60;sales&#x60;, &#x60;products&#x60;, &#x60;customers&#x60;. (required)
    * @param orderBy The attribute used to sort items returned in the response. (optional)
    * @param orderDirection Sorting direction. One of: &#x60;asc&#x60;, &#x60;desc&#x60;. (optional)
@@ -50,31 +50,28 @@ public class SearchApi {
    * @param customerId **SALES** The &#x60;ID&#x60; of the customer associated with the sales. (optional)
    * @param userId **SALES** The &#x60;ID&#x60; of the user associated with the sales. (optional)
    * @param outletId **SALES** The &#x60;ID&#x60; of the outlet associated with the sales. (optional)
-   * @param dateFrom **SALES** Lower limit for the sale date. (optional)
-   * @param dateTo **SALES** The &#x60;ID&#x60; Upper limit for the sale date. (optional)
-   * @param sku __PRODUCTS__ The SKU of products to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param sku2 __PRODUCTS__ The SKU of products to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param supplierId __PRODUCTS__ The ID of the supplier associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param supplierId2 __PRODUCTS__ The ID of the supplier associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param brandId __PRODUCTS__ The ID of the brand associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param brandId2 __PRODUCTS__ The ID of the brand associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param tagId __PRODUCTS__ The ID of the tag associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param tagId2 __PRODUCTS__ The ID of the brand associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param productTypeId __PRODUCTS__ The ID of the product type associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param productTypeId2 __PRODUCTS__ The ID of the product type associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param variantParentId __PRODUCTS__ The ID of the variant parent product associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
-   * @param variantParentId2 __PRODUCTS__ The ID of the variant parent product associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param dateFrom **SALES** Lower limit for the sale date as UTC timestamp. Format: &#x60;2016-08-08T12:00:00Z&#x60;. (optional)
+   * @param dateTo **SALES** Upper limit for the sale date as UTC timestamp. Format: &#x60;2016-08-08T12:00:00Z&#x60;. (optional)
+   * @param sku **PRODUCTS** The SKU of products to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param sku2 **PRODUCTS** The SKU of products to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param supplierId **PRODUCTS** The ID of the supplier associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param supplierId2 **PRODUCTS** The ID of the supplier associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param brandId **PRODUCTS** The ID of the brand associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param brandId2 **PRODUCTS** The ID of the brand associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param tagId **PRODUCTS** The ID of the tag associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param tagId2 **PRODUCTS** The ID of the brand associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param productTypeId **PRODUCTS** The ID of the product type associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param productTypeId2 **PRODUCTS** The ID of the product type associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param variantParentId **PRODUCTS** The ID of the variant parent product associated with the product to include in the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
+   * @param variantParentId2 **PRODUCTS** The ID of the variant parent product associated with the product to exclude from the search. Can be used multiple times to search for objects with different values of this parameter. (optional)
    * @param customerCode **CUSTOMERS** The &#x60;customer_code&#x60; associated with the customer to find. (optional)
    * @param firstName **CUSTOMERS** The &#x60;first_name&#x60; for the customers to find. (optional)
    * @param lastName **CUSTOMERS** The &#x60;last_name&#x60; for the customers to find. (optional)
    * @param companyName **CUSTOMERS** The &#x60;company_name&#x60; for the customers to find. (optional)
-   * @param phone **CUSTOMERS** The &#x60;phone_number&#x60; for the customer(s) to find. (optional)
-   * @param mobile **CUSTOMERS** The &#x60;mobile&#x60; phone number for the customer(s) to find. (optional)
-   * @param email **CUSTOMERS** The &#x60;email&#x60; for the customer(s) to find. (optional)
    * @return SearchResponse
    * @throws ApiException if fails to make API call
    */
-  public SearchResponse search(String type, String orderBy, String orderDirection, Integer pageSize, Integer offset, String id, String id2, Boolean deleted, String status, String invoiceNumber, String customerId, String userId, String outletId, String dateFrom, String dateTo, String sku, String sku2, String supplierId, String supplierId2, String brandId, String brandId2, String tagId, String tagId2, String productTypeId, String productTypeId2, String variantParentId, String variantParentId2, String customerCode, String firstName, String lastName, String companyName, String phone, String mobile, String email) throws ApiException {
+  public SearchResponse search(String type, String orderBy, String orderDirection, Integer pageSize, Integer offset, String id, String id2, Boolean deleted, String status, String invoiceNumber, String customerId, String userId, String outletId, String dateFrom, String dateTo, String sku, String sku2, String supplierId, String supplierId2, String brandId, String brandId2, String tagId, String tagId2, String productTypeId, String productTypeId2, String variantParentId, String variantParentId2, String customerCode, String firstName, String lastName, String companyName) throws ApiException {
     Object localVarPostBody = null;
     
     // verify the required parameter 'type' is set
@@ -121,9 +118,6 @@ public class SearchApi {
     localVarQueryParams.addAll(apiClient.parameterToPairs("", "first_name", firstName));
     localVarQueryParams.addAll(apiClient.parameterToPairs("", "last_name", lastName));
     localVarQueryParams.addAll(apiClient.parameterToPairs("", "company_name", companyName));
-    localVarQueryParams.addAll(apiClient.parameterToPairs("", "phone", phone));
-    localVarQueryParams.addAll(apiClient.parameterToPairs("", "mobile", mobile));
-    localVarQueryParams.addAll(apiClient.parameterToPairs("", "email", email));
 
     
     
@@ -137,7 +131,7 @@ public class SearchApi {
     };
     final String localVarContentType = apiClient.selectHeaderContentType(localVarContentTypes);
 
-    String[] localVarAuthNames = new String[] { "oauth", "personal_token" };
+    String[] localVarAuthNames = new String[] { "personal_token" };
 
     GenericType<SearchResponse> localVarReturnType = new GenericType<SearchResponse>() {};
     return apiClient.invokeAPI(localVarPath, "GET", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);
