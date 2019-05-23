@@ -132,7 +132,7 @@ Class | Method | HTTP request | Description
 *ProductImagesApi* | [**getProductImageDataByID**](docs/ProductImagesApi.md#getProductImageDataByID) | **GET** /product_images/{product_image_id} | Get a single product_image data
 *ProductImagesApi* | [**setImagePosition**](docs/ProductImagesApi.md#setImagePosition) | **PUT** /product_images/{product_image_id} | Set image position
 *ProductTypesApi* | [**getProductTypeByID**](docs/ProductTypesApi.md#getProductTypeByID) | **GET** /product_types/{product_type_id} | Get a single product type
-*ProductTypesApi* | [**listProductTypes**](docs/ProductTypesApi.md#listProductTypes) | **GET** /product_types | ListProductTypes
+*ProductTypesApi* | [**listProductTypes**](docs/ProductTypesApi.md#listProductTypes) | **GET** /product_types | List product types
 *ProductsApi* | [**getInventoryByProductID**](docs/ProductsApi.md#getInventoryByProductID) | **GET** /products/{product_id}/inventory | Get inventory data for a single product
 *ProductsApi* | [**getProductByID**](docs/ProductsApi.md#getProductByID) | **GET** /products/{product_id} | Get a single product
 *ProductsApi* | [**listProducts**](docs/ProductsApi.md#listProducts) | **GET** /products | List products
@@ -153,6 +153,7 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Models
 
+ - [Adjustment](docs/Adjustment.md)
  - [Brand](docs/Brand.md)
  - [BrandCollection](docs/BrandCollection.md)
  - [BrandResponse](docs/BrandResponse.md)

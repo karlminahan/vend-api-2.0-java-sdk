@@ -26,8 +26,9 @@ Name | Type | Description | Notes
 **deletedAt** | **String** | Deletion timestamp in UTC. |  [optional]
 **version** | **Long** | Auto-incrementing object version number. |  [optional]
 **taxes** | [**List&lt;SaleTax&gt;**](SaleTax.md) | Collection of taxes. |  [optional]
-**lineItems** | [**List&lt;LineItem&gt;**](LineItem.md) | A collection of line items. |  [optional]
+**lineItems** | [**List&lt;LineItem&gt;**](LineItem.md) | Collection of line items. |  [optional]
 **payments** | [**List&lt;Payment&gt;**](Payment.md) | Collection of payments. |  [optional]
+**adjustments** | [**List&lt;Adjustment&gt;**](Adjustment.md) | Collection of adjustments. |  [optional]
 
 
 

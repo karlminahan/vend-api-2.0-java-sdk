@@ -5,7 +5,7 @@ All URIs are relative to *https://{domain_prefix}.vendhq.com/api/2.0*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getProductTypeByID**](ProductTypesApi.md#getProductTypeByID) | **GET** /product_types/{product_type_id} | Get a single product type
-[**listProductTypes**](ProductTypesApi.md#listProductTypes) | **GET** /product_types | ListProductTypes
+[**listProductTypes**](ProductTypesApi.md#listProductTypes) | **GET** /product_types | List product types
 
 
 <a name="getProductTypeByID"></a>
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 # **listProductTypes**
 > ProductTypeCollection listProductTypes(after, before, pageSize)
 
-ListProductTypes
+List product types
 
 Returns a paginated list of product types.
 

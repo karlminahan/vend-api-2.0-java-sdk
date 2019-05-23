@@ -79,7 +79,7 @@ public class ProductTypesApi {
     return apiClient.invokeAPI(localVarPath, "GET", localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAccept, localVarContentType, localVarAuthNames, localVarReturnType);
       }
   /**
-   * ListProductTypes
+   * List product types
    * Returns a paginated list of product types.
    * @param after The lower limit for the version numbers to be included in the response. (optional)
    * @param before The upper limit for the version numbers to be included in the response. (optional)

@@ -18,6 +18,7 @@ import java.util.Arrays;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
+import com.vendhq.models.Adjustment;
 import com.vendhq.models.LineItem;
 import com.vendhq.models.Payment;
 import com.vendhq.models.SaleTax;
@@ -102,6 +103,9 @@ public class Sale {
 
   @JsonProperty("payments")
   private List<Payment> payments = null;
+
+  @JsonProperty("adjustments")
+  private List<Adjustment> adjustments = null;
 
   public Sale id(String id) {
     this.id = id;
@@ -521,10 +525,10 @@ public class Sale {
   }
 
    /**
-   * A collection of line items.
+   * Collection of line items.
    * @return lineItems
   **/
-  @ApiModelProperty(value = "A collection of line items.")
+  @ApiModelProperty(value = "Collection of line items.")
   public List<LineItem> getLineItems() {
     return lineItems;
   }
@@ -557,6 +561,32 @@ public class Sale {
 
   public void setPayments(List<Payment> payments) {
     this.payments = payments;
+  }
+
+  public Sale adjustments(List<Adjustment> adjustments) {
+    this.adjustments = adjustments;
+    return this;
+  }
+
+  public Sale addAdjustmentsItem(Adjustment adjustmentsItem) {
+    if (this.adjustments == null) {
+      this.adjustments = new ArrayList<>();
+    }
+    this.adjustments.add(adjustmentsItem);
+    return this;
+  }
+
+   /**
+   * Collection of adjustments.
+   * @return adjustments
+  **/
+  @ApiModelProperty(value = "Collection of adjustments.")
+  public List<Adjustment> getAdjustments() {
+    return adjustments;
+  }
+
+  public void setAdjustments(List<Adjustment> adjustments) {
+    this.adjustments = adjustments;
   }
 
 
@@ -592,12 +622,13 @@ public class Sale {
         Objects.equals(this.version, sale.version) &&
         Objects.equals(this.taxes, sale.taxes) &&
         Objects.equals(this.lineItems, sale.lineItems) &&
-        Objects.equals(this.payments, sale.payments);
+        Objects.equals(this.payments, sale.payments) &&
+        Objects.equals(this.adjustments, sale.adjustments);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, outletId, registerId, userId, customerId, invoiceNumber, invoiceSequence, source, sourceId, status, note, shortCode, returnFor, totalPrice, totalTax, totalLoyalty, saleDate, createdAt, updatedAt, deletedAt, version, taxes, lineItems, payments);
+    return Objects.hash(id, outletId, registerId, userId, customerId, invoiceNumber, invoiceSequence, source, sourceId, status, note, shortCode, returnFor, totalPrice, totalTax, totalLoyalty, saleDate, createdAt, updatedAt, deletedAt, version, taxes, lineItems, payments, adjustments);
   }
 
 
@@ -630,6 +661,7 @@ public class Sale {
     sb.append("    taxes: ").append(toIndentedString(taxes)).append("\n");
     sb.append("    lineItems: ").append(toIndentedString(lineItems)).append("\n");
     sb.append("    payments: ").append(toIndentedString(payments)).append("\n");
+    sb.append("    adjustments: ").append(toIndentedString(adjustments)).append("\n");
     sb.append("}");
     return sb.toString();
   }
